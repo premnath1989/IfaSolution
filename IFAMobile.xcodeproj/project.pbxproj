@@ -76,6 +76,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F76D9801CFC3F42002A7F47 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0FB8FE191CF7DAD8005C85DE /* LaunchScreen.storyboard */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		0F76D9811CFC3F4D002A7F47 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Style;
+			sourceTree = "<group>";
+		};
 		0FB8FE011CF7DAD8005C85DE = {
 			isa = PBXGroup;
 			children = (
@@ -103,8 +118,9 @@
 				0FB8FE0F1CF7DAD8005C85DE /* ViewController.swift */,
 				0FB8FE111CF7DAD8005C85DE /* Main.storyboard */,
 				0FB8FE171CF7DAD8005C85DE /* Assets.xcassets */,
-				0FB8FE191CF7DAD8005C85DE /* LaunchScreen.storyboard */,
+				0F76D9801CFC3F42002A7F47 /* Fonts */,
 				0FB8FE1C1CF7DAD8005C85DE /* Info.plist */,
+				0F76D9811CFC3F4D002A7F47 /* Style */,
 				0FB8FE141CF7DAD8005C85DE /* IFAMobile.xcdatamodeld */,
 			);
 			path = IFAMobile;
@@ -488,6 +504,7 @@
 				0FB8FE371CF7DAD9005C85DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FB8FE381CF7DAD9005C85DE /* Build configuration list for PBXNativeTarget "IFAMobileTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +513,7 @@
 				0FB8FE3A1CF7DAD9005C85DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FB8FE3B1CF7DAD9005C85DE /* Build configuration list for PBXNativeTarget "IFAMobileUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +522,7 @@
 				0FB8FE3D1CF7DAD9005C85DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
