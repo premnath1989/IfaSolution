@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F76D9A01CFC4DF9002A7F47 /* Font Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76D99E1CFC4DF9002A7F47 /* Font Generator.swift */; };
+		0F76D9A11CFC4DF9002A7F47 /* User Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76D99F1CFC4DF9002A7F47 /* User Interface.swift */; };
+		0F76D9C51CFC4FAE002A7F47 /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76D9C01CFC4FAE002A7F47 /* Dimension.swift */; };
+		0F76D9C61CFC4FAE002A7F47 /* Font Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76D9C11CFC4FAE002A7F47 /* Font Size.swift */; };
+		0F76D9C71CFC4FAE002A7F47 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76D9C21CFC4FAE002A7F47 /* Rule.swift */; };
+		0F76D9C81CFC4FAE002A7F47 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76D9C31CFC4FAE002A7F47 /* String.swift */; };
+		0F76D9C91CFC4FAE002A7F47 /* Theme Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F76D9C41CFC4FAE002A7F47 /* Theme Default.swift */; };
 		0FB8FE0E1CF7DAD8005C85DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB8FE0D1CF7DAD8005C85DE /* AppDelegate.swift */; };
-		0FB8FE101CF7DAD8005C85DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB8FE0F1CF7DAD8005C85DE /* ViewController.swift */; };
+		0FB8FE101CF7DAD8005C85DE /* Login Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB8FE0F1CF7DAD8005C85DE /* Login Controller.swift */; };
 		0FB8FE131CF7DAD8005C85DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FB8FE111CF7DAD8005C85DE /* Main.storyboard */; };
 		0FB8FE161CF7DAD8005C85DE /* IFAMobile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FB8FE141CF7DAD8005C85DE /* IFAMobile.xcdatamodeld */; };
 		0FB8FE181CF7DAD8005C85DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FB8FE171CF7DAD8005C85DE /* Assets.xcassets */; };
@@ -35,9 +42,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F76D99B1CFC4D29002A7F47 /* HelveticaNeue_35_Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeue_35_Thin.ttf; sourceTree = "<group>"; };
+		0F76D99C1CFC4D29002A7F47 /* HelveticaNeue_47_Light_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeue_47_Light_Italic.ttf; sourceTree = "<group>"; };
+		0F76D99D1CFC4D29002A7F47 /* HelveticaNeue_55_Roman.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeue_55_Roman.ttf; sourceTree = "<group>"; };
+		0F76D99E1CFC4DF9002A7F47 /* Font Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font Generator.swift"; sourceTree = "<group>"; };
+		0F76D99F1CFC4DF9002A7F47 /* User Interface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User Interface.swift"; sourceTree = "<group>"; };
+		0F76D9C01CFC4FAE002A7F47 /* Dimension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dimension.swift; sourceTree = "<group>"; };
+		0F76D9C11CFC4FAE002A7F47 /* Font Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font Size.swift"; sourceTree = "<group>"; };
+		0F76D9C21CFC4FAE002A7F47 /* Rule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
+		0F76D9C31CFC4FAE002A7F47 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		0F76D9C41CFC4FAE002A7F47 /* Theme Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Theme Default.swift"; sourceTree = "<group>"; };
 		0FB8FE0A1CF7DAD8005C85DE /* IFAMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IFAMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FB8FE0D1CF7DAD8005C85DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0FB8FE0F1CF7DAD8005C85DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0FB8FE0F1CF7DAD8005C85DE /* Login Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login Controller.swift"; sourceTree = "<group>"; };
 		0FB8FE121CF7DAD8005C85DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0FB8FE151CF7DAD8005C85DE /* IFAMobile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IFAMobile.xcdatamodel; sourceTree = "<group>"; };
 		0FB8FE171CF7DAD8005C85DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,12 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0F76D9801CFC3F42002A7F47 /* Fonts */ = {
+		0F76D9801CFC3F42002A7F47 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				0FB8FE191CF7DAD8005C85DE /* LaunchScreen.storyboard */,
+				0F76D99B1CFC4D29002A7F47 /* HelveticaNeue_35_Thin.ttf */,
+				0F76D99C1CFC4D29002A7F47 /* HelveticaNeue_47_Light_Italic.ttf */,
+				0F76D99D1CFC4D29002A7F47 /* HelveticaNeue_55_Roman.ttf */,
 			);
-			name = Fonts;
+			name = Font;
 			sourceTree = "<group>";
 		};
 		0F76D9811CFC3F4D002A7F47 /* Style */ = {
@@ -89,6 +108,66 @@
 			children = (
 			);
 			name = Style;
+			sourceTree = "<group>";
+		};
+		0F76D9821CFC4A57002A7F47 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0FB8FE0F1CF7DAD8005C85DE /* Login Controller.swift */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		0F76D9831CFC4A79002A7F47 /* Composer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Composer;
+			sourceTree = "<group>";
+		};
+		0F76D9841CFC4A8D002A7F47 /* Variable */ = {
+			isa = PBXGroup;
+			children = (
+				0F76D9861CFC4AAD002A7F47 /* Object */,
+				0F76D98A1CFC4ADF002A7F47 /* Constant */,
+				0F76D9851CFC4AA2002A7F47 /* Session */,
+			);
+			name = Variable;
+			sourceTree = "<group>";
+		};
+		0F76D9851CFC4AA2002A7F47 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Session;
+			sourceTree = "<group>";
+		};
+		0F76D9861CFC4AAD002A7F47 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Object;
+			sourceTree = "<group>";
+		};
+		0F76D98A1CFC4ADF002A7F47 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				0F76D9C01CFC4FAE002A7F47 /* Dimension.swift */,
+				0F76D9C11CFC4FAE002A7F47 /* Font Size.swift */,
+				0F76D9C21CFC4FAE002A7F47 /* Rule.swift */,
+				0F76D9C31CFC4FAE002A7F47 /* String.swift */,
+				0F76D9C41CFC4FAE002A7F47 /* Theme Default.swift */,
+			);
+			name = Constant;
+			sourceTree = "<group>";
+		};
+		0F76D98B1CFC4AFD002A7F47 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				0F76D99E1CFC4DF9002A7F47 /* Font Generator.swift */,
+				0F76D99F1CFC4DF9002A7F47 /* User Interface.swift */,
+			);
+			name = "User Interface";
 			sourceTree = "<group>";
 		};
 		0FB8FE011CF7DAD8005C85DE = {
@@ -115,10 +194,14 @@
 			isa = PBXGroup;
 			children = (
 				0FB8FE0D1CF7DAD8005C85DE /* AppDelegate.swift */,
-				0FB8FE0F1CF7DAD8005C85DE /* ViewController.swift */,
+				0F76D98B1CFC4AFD002A7F47 /* User Interface */,
+				0F76D9841CFC4A8D002A7F47 /* Variable */,
+				0F76D9831CFC4A79002A7F47 /* Composer */,
+				0F76D9821CFC4A57002A7F47 /* View Controller */,
 				0FB8FE111CF7DAD8005C85DE /* Main.storyboard */,
 				0FB8FE171CF7DAD8005C85DE /* Assets.xcassets */,
-				0F76D9801CFC3F42002A7F47 /* Fonts */,
+				0FB8FE191CF7DAD8005C85DE /* LaunchScreen.storyboard */,
+				0F76D9801CFC3F42002A7F47 /* Font */,
 				0FB8FE1C1CF7DAD8005C85DE /* Info.plist */,
 				0F76D9811CFC3F4D002A7F47 /* Style */,
 				0FB8FE141CF7DAD8005C85DE /* IFAMobile.xcdatamodeld */,
@@ -276,7 +359,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FB8FE161CF7DAD8005C85DE /* IFAMobile.xcdatamodeld in Sources */,
-				0FB8FE101CF7DAD8005C85DE /* ViewController.swift in Sources */,
+				0F76D9A11CFC4DF9002A7F47 /* User Interface.swift in Sources */,
+				0F76D9C91CFC4FAE002A7F47 /* Theme Default.swift in Sources */,
+				0F76D9C61CFC4FAE002A7F47 /* Font Size.swift in Sources */,
+				0F76D9C81CFC4FAE002A7F47 /* String.swift in Sources */,
+				0F76D9C51CFC4FAE002A7F47 /* Dimension.swift in Sources */,
+				0F76D9A01CFC4DF9002A7F47 /* Font Generator.swift in Sources */,
+				0F76D9C71CFC4FAE002A7F47 /* Rule.swift in Sources */,
+				0FB8FE101CF7DAD8005C85DE /* Login Controller.swift in Sources */,
 				0FB8FE0E1CF7DAD8005C85DE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
