@@ -22,6 +22,14 @@
 		0FB8FE1B1CF7DAD8005C85DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FB8FE191CF7DAD8005C85DE /* LaunchScreen.storyboard */; };
 		0FB8FE261CF7DAD8005C85DE /* IFAMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB8FE251CF7DAD8005C85DE /* IFAMobileTests.swift */; };
 		0FB8FE311CF7DAD9005C85DE /* IFAMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB8FE301CF7DAD9005C85DE /* IFAMobileUITests.swift */; };
+		0FCEA4E91CFE868900823B1E /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEA4E61CFE868900823B1E /* Button.swift */; };
+		0FCEA4EA1CFE868900823B1E /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEA4E71CFE868900823B1E /* Input.swift */; };
+		0FCEA4EB1CFE868900823B1E /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEA4E81CFE868900823B1E /* Layout.swift */; };
+		0FCEA4F21CFE86EE00823B1E /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEA4F01CFE86EE00823B1E /* Icon.swift */; };
+		0FCEA4F31CFE86EE00823B1E /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEA4F11CFE86EE00823B1E /* Label.swift */; };
+		0FCEA4F71CFEDCC400823B1E /* Footer Layout.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FCEA4F61CFEDCC400823B1E /* Footer Layout.xib */; };
+		0FCEA4FA1CFEE09C00823B1E /* Footer Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEA4F91CFEE09C00823B1E /* Footer Controller.swift */; };
+		0FCEA50F1CFEEC0E00823B1E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FCEA5111CFEEC0E00823B1E /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +51,6 @@
 
 /* Begin PBXFileReference section */
 		0F76D99B1CFC4D29002A7F47 /* HelveticaNeue_35_Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeue_35_Thin.ttf; sourceTree = "<group>"; };
-		0F76D99C1CFC4D29002A7F47 /* HelveticaNeue_47_Light_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeue_47_Light_Italic.ttf; sourceTree = "<group>"; };
 		0F76D99D1CFC4D29002A7F47 /* HelveticaNeue_55_Roman.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeue_55_Roman.ttf; sourceTree = "<group>"; };
 		0F76D99E1CFC4DF9002A7F47 /* Font Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font Generator.swift"; sourceTree = "<group>"; };
 		0F76D99F1CFC4DF9002A7F47 /* User Interface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User Interface.swift"; sourceTree = "<group>"; };
@@ -66,6 +73,19 @@
 		0FB8FE2C1CF7DAD9005C85DE /* IFAMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IFAMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FB8FE301CF7DAD9005C85DE /* IFAMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IFAMobileUITests.swift; sourceTree = "<group>"; };
 		0FB8FE321CF7DAD9005C85DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FCEA4E61CFE868900823B1E /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		0FCEA4E71CFE868900823B1E /* Input.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
+		0FCEA4E81CFE868900823B1E /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		0FCEA4F01CFE86EE00823B1E /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		0FCEA4F11CFE86EE00823B1E /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		0FCEA4F51CFE9DF200823B1E /* HelveticaNeue_45_Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeue_45_Light.ttf; sourceTree = "<group>"; };
+		0FCEA4F61CFEDCC400823B1E /* Footer Layout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Footer Layout.xib"; sourceTree = "<group>"; };
+		0FCEA4F91CFEE09C00823B1E /* Footer Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Footer Controller.swift"; sourceTree = "<group>"; };
+		0FCEA5101CFEEC0E00823B1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0FCEA5121CFEEC0F00823B1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0FCEA5131CFEED1000823B1E /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Main.strings; sourceTree = "<group>"; };
+		0FCEA5141CFEED1100823B1E /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		0FCEA5171CFEED1100823B1E /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +116,8 @@
 		0F76D9801CFC3F42002A7F47 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				0FCEA4F51CFE9DF200823B1E /* HelveticaNeue_45_Light.ttf */,
 				0F76D99B1CFC4D29002A7F47 /* HelveticaNeue_35_Thin.ttf */,
-				0F76D99C1CFC4D29002A7F47 /* HelveticaNeue_47_Light_Italic.ttf */,
 				0F76D99D1CFC4D29002A7F47 /* HelveticaNeue_55_Roman.ttf */,
 			);
 			name = Font;
@@ -106,6 +126,11 @@
 		0F76D9811CFC3F4D002A7F47 /* Style */ = {
 			isa = PBXGroup;
 			children = (
+				0FCEA4F01CFE86EE00823B1E /* Icon.swift */,
+				0FCEA4F11CFE86EE00823B1E /* Label.swift */,
+				0FCEA4E61CFE868900823B1E /* Button.swift */,
+				0FCEA4E71CFE868900823B1E /* Input.swift */,
+				0FCEA4E81CFE868900823B1E /* Layout.swift */,
 			);
 			name = Style;
 			sourceTree = "<group>";
@@ -113,6 +138,7 @@
 		0F76D9821CFC4A57002A7F47 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0FCEA4F81CFEE07D00823B1E /* Include */,
 				0FB8FE0F1CF7DAD8005C85DE /* Login Controller.swift */,
 			);
 			name = "View Controller";
@@ -205,6 +231,7 @@
 				0FB8FE1C1CF7DAD8005C85DE /* Info.plist */,
 				0F76D9811CFC3F4D002A7F47 /* Style */,
 				0FB8FE141CF7DAD8005C85DE /* IFAMobile.xcdatamodeld */,
+				0FCEA5111CFEEC0E00823B1E /* Localizable.strings */,
 			);
 			path = IFAMobile;
 			sourceTree = "<group>";
@@ -225,6 +252,15 @@
 				0FB8FE321CF7DAD9005C85DE /* Info.plist */,
 			);
 			path = IFAMobileUITests;
+			sourceTree = "<group>";
+		};
+		0FCEA4F81CFEE07D00823B1E /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				0FCEA4F61CFEDCC400823B1E /* Footer Layout.xib */,
+				0FCEA4F91CFEE09C00823B1E /* Footer Controller.swift */,
+			);
+			name = Include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +331,7 @@
 				TargetAttributes = {
 					0FB8FE091CF7DAD8005C85DE = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = Q4NY74HXM4;
 					};
 					0FB8FE201CF7DAD8005C85DE = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -313,6 +350,7 @@
 			knownRegions = (
 				en,
 				Base,
+				id,
 			);
 			mainGroup = 0FB8FE011CF7DAD8005C85DE;
 			productRefGroup = 0FB8FE0B1CF7DAD8005C85DE /* Products */;
@@ -331,9 +369,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FCEA50F1CFEEC0E00823B1E /* Localizable.strings in Resources */,
 				0FB8FE1B1CF7DAD8005C85DE /* LaunchScreen.storyboard in Resources */,
 				0FB8FE181CF7DAD8005C85DE /* Assets.xcassets in Resources */,
 				0FB8FE131CF7DAD8005C85DE /* Main.storyboard in Resources */,
+				0FCEA4F71CFEDCC400823B1E /* Footer Layout.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,14 +400,20 @@
 			files = (
 				0FB8FE161CF7DAD8005C85DE /* IFAMobile.xcdatamodeld in Sources */,
 				0F76D9A11CFC4DF9002A7F47 /* User Interface.swift in Sources */,
+				0FCEA4F21CFE86EE00823B1E /* Icon.swift in Sources */,
 				0F76D9C91CFC4FAE002A7F47 /* Theme Default.swift in Sources */,
 				0F76D9C61CFC4FAE002A7F47 /* Font Size.swift in Sources */,
+				0FCEA4FA1CFEE09C00823B1E /* Footer Controller.swift in Sources */,
 				0F76D9C81CFC4FAE002A7F47 /* String.swift in Sources */,
+				0FCEA4EB1CFE868900823B1E /* Layout.swift in Sources */,
 				0F76D9C51CFC4FAE002A7F47 /* Dimension.swift in Sources */,
+				0FCEA4F31CFE86EE00823B1E /* Label.swift in Sources */,
+				0FCEA4EA1CFE868900823B1E /* Input.swift in Sources */,
 				0F76D9A01CFC4DF9002A7F47 /* Font Generator.swift in Sources */,
 				0F76D9C71CFC4FAE002A7F47 /* Rule.swift in Sources */,
 				0FB8FE101CF7DAD8005C85DE /* Login Controller.swift in Sources */,
 				0FB8FE0E1CF7DAD8005C85DE /* AppDelegate.swift in Sources */,
+				0FCEA4E91CFE868900823B1E /* Button.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +453,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0FB8FE121CF7DAD8005C85DE /* Base */,
+				0FCEA5131CFEED1000823B1E /* id */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -415,8 +462,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				0FB8FE1A1CF7DAD8005C85DE /* Base */,
+				0FCEA5141CFEED1100823B1E /* id */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		0FCEA5111CFEEC0E00823B1E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FCEA5101CFEEC0E00823B1E /* Base */,
+				0FCEA5121CFEEC0F00823B1E /* en */,
+				0FCEA5171CFEED1100823B1E /* id */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -459,7 +517,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -499,7 +557,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -511,10 +569,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = IFAMobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = my.com.infoconnect.IFAMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -522,10 +583,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = IFAMobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = my.com.infoconnect.IFAMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
