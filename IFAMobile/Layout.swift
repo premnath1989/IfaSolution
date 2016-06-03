@@ -32,3 +32,21 @@ class ViewLoginContainer : UIView
         self.backgroundColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity: 0.2)
     }
 }
+
+class ScrollViewDesktopContainer : UIScrollView
+{
+    required init?(coder aDecoder: (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        self.backgroundColor = GeneratorUIColor(THEME_QUATERNARY_COLOR, Opacity: 1.0)
+    }
+}
+
+class ViewPaperContainer : UIView
+{
+    required init?(coder aDecoder: (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        self.backgroundColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity: 1.0)
+    }
+}

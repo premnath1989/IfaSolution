@@ -9,6 +9,7 @@
 
 // IMPORT
 
+import Foundation
 import UIKit
 
 
@@ -36,10 +37,10 @@ class LoginController: UIViewController
         
         // LANGUAGE
         
-        labelLoginTitle.text = NSLocalizedString("LABEL_LOGIN_WELCOMEBACK", comment: "")
-        textFieldAgentCode.placeholder = NSLocalizedString("PLACEHOLDER_AGENT_CODE", comment: "")
-        textFieldAgentPassword.placeholder = NSLocalizedString("PLACEHOLDER_AGENT_PASSWORD", comment: "")
-        buttonLogIn.setTitle(NSLocalizedString("BUTTON_LOGIN", comment: ""), forState: .Normal)
+        labelLoginTitle.text = NSLocalizedString("TITLE_LOGIN_WELCOMEBACK", comment: "")
+        textFieldAgentCode.placeholder = NSLocalizedString("PLACEHOLDER_AGENT_CODE", comment: "").lowercaseString
+        textFieldAgentPassword.placeholder = NSLocalizedString("PLACEHOLDER_AGENT_PASSWORD", comment: "").lowercaseString
+        buttonLogIn.setTitle(NSLocalizedString("BUTTON_LOGIN", comment: "").uppercaseString, forState: .Normal)
     }
 
     

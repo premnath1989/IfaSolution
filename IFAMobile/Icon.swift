@@ -24,6 +24,6 @@ class IconInput : UIImageView
         super.init(coder: aDecoder)
         
         // self.backgroundColor = GeneratorUIColor(ThemeQuinaryColor, Opacity: 1.0)
-        self.layer.cornerRadius = InputBorderRadius
+        self.layer.cornerRadius = INPUT_GENERAL_BORDERRADIUS
     }
 }

@@ -15,7 +15,7 @@ import UIKit
 
 // CLASS
 
-class LayoutFooter: UIView
+class FooterController : UIView
 {
     // INITIALIZATION
     

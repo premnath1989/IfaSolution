@@ -25,9 +25,162 @@ import Foundation
             
             // GENERAL
             
-            self.font = UIFont(name : THEME_SECONDARY_FONT, size : FONTSIZE_ENORMOUS)
+            self.font = UIFont(name : THEME_SECONDARY_FONT, size : FONTSIZE_LOGIN_TITLE)
             self.textColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0)
             self.textAlignment = .Center
+            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+            self.numberOfLines = 1
+        }
+    }
+
+    class LabelHeaderTitle : UILabel
+    {
+        required init?(coder aDecoder : (NSCoder!))
+        {
+            super.init(coder: aDecoder)
+            
+            // GENERAL
+            
+            self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_HEADER_TITLE)
+            self.textColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Left
+            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+            self.numberOfLines = 1
+        }
+    }
+
+    class LabelHeaderDescription : UILabel
+    {
+        required init?(coder aDecoder : (NSCoder!))
+        {
+            super.init(coder: aDecoder)
+            
+            // GENERAL
+            
+            self.font = UIFont(name : THEME_SECONDARY_FONT, size : FONTSIZE_HEADER_DESCRIPTION)
+            self.textColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Left
+            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+            self.numberOfLines = 1
+        }
+    }
+
+
+    // NAVIGATION
+
+    class LabelNavigation : UILabel
+    {
+        required init?(coder aDecoder : (NSCoder!))
+        {
+            super.init(coder: aDecoder)
+            
+            // GENERAL
+            
+            self.font = UIFont(name : THEME_PRIMARY_FONT, size : FONTSIZE_NAVIGATION_MENU)
+            self.textColor = GeneratorUIColor(THEME_SEPTENARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Center
+            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+            self.numberOfLines = 1
+        }
+    }
+
+
+    // PROFILE
+
+    class LabelProfileName : UILabel
+    {
+        required init?(coder aDecoder : (NSCoder!))
+        {
+            super.init(coder: aDecoder)
+            
+            // GENERAL
+            
+            self.font = UIFont(name : THEME_PRIMARY_FONT, size : FONTSIZE_USER_NAME)
+            self.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Right
+            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+            self.numberOfLines = 1
+        }
+    }
+
+    class LabelProfileSetting : UILabel
+    {
+        required init?(coder aDecoder : (NSCoder!))
+        {
+            super.init(coder: aDecoder)
+            
+            // GENERAL
+            
+            self.font = UIFont(name : THEME_SECONDARY_FONT, size : FONTSIZE_USER_SETTING)
+            self.textColor = GeneratorUIColor(THEME_SEPTENARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Right
+            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+            self.numberOfLines = 1
+        }
+    }
+
+    class LabelProfileHeader : UILabel
+    {
+        required init?(coder aDecoder : (NSCoder!))
+        {
+            super.init(coder: aDecoder)
+            
+            // GENERAL
+            
+            self.font = UIFont(name : THEME_PRIMARY_FONT, size : FONTSIZE_USER_HEADER)
+            self.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Right
+            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+            self.numberOfLines = 1
+        }
+    }
+
+    class LabelProfileDetail : UILabel
+    {
+        required init?(coder aDecoder : (NSCoder!))
+        {
+            super.init(coder: aDecoder)
+            
+            // GENERAL
+            
+            self.font = UIFont(name : THEME_SECONDARY_FONT, size : FONTSIZE_USER_DETAIL)
+            self.textColor = GeneratorUIColor(THEME_SEPTENARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Right
+            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+            self.numberOfLines = 1
+        }
+    }
+
+
+    // CONTENT
+
+    class LabelTitle : UILabel
+    {
+        required init?(coder aDecoder : (NSCoder!))
+        {
+            super.init(coder: aDecoder)
+            
+            // GENERAL
+            
+            self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_FORM_TITLE)
+            self.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Left
+            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+            self.numberOfLines = 1
+        }
+    }
+
+    class LabelField : UILabel
+    {
+        required init?(coder aDecoder : (NSCoder!))
+        {
+            super.init(coder: aDecoder)
+            
+            // GENERAL
+            
+            self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_FORM_FIELD)
+            self.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Left
             self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
             self.numberOfLines = 1
         }
@@ -44,7 +197,7 @@ import Foundation
             
             // GENERAL
             
-            self.font = UIFont(name : THEME_PRIMARY_FONT, size : FONTSIZE_MEDIUM)
+            self.font = UIFont(name : THEME_PRIMARY_FONT, size : FONTSIZE_FOOTER_HEADER)
             self.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
             self.textAlignment = .Left
             self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
@@ -60,7 +213,7 @@ import Foundation
             
             // GENERAL
             
-            self.font = UIFont(name : THEME_SECONDARY_FONT, size : FONTSIZE_SMALL)
+            self.font = UIFont(name : THEME_SECONDARY_FONT, size : FONTSIZE_FOOTER_DETAIL)
             self.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
             self.textAlignment = .Left
             self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
@@ -76,7 +229,7 @@ import Foundation
             
             // GENERAL
             
-            self.font = UIFont(name : THEME_PRIMARY_FONT, size : FONTSIZE_MEDIUM)
+            self.font = UIFont(name : THEME_PRIMARY_FONT, size : FONTSIZE_FOOTER_HEADER)
             self.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
             self.textAlignment = .Right
             self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
@@ -92,7 +245,7 @@ import Foundation
             
             // GENERAL
             
-            self.font = UIFont(name : THEME_SECONDARY_FONT, size : FONTSIZE_SMALL)
+            self.font = UIFont(name : THEME_SECONDARY_FONT, size : FONTSIZE_FOOTER_DETAIL)
             self.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
             self.textAlignment = .Right
             self.baselineAdjustment = UIBaselineAdjustment.AlignCenters

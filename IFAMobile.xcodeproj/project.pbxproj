@@ -30,6 +30,20 @@
 		0FCEA4F71CFEDCC400823B1E /* Footer Layout.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FCEA4F61CFEDCC400823B1E /* Footer Layout.xib */; };
 		0FCEA4FA1CFEE09C00823B1E /* Footer Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCEA4F91CFEE09C00823B1E /* Footer Controller.swift */; };
 		0FCEA50F1CFEEC0E00823B1E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FCEA5111CFEEC0E00823B1E /* Localizable.strings */; };
+		0FF04F601CFFE8AA0048C7A2 /* Education Detail Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF04F5F1CFFE8AA0048C7A2 /* Education Detail Controller.swift */; };
+		0FF04F621CFFE9400048C7A2 /* Navigation Layout.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FF04F611CFFE9400048C7A2 /* Navigation Layout.xib */; };
+		0FF04F661CFFE9730048C7A2 /* Guide Layout.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FF04F651CFFE9730048C7A2 /* Guide Layout.xib */; };
+		0FF04F681CFFE9850048C7A2 /* Navigation Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF04F671CFFE9850048C7A2 /* Navigation Controller.swift */; };
+		0FF04F6A1CFFE9960048C7A2 /* Guide Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF04F691CFFE9960048C7A2 /* Guide Controller.swift */; };
+		9B5B83DD1D0173DF002AE0F4 /* Fact Finding Questionnaire Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5B83DC1D0173DF002AE0F4 /* Fact Finding Questionnaire Controller.swift */; };
+		9B8DFF021D018E8E00C80A0F /* Insert Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DFF011D018E8E00C80A0F /* Insert Initialization.swift */; };
+		9B8DFF0C1D018F1C00C80A0F /* Database Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DFF0B1D018F1C00C80A0F /* Database Initialization.swift */; };
+		9B8DFF111D018FAF00C80A0F /* Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DFF0D1D018FAF00C80A0F /* Delete.swift */; };
+		9B8DFF121D018FAF00C80A0F /* Insert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DFF0E1D018FAF00C80A0F /* Insert.swift */; };
+		9B8DFF131D018FAF00C80A0F /* Select.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DFF0F1D018FAF00C80A0F /* Select.swift */; };
+		9B8DFF141D018FAF00C80A0F /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DFF101D018FAF00C80A0F /* Update.swift */; };
+		9B8DFF231D0190FD00C80A0F /* Database Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DFF211D0190FD00C80A0F /* Database Action.swift */; };
+		9B8DFF241D0190FD00C80A0F /* Database Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DFF221D0190FD00C80A0F /* Database Object.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +100,20 @@
 		0FCEA5131CFEED1000823B1E /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Main.strings; sourceTree = "<group>"; };
 		0FCEA5141CFEED1100823B1E /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		0FCEA5171CFEED1100823B1E /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0FF04F5F1CFFE8AA0048C7A2 /* Education Detail Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Education Detail Controller.swift"; sourceTree = "<group>"; };
+		0FF04F611CFFE9400048C7A2 /* Navigation Layout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Navigation Layout.xib"; sourceTree = "<group>"; };
+		0FF04F651CFFE9730048C7A2 /* Guide Layout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Guide Layout.xib"; sourceTree = "<group>"; };
+		0FF04F671CFFE9850048C7A2 /* Navigation Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Navigation Controller.swift"; sourceTree = "<group>"; };
+		0FF04F691CFFE9960048C7A2 /* Guide Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Guide Controller.swift"; sourceTree = "<group>"; };
+		9B5B83DC1D0173DF002AE0F4 /* Fact Finding Questionnaire Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fact Finding Questionnaire Controller.swift"; sourceTree = "<group>"; };
+		9B8DFF011D018E8E00C80A0F /* Insert Initialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Insert Initialization.swift"; sourceTree = "<group>"; };
+		9B8DFF0B1D018F1C00C80A0F /* Database Initialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database Initialization.swift"; sourceTree = "<group>"; };
+		9B8DFF0D1D018FAF00C80A0F /* Delete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delete.swift; sourceTree = "<group>"; };
+		9B8DFF0E1D018FAF00C80A0F /* Insert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Insert.swift; sourceTree = "<group>"; };
+		9B8DFF0F1D018FAF00C80A0F /* Select.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Select.swift; sourceTree = "<group>"; };
+		9B8DFF101D018FAF00C80A0F /* Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
+		9B8DFF211D0190FD00C80A0F /* Database Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database Action.swift"; sourceTree = "<group>"; };
+		9B8DFF221D0190FD00C80A0F /* Database Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database Object.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +168,8 @@
 			children = (
 				0FCEA4F81CFEE07D00823B1E /* Include */,
 				0FB8FE0F1CF7DAD8005C85DE /* Login Controller.swift */,
+				0FF04F5F1CFFE8AA0048C7A2 /* Education Detail Controller.swift */,
+				9B5B83DC1D0173DF002AE0F4 /* Fact Finding Questionnaire Controller.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -220,17 +250,17 @@
 			isa = PBXGroup;
 			children = (
 				0FB8FE0D1CF7DAD8005C85DE /* AppDelegate.swift */,
-				0F76D98B1CFC4AFD002A7F47 /* User Interface */,
 				0F76D9841CFC4A8D002A7F47 /* Variable */,
-				0F76D9831CFC4A79002A7F47 /* Composer */,
-				0F76D9821CFC4A57002A7F47 /* View Controller */,
-				0FB8FE111CF7DAD8005C85DE /* Main.storyboard */,
-				0FB8FE171CF7DAD8005C85DE /* Assets.xcassets */,
-				0FB8FE191CF7DAD8005C85DE /* LaunchScreen.storyboard */,
 				0F76D9801CFC3F42002A7F47 /* Font */,
-				0FB8FE1C1CF7DAD8005C85DE /* Info.plist */,
 				0F76D9811CFC3F4D002A7F47 /* Style */,
-				0FB8FE141CF7DAD8005C85DE /* IFAMobile.xcdatamodeld */,
+				0F76D98B1CFC4AFD002A7F47 /* User Interface */,
+				0F76D9821CFC4A57002A7F47 /* View Controller */,
+				0F76D9831CFC4A79002A7F47 /* Composer */,
+				0FB8FE111CF7DAD8005C85DE /* Main.storyboard */,
+				0FB8FE191CF7DAD8005C85DE /* LaunchScreen.storyboard */,
+				0FB8FE171CF7DAD8005C85DE /* Assets.xcassets */,
+				0FB8FE1C1CF7DAD8005C85DE /* Info.plist */,
+				9B8DFF001D018E3700C80A0F /* Database */,
 				0FCEA5111CFEEC0E00823B1E /* Localizable.strings */,
 			);
 			path = IFAMobile;
@@ -259,8 +289,44 @@
 			children = (
 				0FCEA4F61CFEDCC400823B1E /* Footer Layout.xib */,
 				0FCEA4F91CFEE09C00823B1E /* Footer Controller.swift */,
+				0FF04F611CFFE9400048C7A2 /* Navigation Layout.xib */,
+				0FF04F671CFFE9850048C7A2 /* Navigation Controller.swift */,
+				0FF04F651CFFE9730048C7A2 /* Guide Layout.xib */,
+				0FF04F691CFFE9960048C7A2 /* Guide Controller.swift */,
 			);
 			name = Include;
+			sourceTree = "<group>";
+		};
+		9B8DFF001D018E3700C80A0F /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				0FB8FE141CF7DAD8005C85DE /* IFAMobile.xcdatamodeld */,
+				9B8DFF261D01966500C80A0F /* Entity */,
+				9B8DFF251D01964700C80A0F /* Function */,
+				9B8DFF011D018E8E00C80A0F /* Insert Initialization.swift */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		9B8DFF251D01964700C80A0F /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				9B8DFF0B1D018F1C00C80A0F /* Database Initialization.swift */,
+				9B8DFF0D1D018FAF00C80A0F /* Delete.swift */,
+				9B8DFF0E1D018FAF00C80A0F /* Insert.swift */,
+				9B8DFF0F1D018FAF00C80A0F /* Select.swift */,
+				9B8DFF101D018FAF00C80A0F /* Update.swift */,
+			);
+			name = Function;
+			sourceTree = "<group>";
+		};
+		9B8DFF261D01966500C80A0F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9B8DFF211D0190FD00C80A0F /* Database Action.swift */,
+				9B8DFF221D0190FD00C80A0F /* Database Object.swift */,
+			);
+			name = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,9 +437,11 @@
 			files = (
 				0FCEA50F1CFEEC0E00823B1E /* Localizable.strings in Resources */,
 				0FB8FE1B1CF7DAD8005C85DE /* LaunchScreen.storyboard in Resources */,
+				0FF04F621CFFE9400048C7A2 /* Navigation Layout.xib in Resources */,
 				0FB8FE181CF7DAD8005C85DE /* Assets.xcassets in Resources */,
 				0FB8FE131CF7DAD8005C85DE /* Main.storyboard in Resources */,
 				0FCEA4F71CFEDCC400823B1E /* Footer Layout.xib in Resources */,
+				0FF04F661CFFE9730048C7A2 /* Guide Layout.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,18 +467,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FB8FE161CF7DAD8005C85DE /* IFAMobile.xcdatamodeld in Sources */,
+				9B8DFF021D018E8E00C80A0F /* Insert Initialization.swift in Sources */,
 				0F76D9A11CFC4DF9002A7F47 /* User Interface.swift in Sources */,
+				9B5B83DD1D0173DF002AE0F4 /* Fact Finding Questionnaire Controller.swift in Sources */,
 				0FCEA4F21CFE86EE00823B1E /* Icon.swift in Sources */,
+				0FF04F601CFFE8AA0048C7A2 /* Education Detail Controller.swift in Sources */,
 				0F76D9C91CFC4FAE002A7F47 /* Theme Default.swift in Sources */,
 				0F76D9C61CFC4FAE002A7F47 /* Font Size.swift in Sources */,
+				9B8DFF231D0190FD00C80A0F /* Database Action.swift in Sources */,
+				9B8DFF141D018FAF00C80A0F /* Update.swift in Sources */,
+				9B8DFF111D018FAF00C80A0F /* Delete.swift in Sources */,
+				9B8DFF131D018FAF00C80A0F /* Select.swift in Sources */,
 				0FCEA4FA1CFEE09C00823B1E /* Footer Controller.swift in Sources */,
 				0F76D9C81CFC4FAE002A7F47 /* String.swift in Sources */,
+				0FF04F6A1CFFE9960048C7A2 /* Guide Controller.swift in Sources */,
+				9B8DFF121D018FAF00C80A0F /* Insert.swift in Sources */,
+				9B8DFF0C1D018F1C00C80A0F /* Database Initialization.swift in Sources */,
 				0FCEA4EB1CFE868900823B1E /* Layout.swift in Sources */,
 				0F76D9C51CFC4FAE002A7F47 /* Dimension.swift in Sources */,
 				0FCEA4F31CFE86EE00823B1E /* Label.swift in Sources */,
+				9B8DFF241D0190FD00C80A0F /* Database Object.swift in Sources */,
 				0FCEA4EA1CFE868900823B1E /* Input.swift in Sources */,
 				0F76D9A01CFC4DF9002A7F47 /* Font Generator.swift in Sources */,
 				0F76D9C71CFC4FAE002A7F47 /* Rule.swift in Sources */,
+				0FF04F681CFFE9850048C7A2 /* Navigation Controller.swift in Sources */,
 				0FB8FE101CF7DAD8005C85DE /* Login Controller.swift in Sources */,
 				0FB8FE0E1CF7DAD8005C85DE /* AppDelegate.swift in Sources */,
 				0FCEA4E91CFE868900823B1E /* Button.swift in Sources */,

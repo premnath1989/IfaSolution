@@ -29,6 +29,7 @@ import UIKit
             self.layer.cornerRadius = ButtonBorderRadius
             self.titleLabel?.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_MEDIUM)
             self.titleLabel?.text?.capitalizedString
+            self.backgroundColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity : 1.0);
             
             // ENABLE
             
@@ -43,6 +44,45 @@ import UIKit
             // DISABLED
             
             self.setTitleColor(GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0), forState:UIControlState.Disabled)
+        }
+        
+        
+        // FUNCTION
+        
+        func ButtonEnable(OnTouchUpInside: UIButton!)
+        {
+            self.backgroundColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity : 1.0);
+        }
+        
+        func ButtonClicked(OnTouchDown: UIButton!)
+        {
+            self.backgroundColor = GeneratorUIColor(THEME_SECONDARY_COLOR, Opacity : 1.0);
+        }
+    }
+
+    // IMAGE
+
+    class ButtonReset: UIButton
+    {
+        required init?(coder aDecoder : (NSCoder!))
+        {
+            super.init(coder: aDecoder)
+            
+            // GENERAL
+            
+            self.layer.borderWidth = ButtonBorderWidth
+            self.layer.cornerRadius = ButtonBorderRadius
+            self.backgroundColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity : 1.0);
+            self.setTitle("", forState: .Normal)
+            self.setImage(UIImage(named: "Reset Secondary"), forState: .Normal)
+            
+            // ENABLE
+            
+            self.addTarget(self, action: #selector(ButtonPrimary.ButtonEnable(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+            
+            // HIGHLIGHT
+            
+            self.addTarget(self, action: #selector(ButtonPrimary.ButtonClicked(_:)), forControlEvents: UIControlEvents.TouchDown)
         }
         
         

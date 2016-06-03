@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationController" customModule="IFAMobile" customModuleProvider="target">
+            <connections>
+                <outlet property="imageViewAgentPhoto" destination="mQE-QS-R12" id="jLt-MG-IDj"/>
+                <outlet property="labelAgentName" destination="fq6-Yi-ER7" id="edn-Ce-zlp"/>
+                <outlet property="labelCalendar" destination="osJ-xZ-MHl" id="hc8-ix-vi9"/>
+                <outlet property="labelMail" destination="Bhd-H9-OHF" id="SH8-MN-QT2"/>
+                <outlet property="labelNote" destination="z5q-ZY-nEX" id="hFm-ru-ciG"/>
+                <outlet property="labelProspect" destination="nah-AJ-3ux" id="GR8-ZN-dGj"/>
+                <outlet property="labelSignOut" destination="h0U-Xe-UNx" id="RMT-6J-02F"/>
+                <outlet property="viewNavigation" destination="iN0-l3-epB" id="eJy-nL-2GL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nah-AJ-3ux" customClass="LabelNavigation" customModule="IFAMobile" customModuleProvider="target">
+                    <rect key="frame" x="40" y="290" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osJ-xZ-MHl" customClass="LabelNavigation" customModule="IFAMobile" customModuleProvider="target">
+                    <rect key="frame" x="112" y="290" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhd-H9-OHF" customClass="LabelNavigation" customModule="IFAMobile" customModuleProvider="target">
+                    <rect key="frame" x="184" y="290" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5q-ZY-nEX" customClass="LabelNavigation" customModule="IFAMobile" customModuleProvider="target">
+                    <rect key="frame" x="256" y="290" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mQE-QS-R12">
+                    <rect key="frame" x="524" y="282" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="XSc-gf-xfX"/>
+                        <constraint firstAttribute="width" constant="36" id="rZ6-E2-fh1"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ktW-6B-yfu">
+                    <rect key="frame" x="462" y="279" width="42" height="41"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fq6-Yi-ER7" customClass="LabelProfileName" customModule="IFAMobile" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0U-Xe-UNx" customClass="LabelProfileSetting" customModule="IFAMobile" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="21" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="osJ-xZ-MHl" firstAttribute="leading" secondItem="nah-AJ-3ux" secondAttribute="trailing" constant="30" id="7Bm-bE-PiU"/>
+                <constraint firstItem="ktW-6B-yfu" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="D0d-KB-h3B"/>
+                <constraint firstItem="z5q-ZY-nEX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Hka-tQ-fym"/>
+                <constraint firstAttribute="trailing" secondItem="mQE-QS-R12" secondAttribute="trailing" constant="40" id="I1Z-jq-GaK"/>
+                <constraint firstItem="osJ-xZ-MHl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Joy-Ax-jev"/>
+                <constraint firstItem="z5q-ZY-nEX" firstAttribute="leading" secondItem="Bhd-H9-OHF" secondAttribute="trailing" constant="30" id="L7A-dU-deJ"/>
+                <constraint firstItem="Bhd-H9-OHF" firstAttribute="leading" secondItem="osJ-xZ-MHl" secondAttribute="trailing" constant="30" id="Ogm-l7-d5M"/>
+                <constraint firstItem="mQE-QS-R12" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="QFf-Em-jYo"/>
+                <constraint firstItem="Bhd-H9-OHF" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Txy-m4-XGg"/>
+                <constraint firstItem="nah-AJ-3ux" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="YVA-Rc-7L5"/>
+                <constraint firstItem="nah-AJ-3ux" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="foC-wV-7bF"/>
+                <constraint firstItem="mQE-QS-R12" firstAttribute="leading" secondItem="ktW-6B-yfu" secondAttribute="trailing" constant="20" id="uxL-Qi-h1c"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

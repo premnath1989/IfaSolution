@@ -9,18 +9,97 @@
 
 // HEADER
 
-LABEL_LOGIN_WELCOMEBACK = "Welcome Back";
+TITLE_LOGIN_WELCOMEBACK = "Welcome Back";
+HEADER_PROSPECT_TITLE = "Prospect Dashboard";
+HEADER_PROSPECT_DESCRIPTION = "Manage new prospect or existing prospect along with their financial plan";
+
+TITLE_EDUCATIONPLAN_DETAILINFORMATION = "Education Form Detail";
+
+
+// NAVIGATION
+
+NAVIGATION_PROSPECT = "Prospect";
+NAVIGATION_CALENDAR = "Calendar";
+NAVIGATION_MAIL = "Mail";
+NAVIGATION_NOTE = "Note";
+
+
+// PROFILE
+
+PROFILE_AGENT_DEFAULTNAME = "Andy Phan";
+PROFILE_AGENT_SIGNOUT = "Sign out";
+PROFILE_AGENT_DEFAULTPHOTO = "Photo Andy Phan";
+
+
+// GUIDE
+
+GUIDE_GENERALINFORMATION_STEP = "1";
+GUIDE_FINANCIALPLAN_STEP = "2";
+GUIDE_DETAILINFORMATION_STEP = "3";
+GUIDE_FACTFINDINGQUESTIONARE_STEP = "4";
+GUIDE_ANALYSISRESULT_STEP = "5";
+GUIDE_PDFRESULT_STEP = "6";
+
+GUIDE_GENERALINFORMATION_DETAIL = "General Information";
+GUIDE_FINANCIALPLAN_DETAIL = "Financial Plan";
+GUIDE_DETAILINFORMATION_DETAIL = "Detail information";
+GUIDE_FACTFINDINGRQUESTIONARE_DETAIL = "Fact Finding Questionare";
+GUIDE_ANALYSISRESULT_DETAIL = "Analysis Result";
+GUIDE_PDFRESULT_DETAIL = "PDF Result";
+
+
+// FIELD
+
+FIELD_PLANNAME = "Plan name";
+FIELD_ENTRYAGETOUNIVERSITY = "Entry age to university";
+FIELD_TOTALANNUALCOSTASATTODAYVALUE = "Total annual cost as at today value";
+FIELD_TOTALANNUALLIVINGEXPENSES = "Total annual living expenses";
+FIELD_LUMSUMPSAVINGS = "Lum sump savings";
+FIELD_REGULARANNUALSAVINGS = "Regular annual savings";
+FIELD_EXISTINGSAVINGSPROGRAMS = "Existing savings programs";
+FIELD_ACTUALTOTALEDUCATION = "Actual total education";
+FIELD_INFLATIONRATE = "Inflation rate";
+FIELD_EXPECTEDRATEOFRETURN = "Expected rate of return";
+
+FIELD_PLANNINGMEETCHILDRENSEDUCATIONGOAL = "Is your current planning able to meet your childrens' education goal ?";
+FIELD_MAXIMIZETAXADVANTAGES = "Are you maximising your tax advantages ?";
+FIELD_SOLUTIONPROTECTION = "Would you prefer a protected or unprotected solution ?";
+FIELD_PROTECTIONRETURN = "If your choice is protected savings/investment scheme, would you prefer a volatile or stable return ?";
+FIELD_RISKPROFILE = "What is your risk profile ?";
+
+
+// OPTION
+
+OPTION_YES = "Yes";
+OPTION_NO = "No";
+OPTION_VOLATILE = "Volatile";
+OPTION_STABLE = "Stable";
+OPTION_CONSERVATIVE = "Conservative";
+OPTION_MODERATE = "Moderate";
+OPTION_AGGRESSIVE = "Aggressive";
 
 
 // HINT
 
-PLACEHOLDER_AGENT_CODE = "please input your agent code";
-PLACEHOLDER_AGENT_PASSWORD = "please input your agent password";
+PLACEHOLDER_AGENT_CODE = "Please input your agent code";
+PLACEHOLDER_AGENT_PASSWORD = "Please input your agent password";
+
+PLACEHOLDER_PLAN_NAME = "Your financial plan name";
+PLACEHOLDER_ENTRYAGETOUNIVERSITY = "How old is your child when enter university";
+PLACEHOLDER_TOTALANNUALCOSTASATTODAYVALUE = "Total annual cost based on today value";
+PLACEHOLDER_TOTALANNUALLIVINGEXPENSES = "The total annual living expenses";
+PLACEHOLDER_LUMSUMPSAVINGS = "Your lum sump savings";
+PLACEHOLDER_REGULARANNUALSAVINGS = "Your regular annual savings";
+PLACEHOLDER_EXISTINGSAVINGSPROGRAMS = "Your existing saving programs";
+PLACEHOLDER_ACTUALTOTALEDUCATION = "Actual total education";
+PLACEHOLDER_INFLATIONRATE = "Inflation rate";
+PLACEHOLDER_EXPECTEDRATEOFRETURN = "The expected rate of return";
 
 
 // BUTTON
 
-BUTTON_LOGIN = "Login";
+BUTTON_LOGIN = "Sign In";
+BUTTON_SUBMIT = "Submit";
 
 
 // FOOTER

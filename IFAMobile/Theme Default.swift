@@ -28,4 +28,4 @@ public let THEME_OCTONARY_COLOR:UInt32 = 0x969696 // Font Light Grey
 
 public let THEME_PRIMARY_FONT : String = "HelveticaNeue-Medium"
 public let THEME_SECONDARY_FONT : String = "HelveticaNeue-Light"
-public let THEME_TERTIARY_FONT : String = "HelveticaNeueLTStd-Thin"
+public let THEME_TERTIARY_FONT : String = "HelveticaNeue-Thin"
