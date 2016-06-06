@@ -167,10 +167,108 @@ import Foundation
             self.textAlignment = .Left
             self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
             self.numberOfLines = 1
+            self.text?.capitalizedString
+        }
+    }
+
+    class TextViewNote : UITextView
+    {
+        required init?(coder aDecoder : (NSCoder!))
+        {
+            super.init(coder: aDecoder)
+            
+            // GENERAL
+            
+            self.heightAnchor.constraintEqualToConstant(TEXTVIEW_GENERAL_HEIGHT).active = true
+            self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_FORM_FIELD)
+            self.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Left
+            self.backgroundColor = GeneratorUIColor(THEME_QUATERNARY_COLOR, Opacity: 1.0)
         }
     }
 
     class LabelField : UILabel
+    {
+        required init?(coder aDecoder : (NSCoder!))
+        {
+            super.init(coder: aDecoder)
+            
+            // GENERAL
+            
+            self.bounds = CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+            self.widthAnchor.constraintEqualToConstant(FIELD_GENERAL_WIDTH).active = true
+            self.heightAnchor.constraintEqualToConstant(INPUT_GENERAL_HEIGHT).active = true
+            self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_FORM_FIELD)
+            self.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Left
+            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+            self.numberOfLines = 1
+        }
+    }
+
+    class LabelQuestion : UILabel
+    {
+        required init?(coder aDecoder : NSCoder)
+        {
+            super.init(coder: aDecoder)
+            
+            // GENERAL
+            
+            self.widthAnchor.constraintEqualToConstant(LABEL_QUESTION_WIDTH).active = true
+            self.heightAnchor.constraintEqualToConstant(INPUT_GENERAL_HEIGHT).active = true
+            self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_FORM_FIELD)
+            self.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Left
+            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+            self.numberOfLines = 1
+        }
+        
+        override init(frame: CGRect)
+        {
+            super.init(frame: frame)
+            
+            self.widthAnchor.constraintEqualToConstant(LABEL_QUESTION_WIDTH).active = true
+            self.heightAnchor.constraintEqualToConstant(INPUT_GENERAL_HEIGHT).active = true
+            self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_FORM_FIELD)
+            self.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Left
+            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+            self.numberOfLines = 1
+        }
+    }
+
+    class LabelOption : UILabel
+    {
+        required init?(coder aDecoder : (NSCoder!))
+        {
+            super.init(coder: aDecoder)
+            
+            // GENERAL
+            
+            self.widthAnchor.constraintEqualToConstant(LABEL_OPTION_WIDTH).active = true
+            self.heightAnchor.constraintEqualToConstant(INPUT_GENERAL_HEIGHT).active = true
+            self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_FORM_FIELD)
+            self.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Left
+            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+            self.numberOfLines = 1
+        }
+        
+        override init(frame: CGRect)
+        {
+            super.init(frame: frame)
+            
+            self.widthAnchor.constraintEqualToConstant(LABEL_OPTION_WIDTH).active = true
+            self.heightAnchor.constraintEqualToConstant(INPUT_GENERAL_HEIGHT).active = true
+            self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_FORM_FIELD)
+            self.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Left
+            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+            self.numberOfLines = 1 
+        }
+    }
+
+    class LabelText : UILabel
     {
         required init?(coder aDecoder : (NSCoder!))
         {

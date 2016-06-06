@@ -14,10 +14,11 @@
     </entity>
     <entity name="Questionnaire" syncable="YES">
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="Boolean" syncable="YES"/>
     </entity>
     <elements>
         <element name="Question" positionX="-63" positionY="-18" width="128" height="105"/>
         <element name="Option" positionX="-54" positionY="-9" width="128" height="105"/>
-        <element name="Questionnaire" positionX="-36" positionY="36" width="128" height="60"/>
+        <element name="Questionnaire" positionX="-36" positionY="36" width="128" height="75"/>
     </elements>
 </model>

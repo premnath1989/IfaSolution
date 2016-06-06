@@ -56,8 +56,6 @@ class EducationDetailController: UIViewController
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        // GeneratorFontName()
-        
         
         // LANGUAGE
         
@@ -86,7 +84,6 @@ class EducationDetailController: UIViewController
         textFieldActualTotalEducation.placeholder = NSLocalizedString("PLACEHOLDER_ACTUALTOTALEDUCATION", comment: "")
         textFieldInflationRate.placeholder = NSLocalizedString("PLACEHOLDER_INFLATIONRATE", comment: "")
         textFieldExpectedRateOfReturn.placeholder = NSLocalizedString("PLACEHOLDER_EXPECTEDRATEOFRETURN", comment: "")
-        
         
         buttonSubmit.setTitle(NSLocalizedString("BUTTON_SUBMIT", comment: ""), forState: .Normal)
     }

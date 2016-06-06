@@ -18,6 +18,13 @@ HEADER_EDUCATIONPLAN_DESCRIPTION = "text";
 
 TITLE_EDUCATIONPLAN_DETAILINFORMATION = "Education Form Detail";
 TITLE_FINANCIALPLAN_FACTFINDINGQUESTIONNAIRE = "Fact Finding Questionnaire";
+TITLE_FINANCIALPLAN_DONTKNOWRISKPROFILE = "If you do not know your personal risk profile, please check by answering the following questions.";
+TITLE_FINANCIALPLAN_DECLARATION = "Declaration";
+TITLE_FINANCIALPLAN_CONFIRMATION = "Confirmation";
+TITLE_EDUCATIONPLAN_BASICINFORMATION = "Informasi dasar";
+TITLE_EDUCATIONPLAN_FUNDNEEDED = "Total education fund needed at tertiary age";
+TITLE_EDUCATIONPLAN_FUNDAVAILABLE = "Total education fund available at tertiary age";
+TITLE_EDUCATIONPLAN_BALANCE = "Balance amount needed at tertiary age";
 
 
 // NAVIGATION
@@ -71,16 +78,40 @@ FIELD_SOLUTIONPROTECTION = "Would you prefer a protected or unprotected solution
 FIELD_PROTECTIONRETURN = "If your choice is protected savings/investment scheme, would you prefer a volatile or stable return ?";
 FIELD_RISKPROFILE = "What is your risk profile ?";
 
+FIELD_ALLOCATIONPERMONTH = "Alokasi per bulan";
+FIELD_CLIENTNAME = "Saya ";
+FIELD_CLIENTNUMBER = ", nomor NIRC ";
+FIELD_CLIENTSTATEMENT = " telah membaca, mengerti dan menyetujui aturan dan kondisi di atas.";
+FIELD_CLIENTSIGNATURE = "Tanda tangan klien";
+FIELD_ASSOCIATENAME = "Nama agen";
+FIELD_ASSOCIATESIGNATURE = "Tanda tangan agen";
+FIELD_DECLARATIONDATE = "Tanggal";
+
+FIELD_NAME = "Nama";
+FIELD_AGE = "Umur";
+FIELD_PAYORNAME = "Nama penanggung";
+FIELD_DATE = "Tanggal";
+FIELD_TERTIARYAGE = "Umur tertiary";
+FIELD_COURSEDURATION = "Durasi pendidikan";
+FIELD_COURSEFEE = "Biaya pendidikan";
+FIELD_LIVINGEXPENSES = "Biaya hidup";
+FIELD_TOTALEDUCATIONFUNDNEEDED = "Biaya total pendidikan di umur tertiary";
+FIELD_REGULARMONTHLYSAVINGS = "Tabungan reguler bulanan";
+FIELD_RETURNATMATURITYAGE = "Hasil saat dewasa";
+FIELD_TOTALEDUCATIONFUNDAVAILABLE = "Biaya total pendidikan yang tersedia di umur tertiary";
+FIELD_LUMSUMPINVESTMENT = "Investasi lum sump";
+FIELD_EXPECTEDRETURN = "Hasil balik yang diharapkan %";
+
 
 // OPTION
 
-OPTION_YES = "Yes";
-OPTION_NO = "No";
+OPTION_YES = "Ya";
+OPTION_NO = "Tidak";
 OPTION_VOLATILE = "Volatile";
-OPTION_STABLE = "Stable";
-OPTION_CONSERVATIVE = "Conservative";
-OPTION_MODERATE = "Moderate";
-OPTION_AGGRESSIVE = "Aggressive";
+OPTION_STABLE = "Stabil";
+OPTION_CONSERVATIVE = "Konservatif";
+OPTION_MODERATE = "Menengah";
+OPTION_AGGRESSIVE = "Agresif";
 
 
 // HINT
@@ -99,11 +130,19 @@ PLACEHOLDER_ACTUALTOTALEDUCATION = "Total edukasi sesungguhnya";
 PLACEHOLDER_INFLATIONRATE = "Tingkat inflasi";
 PLACEHOLDER_EXPECTEDRATEOFRETURN = "Nilai balik yang anda harapkan";
 
+PLACEHOLDER_CLIENT_NAME = "Masukkan nama pelanggan";
+PLACEHOLDER_CLIENT_NUMBER = "Masukkan nomor NIRC";
+PLACEHOLDER_ASSOCIATE_NAME = "Masukkan nama agen";
+
+INFORMATION_DISCLAIMERCLAUSE = "1. I, the undersigned, hereby authorize the undersigned Associate(s) of Great Vision (GV) to submit any personal information contained herein to GV, who will perform an analysis of and prepare a proposal on the recommended solutions based on the information given herein. \n 2. I  understand that, GV and the Associate(s) will treat my personal information in strict confidentiality, but not limited to the disclosure of such information to the relevant consultant(s) and employee(s) of GV in the normal course of performing their respective function(s). \n 3. I hereby understand that any analysis and proposals that are submitted to me by GV or the Associate(s) are for reference and / or illustration purposes only prior to the implementation of the said recommended solutions without the further involvement of the Associate. \n 4. I  shall not hold  GV or the Associate(s) responsible for any outcome whatsoever in the event that I  proceed with the implementation of the proposal without their said involvement. \n 5. I confirm that the above information provided in this Questionnaire is correct and true.  In the event of any changes to or cancellation of any of my personal information as already given herein,  I shall keep GV informed in writing of such developments as it may affect the analysis process. \n 6. I hereby irrevocably agree to indemnify GV and the Associate(s) against all claims and waive all claims and rights that I may have against GV, its employees, consultants and Associate(s). \n 7. GV reserves the right to reject any request for analysis or development of financial solutions upon submission of this Questionnaire for whatsoever reasons thereof.";
+
 
 // BUTTON
 
 BUTTON_LOGIN = "Masuk";
 BUTTON_SUBMIT = "Submit";
+BUTTON_SIGN = "Tanda tangan";
+BUTTON_SHARE = "Bagi";
 
 
 // FOOTER

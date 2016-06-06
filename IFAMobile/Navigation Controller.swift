@@ -38,6 +38,7 @@ class NavigationController : UIView
         super.init(coder: aDecoder)
         
         NSBundle.mainBundle().loadNibNamed("Navigation Layout", owner: self, options: nil)[0] as! UIView
+        self.heightAnchor.constraintEqualToConstant(60).active = true
         self.addSubview(viewNavigation)
         viewNavigation.frame = self.bounds
         

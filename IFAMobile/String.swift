@@ -19,6 +19,7 @@ public let CHARACTER_KRES : String = "#"
 public let CHARACTER_STAR : String = "*"
 public let CHARACTER_TWODOT : String = ":"
 public let CHARACTER_NEWLINE : String = "\n"
+public let CHARACTER_DATABASE_SEPARATOR = " \\ "
 
 
 // DATABASE
@@ -47,8 +48,8 @@ public let CHARACTER_NEWLINE : String = "\n"
     public let COLUMN_QUESTION_QUESTION : String = "question"
     public let COLUMN_QUESTION_STATE : String = "state"
 
-    public let ENTITY_OPTION : String = "User"
-    public let COLUMN_OPTION_ID : String = "questionnaireid"
-    public let COLUMN_OPTION_QUESTIONNAIREID : String = "name"
+    public let ENTITY_OPTION : String = "Option"
+    public let COLUMN_OPTION_ID : String = "id"
+    public let COLUMN_OPTION_QUESTIONNAIREID : String = "questionnaireid"
     public let COLUMN_OPTION_OPTION : String = "option"
     public let COLUMN_OPTION_STATE : String = "state"

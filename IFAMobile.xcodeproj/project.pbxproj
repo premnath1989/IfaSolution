@@ -35,15 +35,18 @@
 		0FF04F661CFFE9730048C7A2 /* Guide Layout.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FF04F651CFFE9730048C7A2 /* Guide Layout.xib */; };
 		0FF04F681CFFE9850048C7A2 /* Navigation Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF04F671CFFE9850048C7A2 /* Navigation Controller.swift */; };
 		0FF04F6A1CFFE9960048C7A2 /* Guide Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF04F691CFFE9960048C7A2 /* Guide Controller.swift */; };
+		9B276CC51D0500B200157817 /* Education Plan Analysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B276CC41D0500B200157817 /* Education Plan Analysis.swift */; };
+		9B4AE16F1D053D7F0028DCD9 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4AE1681D053D600028DCD9 /* Charts.framework */; };
+		9B4AE1701D053D7F0028DCD9 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4AE1681D053D600028DCD9 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9B5B83DD1D0173DF002AE0F4 /* Fact Finding Questionnaire Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5B83DC1D0173DF002AE0F4 /* Fact Finding Questionnaire Controller.swift */; };
 		9B8DFF021D018E8E00C80A0F /* Insert Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DFF011D018E8E00C80A0F /* Insert Initialization.swift */; };
-		9B8DFF0C1D018F1C00C80A0F /* Database Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DFF0B1D018F1C00C80A0F /* Database Initialization.swift */; };
 		9B8DFF111D018FAF00C80A0F /* Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DFF0D1D018FAF00C80A0F /* Delete.swift */; };
 		9B8DFF121D018FAF00C80A0F /* Insert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DFF0E1D018FAF00C80A0F /* Insert.swift */; };
 		9B8DFF131D018FAF00C80A0F /* Select.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DFF0F1D018FAF00C80A0F /* Select.swift */; };
 		9B8DFF141D018FAF00C80A0F /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DFF101D018FAF00C80A0F /* Update.swift */; };
 		9B8DFF231D0190FD00C80A0F /* Database Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DFF211D0190FD00C80A0F /* Database Action.swift */; };
 		9B8DFF241D0190FD00C80A0F /* Database Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DFF221D0190FD00C80A0F /* Database Object.swift */; };
+		9B8DFF2C1D0319F800C80A0F /* Database Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DFF2B1D0319F800C80A0F /* Database Initialization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +64,56 @@
 			remoteGlobalIDString = 0FB8FE091CF7DAD8005C85DE;
 			remoteInfo = IFAMobile;
 		};
+		9B4AE1671D053D600028DCD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B4AE1601D053D600028DCD9 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
+		9B4AE1691D053D600028DCD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B4AE1601D053D600028DCD9 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A52C5C371BAC5CA400594CDD;
+			remoteInfo = "Charts-TV";
+		};
+		9B4AE16B1D053D600028DCD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B4AE1601D053D600028DCD9 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65B3F5BF1C7370BE000983D0;
+			remoteInfo = "Charts-OSX";
+		};
+		9B4AE16D1D053D600028DCD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B4AE1601D053D600028DCD9 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06AEE7A21BDC3F8B009875AE;
+			remoteInfo = ChartsTests;
+		};
+		9B4AE1711D053D7F0028DCD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B4AE1601D053D600028DCD9 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9B4AE1731D053D7F0028DCD9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9B4AE1701D053D7F0028DCD9 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0F76D99B1CFC4D29002A7F47 /* HelveticaNeue_35_Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeue_35_Thin.ttf; sourceTree = "<group>"; };
@@ -105,15 +157,17 @@
 		0FF04F651CFFE9730048C7A2 /* Guide Layout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Guide Layout.xib"; sourceTree = "<group>"; };
 		0FF04F671CFFE9850048C7A2 /* Navigation Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Navigation Controller.swift"; sourceTree = "<group>"; };
 		0FF04F691CFFE9960048C7A2 /* Guide Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Guide Controller.swift"; sourceTree = "<group>"; };
+		9B276CC41D0500B200157817 /* Education Plan Analysis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Education Plan Analysis.swift"; sourceTree = "<group>"; };
+		9B4AE1601D053D600028DCD9 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 		9B5B83DC1D0173DF002AE0F4 /* Fact Finding Questionnaire Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fact Finding Questionnaire Controller.swift"; sourceTree = "<group>"; };
 		9B8DFF011D018E8E00C80A0F /* Insert Initialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Insert Initialization.swift"; sourceTree = "<group>"; };
-		9B8DFF0B1D018F1C00C80A0F /* Database Initialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database Initialization.swift"; sourceTree = "<group>"; };
 		9B8DFF0D1D018FAF00C80A0F /* Delete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delete.swift; sourceTree = "<group>"; };
 		9B8DFF0E1D018FAF00C80A0F /* Insert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Insert.swift; sourceTree = "<group>"; };
 		9B8DFF0F1D018FAF00C80A0F /* Select.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Select.swift; sourceTree = "<group>"; };
 		9B8DFF101D018FAF00C80A0F /* Update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
 		9B8DFF211D0190FD00C80A0F /* Database Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database Action.swift"; sourceTree = "<group>"; };
 		9B8DFF221D0190FD00C80A0F /* Database Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database Object.swift"; sourceTree = "<group>"; };
+		9B8DFF2B1D0319F800C80A0F /* Database Initialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database Initialization.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B4AE16F1D053D7F0028DCD9 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +225,7 @@
 				0FB8FE0F1CF7DAD8005C85DE /* Login Controller.swift */,
 				0FF04F5F1CFFE8AA0048C7A2 /* Education Detail Controller.swift */,
 				9B5B83DC1D0173DF002AE0F4 /* Fact Finding Questionnaire Controller.swift */,
+				9B276CC41D0500B200157817 /* Education Plan Analysis.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -254,13 +310,14 @@
 				0F76D9801CFC3F42002A7F47 /* Font */,
 				0F76D9811CFC3F4D002A7F47 /* Style */,
 				0F76D98B1CFC4AFD002A7F47 /* User Interface */,
+				9B8DFF001D018E3700C80A0F /* Database */,
 				0F76D9821CFC4A57002A7F47 /* View Controller */,
 				0F76D9831CFC4A79002A7F47 /* Composer */,
 				0FB8FE111CF7DAD8005C85DE /* Main.storyboard */,
 				0FB8FE191CF7DAD8005C85DE /* LaunchScreen.storyboard */,
+				9B4AE1601D053D600028DCD9 /* Charts.xcodeproj */,
 				0FB8FE171CF7DAD8005C85DE /* Assets.xcassets */,
 				0FB8FE1C1CF7DAD8005C85DE /* Info.plist */,
-				9B8DFF001D018E3700C80A0F /* Database */,
 				0FCEA5111CFEEC0E00823B1E /* Localizable.strings */,
 			);
 			path = IFAMobile;
@@ -297,6 +354,17 @@
 			name = Include;
 			sourceTree = "<group>";
 		};
+		9B4AE1611D053D600028DCD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B4AE1681D053D600028DCD9 /* Charts.framework */,
+				9B4AE16A1D053D600028DCD9 /* Charts.framework */,
+				9B4AE16C1D053D600028DCD9 /* Charts.framework */,
+				9B4AE16E1D053D600028DCD9 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		9B8DFF001D018E3700C80A0F /* Database */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,8 +379,8 @@
 		9B8DFF251D01964700C80A0F /* Function */ = {
 			isa = PBXGroup;
 			children = (
-				9B8DFF0B1D018F1C00C80A0F /* Database Initialization.swift */,
 				9B8DFF0D1D018FAF00C80A0F /* Delete.swift */,
+				9B8DFF2B1D0319F800C80A0F /* Database Initialization.swift */,
 				9B8DFF0E1D018FAF00C80A0F /* Insert.swift */,
 				9B8DFF0F1D018FAF00C80A0F /* Select.swift */,
 				9B8DFF101D018FAF00C80A0F /* Update.swift */,
@@ -339,10 +407,12 @@
 				0FB8FE061CF7DAD8005C85DE /* Sources */,
 				0FB8FE071CF7DAD8005C85DE /* Frameworks */,
 				0FB8FE081CF7DAD8005C85DE /* Resources */,
+				9B4AE1731D053D7F0028DCD9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9B4AE1721D053D7F0028DCD9 /* PBXTargetDependency */,
 			);
 			name = IFAMobile;
 			productName = IFAMobile;
@@ -421,6 +491,12 @@
 			mainGroup = 0FB8FE011CF7DAD8005C85DE;
 			productRefGroup = 0FB8FE0B1CF7DAD8005C85DE /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9B4AE1611D053D600028DCD9 /* Products */;
+					ProjectRef = 9B4AE1601D053D600028DCD9 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0FB8FE091CF7DAD8005C85DE /* IFAMobile */,
@@ -429,6 +505,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9B4AE1681D053D600028DCD9 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 9B4AE1671D053D600028DCD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9B4AE16A1D053D600028DCD9 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 9B4AE1691D053D600028DCD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9B4AE16C1D053D600028DCD9 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 9B4AE16B1D053D600028DCD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9B4AE16E1D053D600028DCD9 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 9B4AE16D1D053D600028DCD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0FB8FE081CF7DAD8005C85DE /* Resources */ = {
@@ -469,6 +576,7 @@
 				0FB8FE161CF7DAD8005C85DE /* IFAMobile.xcdatamodeld in Sources */,
 				9B8DFF021D018E8E00C80A0F /* Insert Initialization.swift in Sources */,
 				0F76D9A11CFC4DF9002A7F47 /* User Interface.swift in Sources */,
+				9B276CC51D0500B200157817 /* Education Plan Analysis.swift in Sources */,
 				9B5B83DD1D0173DF002AE0F4 /* Fact Finding Questionnaire Controller.swift in Sources */,
 				0FCEA4F21CFE86EE00823B1E /* Icon.swift in Sources */,
 				0FF04F601CFFE8AA0048C7A2 /* Education Detail Controller.swift in Sources */,
@@ -479,10 +587,10 @@
 				9B8DFF111D018FAF00C80A0F /* Delete.swift in Sources */,
 				9B8DFF131D018FAF00C80A0F /* Select.swift in Sources */,
 				0FCEA4FA1CFEE09C00823B1E /* Footer Controller.swift in Sources */,
+				9B8DFF2C1D0319F800C80A0F /* Database Initialization.swift in Sources */,
 				0F76D9C81CFC4FAE002A7F47 /* String.swift in Sources */,
 				0FF04F6A1CFFE9960048C7A2 /* Guide Controller.swift in Sources */,
 				9B8DFF121D018FAF00C80A0F /* Insert.swift in Sources */,
-				9B8DFF0C1D018F1C00C80A0F /* Database Initialization.swift in Sources */,
 				0FCEA4EB1CFE868900823B1E /* Layout.swift in Sources */,
 				0F76D9C51CFC4FAE002A7F47 /* Dimension.swift in Sources */,
 				0FCEA4F31CFE86EE00823B1E /* Label.swift in Sources */,
@@ -525,6 +633,11 @@
 			isa = PBXTargetDependency;
 			target = 0FB8FE091CF7DAD8005C85DE /* IFAMobile */;
 			targetProxy = 0FB8FE2D1CF7DAD9005C85DE /* PBXContainerItemProxy */;
+		};
+		9B4AE1721D053D7F0028DCD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Charts-iOS";
+			targetProxy = 9B4AE1711D053D7F0028DCD9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -651,6 +764,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = IFAMobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = my.com.infoconnect.IFAMobile;
@@ -665,6 +779,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = IFAMobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = my.com.infoconnect.IFAMobile;

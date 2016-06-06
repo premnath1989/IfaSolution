@@ -50,3 +50,91 @@ class ViewPaperContainer : UIView
         self.backgroundColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity: 1.0)
     }
 }
+
+class StackViewFieldContainer : UIStackView
+{
+    required init?(coder aDecoder: (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        self.axis = .Vertical
+        self.alignment = .Leading
+        self.distribution = .Fill
+        self.spacing = 10
+    }
+}
+
+class StackViewInputContainer : UIStackView
+{
+    required init?(coder aDecoder: (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        self.axis = .Vertical
+        self.alignment = .Fill
+        self.spacing = 10
+    }
+}
+
+class StackViewQuestionnaireContainer : UIStackView
+{
+    required init?(coder aDecoder: (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        self.axis = .Vertical
+        self.alignment = .Leading
+        self.distribution = .Fill
+        self.spacing = 5
+    }
+    
+    override init(frame: CGRect)
+    {
+        super.init(frame: frame)
+    }
+}
+
+class StackViewQuestionHorizontalContainer : UIStackView
+{
+    required init?(coder aDecoder: (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        self.axis = .Horizontal
+        self.alignment = .Leading
+        self.distribution = .Fill
+        self.spacing = 10
+    }
+}
+
+class StackViewQuestionVerticalContainer : UIStackView
+{
+    required init?(coder aDecoder: (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        self.axis = .Vertical
+        self.alignment = .Leading
+        self.distribution = .Fill
+        self.spacing = 10
+    }
+}
+
+class StackViewOptionContainer : UIStackView
+{
+    required init?(coder aDecoder: (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        self.axis = .Horizontal
+        self.alignment = .Leading
+        self.distribution = .Fill
+        self.spacing = 10
+    }
+}
+
+class ImageViewSignature : UIImageView
+{
+    required init?(coder aDecoder: (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        
+        self.widthAnchor.constraintEqualToConstant(120).active = true
+        self.heightAnchor.constraintEqualToConstant(60).active = true
+        self.backgroundColor = GeneratorUIColor(THEME_QUATERNARY_COLOR, Opacity: 1.0)
+    }
+}
