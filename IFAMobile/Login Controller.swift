@@ -19,6 +19,8 @@ class LoginController: UIViewController
 {
     // INITIALIZATION
     
+    @IBOutlet var labelHelpNavigation : UILabel!
+    @IBOutlet var labelForgotPasswordNavigation : UILabel!
     @IBOutlet var labelLoginTitle : UILabel!
     @IBOutlet var textFieldAgentCode : UITextField!
     @IBOutlet var textFieldAgentPassword : UITextField!
@@ -41,6 +43,9 @@ class LoginController: UIViewController
         
         
         // LANGUAGE
+        
+        labelHelpNavigation.text = NSLocalizedString("NAVIGATION_HELP", comment: "")
+        labelForgotPasswordNavigation.text = NSLocalizedString("NAVIGATION_FORGOTPASSWORD", comment: "")
         
         labelLoginTitle.text = NSLocalizedString("TITLE_LOGIN_WELCOMEBACK", comment: "")
         textFieldAgentCode.placeholder = NSLocalizedString("PLACEHOLDER_AGENT_CODE", comment: "").lowercaseString

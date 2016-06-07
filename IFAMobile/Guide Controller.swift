@@ -19,16 +19,14 @@ class GuideController : UIView
 {
     // INITIALIZATION
     
-    @IBOutlet var viewNavigation : UIView!
+    @IBOutlet var viewGuide : UIView!
+    @IBOutlet var viewGuideContainer : UIView!
     
-    @IBOutlet var labelProspect : UILabel!
-    @IBOutlet var labelCalendar : UILabel!
-    @IBOutlet var labelMail : UILabel!
-    @IBOutlet var labelNote : UILabel!
-    @IBOutlet var labelAgentName : UILabel!
-    @IBOutlet var labelSignOut : UILabel!
+    @IBOutlet var stackViewStepGuide : UIStackView!
+    @IBOutlet var stackViewDetailGuide : UIStackView!
     
-    @IBOutlet var imageViewAgentPhoto : UIImageView!
+    // @IBOutlet var buttonAdd : UIButton!
+    // @IBOutlet var buttonSearch : UIButton!
     
     
     // SETUP
@@ -37,23 +35,64 @@ class GuideController : UIView
     {
         super.init(coder: aDecoder)
         
-        NSBundle.mainBundle().loadNibNamed("Navigation Layout", owner: self, options: nil)[0] as! UIView
-        self.addSubview(viewNavigation)
-        viewNavigation.frame = self.bounds
+        
+        // INITIALIZATIOIN
+        
+        NSBundle.mainBundle().loadNibNamed("Guide Layout", owner: self, options: nil)[0] as! UIView
+        self.addSubview(viewGuide)
+        viewGuide.frame = self.bounds
+        
+        let arrayStep : Array<String> =
+        [
+            NSLocalizedString("GUIDE_GENERALINFORMATION_STEP", comment: ""),
+            NSLocalizedString("GUIDE_FINANCIALPLAN_STEP", comment: ""),
+            NSLocalizedString("GUIDE_DETAILINFORMATION_STEP", comment: ""),
+            NSLocalizedString("GUIDE_FACTFINDINGQUESTIONARE_STEP", comment: ""),
+            NSLocalizedString("GUIDE_GUIDE_ANALYSISRESULT_STEP", comment: ""),
+            NSLocalizedString("GUIDE_PDFRESULT_STEP", comment: "")
+        ]
+        let arrayDetail : Array<String> =
+        [
+            NSLocalizedString("GUIDE_GENERALINFORMATION_DETAIL", comment: ""),
+            NSLocalizedString("GUIDE_FINANCIALPLAN_DETAIL", comment: ""),
+            NSLocalizedString("GUIDE_DETAILINFORMATION_DETAIL", comment: ""),
+            NSLocalizedString("GUIDE_FACTFINDINGRQUESTIONARE_DETAIL", comment: ""),
+            NSLocalizedString("GUIDE_ANALYSISRESULT_DETAIL", comment: ""),
+            NSLocalizedString("GUIDE_PDFRESULT_DETAIL", comment: "")
+        ]
         
         
         // LAYOUT SETTING
         
-        labelAgentName.text = NSLocalizedString("PROFILE_AGENT_DEFAULTNAME", comment: "")
-        imageViewAgentPhoto.image = UIImage(named: "PROFILE_AGENT_DEFAULTPHOTO")
+        viewGuideContainer.backgroundColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity: 1.0)
+        
+        for i : Int in 0 ..< arrayStep.count
+        {
+            let viewStep = UIView()
+            viewStep.widthAnchor.constraintEqualToConstant(GUIDE_ITEM_WIDTH).active = true
+            viewStep.heightAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
+            let buttonStep = ButtonGuide()
+            buttonStep.setTitle(arrayStep[i], forState: .Normal)
+            
+            viewStep.addSubview(buttonStep)
+            stackViewStepGuide.addArrangedSubview(viewStep)
+        }
+        
+        for i : Int in 0 ..< arrayDetail.count
+        {
+            let viewDetail = UIView()
+            viewDetail.widthAnchor.constraintEqualToConstant(GUIDE_ITEM_WIDTH).active = true
+            viewDetail.heightAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
+            let labelDetail = LabelGuideDetail()
+            labelDetail.text = arrayStep[i].lowercaseString
+            
+            viewDetail.addSubview(labelDetail)
+            stackViewDetailGuide.addArrangedSubview(viewDetail)
+        }
         
         
         // LANGUAGE
         
-        labelProspect.text = NSLocalizedString("NAVIGATION_PROSPECT", comment: "")
-        labelCalendar.text = NSLocalizedString("NAVIGATION_CALENDAR", comment: "")
-        labelMail.text = NSLocalizedString("NAVIGATION_MAIL", comment: "")
-        labelNote.text = NSLocalizedString("NAVIGATION_NOTE", comment: "")
-        labelSignOut.text = NSLocalizedString("PROFILE_AGENT_SIGNOUT", comment: "").lowercaseString
+        
     }
 }

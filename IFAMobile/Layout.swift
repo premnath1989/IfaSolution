@@ -20,7 +20,7 @@ class ViewFooterContainer : UIView
     required init?(coder aDecoder: (NSCoder!))
     {
         super.init(coder: aDecoder)
-        self.backgroundColor = GeneratorUIColor(THEME_OCTONARY_COLOR, Opacity: 1.0)
+        self.backgroundColor = GeneratorUIColor(THEME_TERTIARY_COLOR, Opacity: 1.0)
     }
 }
 
@@ -127,6 +127,18 @@ class StackViewOptionContainer : UIStackView
     }
 }
 
+class StackViewLoginNavigationContainer : UIStackView
+{
+    required init?(coder aDecoder: (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        self.axis = .Horizontal
+        self.alignment = .Trailing
+        self.distribution = .Fill
+        self.spacing = 40
+    }
+}
+
 class ImageViewSignature : UIImageView
 {
     required init?(coder aDecoder: (NSCoder!))
@@ -138,3 +150,4 @@ class ImageViewSignature : UIImageView
         self.backgroundColor = GeneratorUIColor(THEME_QUATERNARY_COLOR, Opacity: 1.0)
     }
 }
+

@@ -74,10 +74,10 @@ class EducationAnalysisController: UIViewController
         labelHeaderTitle.text = NSLocalizedString("HEADER_PROSPECT_TITLE", comment: "")
         labelHeaderDescription.text = NSLocalizedString("HEADER_PROSPECT_DESCRIPTION", comment: "")
         
-        labelBasicInformationTitle.text = NSLocalizedString("TITLE_EDUCATIONPLAN_BASICINFORMATION", comment: "")
-        labelTotalEducationFundAvailableAtTertiaryAgeTitle.text = NSLocalizedString("TITLE_EDUCATIONPLAN_FUNDNEEDED", comment: "")
-        labelTotalEducationFundNeededAtTertiaryAgeTitle.text = NSLocalizedString("TITLE_EDUCATIONPLAN_FUNDAVAILABLE", comment: "")
-        labelBalanceTitle.text = NSLocalizedString("TITLE_EDUCATIONPLAN_BALANCE", comment: "")
+        labelBasicInformationTitle.text = NSLocalizedString("TITLE_EDUCATIONPLAN_BASICINFORMATION", comment: "").uppercaseString
+        labelTotalEducationFundAvailableAtTertiaryAgeTitle.text = NSLocalizedString("TITLE_EDUCATIONPLAN_FUNDNEEDED", comment: "").uppercaseString
+        labelTotalEducationFundNeededAtTertiaryAgeTitle.text = NSLocalizedString("TITLE_EDUCATIONPLAN_FUNDAVAILABLE", comment: "").uppercaseString
+        labelBalanceTitle.text = NSLocalizedString("TITLE_EDUCATIONPLAN_BALANCE", comment: "").uppercaseString
         
         labelName.text = NSLocalizedString("FIELD_NAME", comment: "")
         labelAge.text = NSLocalizedString("FIELD_AGE", comment: "")

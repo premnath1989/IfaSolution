@@ -84,6 +84,52 @@ import Foundation
         }
     }
 
+    class LabelLoginNavigation : UILabel
+    {
+        required init?(coder aDecoder : (NSCoder!))
+        {
+            super.init(coder: aDecoder)
+            
+            // GENERAL
+            
+            self.font = UIFont(name : THEME_SECONDARY_FONT, size : FONTSIZE_NAVIGATION_LOGIN)
+            self.textColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Center
+            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+            self.numberOfLines = 1
+        }
+    }
+
+
+    // GUIDE
+
+    class LabelGuideDetail : UILabel
+    {
+        required init?(coder aDecoder : NSCoder)
+        {
+            super.init(coder: aDecoder)
+            
+            // GENERAL
+            
+            self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_GUIDE_STEP)
+            self.textColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Center
+            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+            self.numberOfLines = 1
+        }
+        
+        override init(frame: CGRect)
+        {
+            super.init(frame: frame)
+            
+            self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_GUIDE_DETAIL)
+            self.textColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Center
+            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+            self.numberOfLines = 1
+        }
+    }
+
 
     // PROFILE
 

@@ -467,7 +467,7 @@
 				TargetAttributes = {
 					0FB8FE091CF7DAD8005C85DE = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = Q4NY74HXM4;
+						DevelopmentTeam = 2YT8E2D9X6;
 					};
 					0FB8FE201CF7DAD8005C85DE = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -767,9 +767,9 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = IFAMobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = my.com.infoconnect.IFAMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ifa.Solution;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "a932eec7-39c4-4745-8f76-e1c235167610";
 			};
 			name = Debug;
 		};
@@ -782,9 +782,9 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = IFAMobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = my.com.infoconnect.IFAMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ifa.Solution;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "a932eec7-39c4-4745-8f76-e1c235167610";
 			};
 			name = Release;
 		};

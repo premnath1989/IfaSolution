@@ -22,6 +22,12 @@ public let CHARACTER_NEWLINE : String = "\n"
 public let CHARACTER_DATABASE_SEPARATOR = " \\ "
 
 
+// SOURCE
+
+public let PHOTO_PROFILE_SMALL : String = "Photo Profile Small"
+public let PHOTO_PROFILE_LARGE : String = "Photo Profile Large"
+
+
 // DATABASE
 
     // SYNTAX

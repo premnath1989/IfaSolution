@@ -62,7 +62,7 @@ class EducationDetailController: UIViewController
         labelHeaderTitle.text = NSLocalizedString("HEADER_PROSPECT_TITLE", comment: "")
         labelHeaderDescription.text = NSLocalizedString("HEADER_PROSPECT_DESCRIPTION", comment: "")
         
-        labelDetailInformationTitle.text = NSLocalizedString("TITLE_EDUCATIONPLAN_DETAILINFORMATION", comment: "")
+        labelDetailInformationTitle.text = NSLocalizedString("TITLE_EDUCATIONPLAN_DETAILINFORMATION", comment: "").uppercaseString
         
         labelPlanName.text = NSLocalizedString("FIELD_PLANNAME", comment: "")
         labelEntryAgeToUniversity.text = NSLocalizedString("FIELD_ENTRYAGETOUNIVERSITY", comment: "")

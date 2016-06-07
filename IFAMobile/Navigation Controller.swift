@@ -46,7 +46,7 @@ class NavigationController : UIView
         // LAYOUT SETTING
         
         labelAgentName.text = NSLocalizedString("PROFILE_AGENT_DEFAULTNAME", comment: "")
-        imageViewAgentPhoto.image = UIImage(named: "PROFILE_AGENT_DEFAULTPHOTO")
+        imageViewAgentPhoto.image = UIImage(named: PHOTO_PROFILE_SMALL)
         
         
         // LANGUAGE

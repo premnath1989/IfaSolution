@@ -24,6 +24,7 @@ public let ICON_SIZE_XHDPI : CGFloat = 96.0
 public let ICON_SIZE_XXHDPI : CGFloat = 144.0
 public let ICON_SIZE_XXXHDPI : CGFloat = 192.0
 public let INPUT_SIDE_PADDING : CGFloat = 10.0
+public let GUIDE_ITEM_WIDTH : CGFloat = 90.0
 
 
 // LABEL
@@ -53,4 +54,5 @@ public let BUTTON_LOGIN_HEIGHT : CGFloat = 36
 public let BUTTON_GENERAL_WIDTH : CGFloat = 120
 public let BUTTON_LOGIN_WIDTH : CGFloat = 180
 public let BUTTON_GENERAL_BORDERWIDTH : CGFloat = 0.0
+public let BUTTON_GUIDE_BORDERWIDTH : CGFloat = 1.0
 public let BUTTON_GENERAL_BORDERRADIUS : CGFloat = 4.0

@@ -21,31 +21,36 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nah-AJ-3ux" customClass="LabelNavigation" customModule="IFAMobile" customModuleProvider="target">
-                    <rect key="frame" x="40" y="290" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osJ-xZ-MHl" customClass="LabelNavigation" customModule="IFAMobile" customModuleProvider="target">
-                    <rect key="frame" x="112" y="290" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhd-H9-OHF" customClass="LabelNavigation" customModule="IFAMobile" customModuleProvider="target">
-                    <rect key="frame" x="184" y="290" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5q-ZY-nEX" customClass="LabelNavigation" customModule="IFAMobile" customModuleProvider="target">
-                    <rect key="frame" x="256" y="290" width="42" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mQE-QS-R12">
+                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="MYM-0z-kOt">
+                    <rect key="frame" x="40" y="200" width="258" height="21"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nah-AJ-3ux" customClass="LabelNavigation" customModule="IFAMobile" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osJ-xZ-MHl" customClass="LabelNavigation" customModule="IFAMobile" customModuleProvider="target">
+                            <rect key="frame" x="72" y="0.0" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhd-H9-OHF" customClass="LabelNavigation" customModule="IFAMobile" customModuleProvider="target">
+                            <rect key="frame" x="144" y="0.0" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5q-ZY-nEX" customClass="LabelNavigation" customModule="IFAMobile" customModuleProvider="target">
+                            <rect key="frame" x="216" y="0.0" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mQE-QS-R12" customClass="PhotoProfileNavigation" customModule="IFAMobile" customModuleProvider="target">
                     <rect key="frame" x="524" y="282" width="36" height="36"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="XSc-gf-xfX"/>
@@ -72,17 +77,11 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="osJ-xZ-MHl" firstAttribute="leading" secondItem="nah-AJ-3ux" secondAttribute="trailing" constant="30" id="7Bm-bE-PiU"/>
+                <constraint firstItem="MYM-0z-kOt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="9fA-Sy-fTU"/>
                 <constraint firstItem="ktW-6B-yfu" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="D0d-KB-h3B"/>
-                <constraint firstItem="z5q-ZY-nEX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Hka-tQ-fym"/>
                 <constraint firstAttribute="trailing" secondItem="mQE-QS-R12" secondAttribute="trailing" constant="40" id="I1Z-jq-GaK"/>
-                <constraint firstItem="osJ-xZ-MHl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Joy-Ax-jev"/>
-                <constraint firstItem="z5q-ZY-nEX" firstAttribute="leading" secondItem="Bhd-H9-OHF" secondAttribute="trailing" constant="30" id="L7A-dU-deJ"/>
-                <constraint firstItem="Bhd-H9-OHF" firstAttribute="leading" secondItem="osJ-xZ-MHl" secondAttribute="trailing" constant="30" id="Ogm-l7-d5M"/>
                 <constraint firstItem="mQE-QS-R12" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="QFf-Em-jYo"/>
-                <constraint firstItem="Bhd-H9-OHF" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Txy-m4-XGg"/>
-                <constraint firstItem="nah-AJ-3ux" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="YVA-Rc-7L5"/>
-                <constraint firstItem="nah-AJ-3ux" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="foC-wV-7bF"/>
+                <constraint firstItem="MYM-0z-kOt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="UD1-fc-gAc"/>
                 <constraint firstItem="mQE-QS-R12" firstAttribute="leading" secondItem="ktW-6B-yfu" secondAttribute="trailing" constant="20" id="uxL-Qi-h1c"/>
             </constraints>
         </view>

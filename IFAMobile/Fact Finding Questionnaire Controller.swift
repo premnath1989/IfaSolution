@@ -76,10 +76,10 @@ class FactFindingQuestionnaireController : UIViewController
         labelHeaderTitle.text = NSLocalizedString("HEADER_PROSPECT_TITLE", comment: "")
         labelHeaderDescription.text = NSLocalizedString("HEADER_PROSPECT_DESCRIPTION", comment: "")
         
-        labelFactFindingQuestionnaireTitle.text = NSLocalizedString("TITLE_FINANCIALPLAN_FACTFINDINGQUESTIONNAIRE", comment: "")
-        labelDontKnowRiskProfileTitle.text = NSLocalizedString("TITLE_FINANCIALPLAN_DONTKNOWRISKPROFILE", comment: "")
-        labelConfirmationTitle.text = NSLocalizedString("TITLE_FINANCIALPLAN_CONFIRMATION", comment: "")
-        labelDeclarationTitle.text = NSLocalizedString("TITLE_FINANCIALPLAN_DECLARATION", comment: "")
+        labelFactFindingQuestionnaireTitle.text = NSLocalizedString("TITLE_FINANCIALPLAN_FACTFINDINGQUESTIONNAIRE", comment: "").uppercaseString
+        labelDontKnowRiskProfileTitle.text = NSLocalizedString("TITLE_FINANCIALPLAN_DONTKNOWRISKPROFILE", comment: "").uppercaseString
+        labelConfirmationTitle.text = NSLocalizedString("TITLE_FINANCIALPLAN_CONFIRMATION", comment: "").uppercaseString
+        labelDeclarationTitle.text = NSLocalizedString("TITLE_FINANCIALPLAN_DECLARATION", comment: "").uppercaseString
         
         labelPlanningMeetChildrensEducationGoal.text = NSLocalizedString("FIELD_PLANNINGMEETCHILDRENSEDUCATIONGOAL", comment: "")
         labelMaximizeTaxAdvantages.text = NSLocalizedString("FIELD_MAXIMIZETAXADVANTAGES", comment: "")
@@ -107,13 +107,14 @@ class FactFindingQuestionnaireController : UIViewController
         
         // QUESTIONNAIRE
         
+        // var arraySwitchGroup = [[UISwitch]]()
         var queryQuestionnaire = [NSManagedObject]()
         
         queryQuestionnaire = SelectDatabase(ENTITY_QUESTIONNAIRE)
         
         for i : Int in 0 ..< queryQuestionnaire.count
         {
-            NSLog("Query " + ENTITY_QUESTIONNAIRE + ", questionnaire id = (\(String(queryQuestionnaire[i].valueForKey(COLUMN_QUESTIONNAIRE_ID) as! Int)))", queryQuestionnaire)
+            // NSLog("Query " + ENTITY_QUESTIONNAIRE + ", questionnaire id = (\(String(queryQuestionnaire[i].valueForKey(COLUMN_QUESTIONNAIRE_ID) as! Int)))", queryQuestionnaire)
             
             // QUESTION
             
@@ -129,7 +130,7 @@ class FactFindingQuestionnaireController : UIViewController
             
             if (queryQuestion.count > 0)
             {
-                NSLog("Query " + ENTITY_QUESTION + ", question id = (\(String(queryQuestion[0].valueForKey(COLUMN_QUESTION_ID) as! Int))), question text = (\(String(queryQuestion[0].valueForKey(COLUMN_QUESTION_QUESTION) as! String)))", queryQuestion)
+                // NSLog("Query " + ENTITY_QUESTION + ", question id = (\(String(queryQuestion[0].valueForKey(COLUMN_QUESTION_ID) as! Int))), question text = (\(String(queryQuestion[0].valueForKey(COLUMN_QUESTION_QUESTION) as! String)))", queryQuestion)
                 
                 let labelQuestion : UILabel = LabelQuestion()
                 labelQuestion.text = String(i + 1) + ". " + String(queryQuestion[0].valueForKey(COLUMN_QUESTION_QUESTION) as! String)
@@ -155,9 +156,11 @@ class FactFindingQuestionnaireController : UIViewController
 
             if (queryOption.count > 0)
             {
+                // var arraySwitch = [UISwitch]()
+                
                 for j : Int in 0 ..< queryOption.count
                 {
-                    NSLog("Query " + ENTITY_OPTION + ", option id = (\(String(queryOption[j].valueForKey(COLUMN_OPTION_ID) as! Int))), option text = (\(String(queryOption[j].valueForKey(COLUMN_OPTION_OPTION) as! String!)))", queryOption)
+                    // NSLog("Query " + ENTITY_OPTION + ", option id = (\(String(queryOption[j].valueForKey(COLUMN_OPTION_ID) as! Int))), option text = (\(String(queryOption[j].valueForKey(COLUMN_OPTION_OPTION) as! String!)))", queryOption)
                     
                     let stackViewOption : UIStackView = UIStackView()
                     stackViewOption.distribution = .Fill
@@ -172,13 +175,40 @@ class FactFindingQuestionnaireController : UIViewController
                     stackViewOption.addArrangedSubview(labelOption)
                     
                     stackViewQestionnaire.addArrangedSubview(stackViewOption)
+                    
+                    // arraySwitch.append(switchOption)
                 }
+                
+                // arraySwitchGroup[i].appendContentsOf(arraySwitch)
             }
             else
             {
 
             }
         }
+        
+        /* func radioButton(arraySwitch : [UISwitch])
+        {
+            for i : Int in 0 ..< arraySwitch.count
+            {
+                arraySwitch[i]
+                
+                func switchIsChanged(switchOption : UISwitch)
+                {
+                    if switchOption.on
+                    {
+                        for j : Int in 0 ..< arraySwitch.count
+                        {
+                            
+                        }
+                    }
+                    else
+                    {
+                        
+                    }
+                }
+            }
+        } */
     }
     
     
