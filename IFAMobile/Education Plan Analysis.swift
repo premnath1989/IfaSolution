@@ -150,6 +150,50 @@ class EducationAnalysisController: UIViewController
         let arrayMoney = [20.0, 50.0, 30.0]
         
         setChart(arrayLabel, values: arrayMoney)
+        
+        
+        // PDF
+        
+        func createPDF()
+        {
+            let html = "<b>Hello <i>World!</i></b> <p>Generate PDF file from HTML in Swift</p>"
+            let fmt = UIMarkupTextPrintFormatter(markupText: html)
+            
+            // 2. Assign print formatter to UIPrintPageRenderer
+            
+            let render = UIPrintPageRenderer()
+            render.addPrintFormatter(fmt, startingAtPageAtIndex: 0)
+            
+            // 3. Assign paperRect and printableRect
+            
+            let page = CGRect(x: 0, y: 0, width: 595.2, height: 841.8) // A4, 72 dpi
+            let printable = CGRectInset(page, 0, 0)
+            
+            render.setValue(NSValue(CGRect: page), forKey: "paperRect")
+            render.setValue(NSValue(CGRect: printable), forKey: "printableRect")
+            
+            // 4. Create PDF context and draw
+            
+            let pdfData = NSMutableData()
+            UIGraphicsBeginPDFContextToData(pdfData, CGRectZero, nil)
+            
+            for i in 1...render.numberOfPages() {
+                
+                UIGraphicsBeginPDFPage();
+                let bounds = UIGraphicsGetPDFContextBounds()
+                render.drawPageAtIndex(i - 1, inRect: bounds)
+            }
+            
+            UIGraphicsEndPDFContext();
+            
+            // 5. Save PDF file
+            
+            let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
+            
+            pdfData.writeToFile("\(documentsPath)/file.pdf", atomically: true)
+        }
+        
+        createPDF()
     }
     
     
