@@ -191,6 +191,121 @@ import UIKit
         }
     }
 
+class TextFieldMultilineGeneral : UITextField
+{
+    override func textRectForBounds(bounds: CGRect) -> CGRect
+    {
+        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+    }
+    
+    override func editingRectForBounds(bounds: CGRect) -> CGRect
+    {
+        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+    }
+    
+    override func placeholderRectForBounds(bounds: CGRect) -> CGRect
+    {
+        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+    }
+    
+    required init?(coder aDecoder: (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        
+        self.widthAnchor.constraintEqualToConstant(TEXTFIELD_GENERAL_WIDTH).active = true
+        self.heightAnchor.constraintEqualToConstant(TEXTFIELD_MULTILINE_HEIGHT).active = true
+        
+        self.backgroundColor = GeneratorUIColor(THEME_QUATERNARY_COLOR, Opacity: 1.0)
+        self.layer.masksToBounds = true
+        self.borderStyle = UITextBorderStyle.None
+        self.layer.cornerRadius = INPUT_GENERAL_BORDERRADIUS
+        
+        self.minimumFontSize = FONTSIZE_MEDIUM
+        self.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
+        self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_MEDIUM)
+        
+        self.clearButtonMode = UITextFieldViewMode.UnlessEditing
+        self.returnKeyType = UIReturnKeyType.Done
+        
+        // ENABLE
+        
+        self.addTarget(self, action: #selector(TextFieldSinglelineGeneral.InputEnable(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        
+        // HIGHLIGHT
+        
+        self.addTarget(self, action: #selector(TextFieldSinglelineGeneral.InputHighlight(_:)), forControlEvents: UIControlEvents.TouchDown)
+    }
+    
+    // FUNCTION
+    
+    func InputEnable(OnTouchUpInside: UITextField!)
+    {
+        
+    }
+    
+    func InputHighlight(OnTouchDown: UITextField!)
+    {
+        
+    }
+}
+
+class TextFieldMultiline : UITextField
+{
+    override func textRectForBounds(bounds: CGRect) -> CGRect
+    {
+        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+    }
+    
+    override func editingRectForBounds(bounds: CGRect) -> CGRect
+    {
+        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+    }
+    
+    override func placeholderRectForBounds(bounds: CGRect) -> CGRect
+    {
+        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+    }
+    
+    required init?(coder aDecoder: (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        
+        self.heightAnchor.constraintEqualToConstant(TEXTFIELD_MULTILINE_HEIGHT).active = true
+        
+        self.backgroundColor = GeneratorUIColor(THEME_QUATERNARY_COLOR, Opacity: 1.0)
+        self.layer.masksToBounds = true
+        self.borderStyle = UITextBorderStyle.None
+        self.layer.cornerRadius = INPUT_GENERAL_BORDERRADIUS
+        
+        self.minimumFontSize = FONTSIZE_MEDIUM
+        self.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
+        self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_MEDIUM)
+        
+        self.clearButtonMode = UITextFieldViewMode.UnlessEditing
+        self.returnKeyType = UIReturnKeyType.Done
+        
+        // ENABLE
+        
+        self.addTarget(self, action: #selector(TextFieldSinglelineGeneral.InputEnable(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        
+        // HIGHLIGHT
+        
+        self.addTarget(self, action: #selector(TextFieldSinglelineGeneral.InputHighlight(_:)), forControlEvents: UIControlEvents.TouchDown)
+    }
+    
+    // FUNCTION
+    
+    func InputEnable(OnTouchUpInside: UITextField!)
+    {
+        
+    }
+    
+    func InputHighlight(OnTouchDown: UITextField!)
+    {
+        
+    }
+}
+
     // PICKER
 
     class PickerViewSinglelineShort : UIPickerView
