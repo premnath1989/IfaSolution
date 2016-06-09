@@ -23,8 +23,8 @@ class HomeController: UIViewController
     @IBOutlet var labelHeaderDescription : UILabel!
     
     @IBOutlet var labelAgentInformationTitle : UILabel!
-    // @IBOutlet var labelCalendarTitle : UILabel!
-    // @IBOutlet var labelNoteTitle : UILabel!
+    @IBOutlet var labelCalendarTitle : UILabel!
+    @IBOutlet var labelNoteTitle : UILabel!
     
     @IBOutlet var labelAgentCode : UILabel!
     @IBOutlet var labelBranch : UILabel!
@@ -46,9 +46,17 @@ class HomeController: UIViewController
     @IBOutlet var labelPropertyActiveDate : UILabel!
     @IBOutlet var labelPropertyExpiredDate : UILabel!
     
-    // @IBOutlet var labelTodaysPlan : UILabel!
+    @IBOutlet var labelMonday : UILabel!
+    @IBOutlet var labelTuesday : UILabel!
+    @IBOutlet var labelWednesday : UILabel!
+    @IBOutlet var labelThursday : UILabel!
+    @IBOutlet var labelFriday : UILabel!
+    @IBOutlet var labelSaturday : UILabel!
+    @IBOutlet var labelSunday : UILabel!
     
-    // @IBOutlet var textFieldTodaysPlan : UITextField!
+    @IBOutlet var labelTodaysPlan : UILabel!
+    
+    @IBOutlet var textFieldTodaysPlan : UITextField!
     
     
     // VIEW DID LOAD
@@ -65,10 +73,20 @@ class HomeController: UIViewController
         labelHeaderDescription.text = NSLocalizedString("HEADER_PROSPECT_DESCRIPTION", comment: "")
         
         labelAgentInformationTitle.text = NSLocalizedString("TITLE_EDUCATIONPLAN_DETAILINFORMATION", comment: "").uppercaseString
-        // labelCalendarTitle.text = NSLocalizedString("NAVIGATION_CALENDAR", comment: "").uppercaseString
-        // labelNoteTitle.text = NSLocalizedString("NAVIGATION_NOTE", comment: "").uppercaseString
+        labelCalendarTitle.text = NSLocalizedString("NAVIGATION_CALENDAR", comment: "").uppercaseString
+        labelNoteTitle.text = NSLocalizedString("NAVIGATION_NOTE", comment: "").uppercaseString
         
-        // labelTodaysPlan.text = NSLocalizedString("FIELD_TODAYSPLAN", comment: "")
+        labelTodaysPlan.text = NSLocalizedString("FIELD_TODAYSPLAN", comment: "")
+        
+        labelAgentCode.text = NSLocalizedString("FIELD_AGENTCODE", comment: "")
+        labelBranch.text = NSLocalizedString("FIELD_BRANCH", comment: "")
+        labelArea.text = NSLocalizedString("FIELD_AREA", comment: "")
+        labelKCU.text = NSLocalizedString("FIELD_KCU", comment: "")
+        labelChannelName.text = NSLocalizedString("FIELD_CHANNELNAME", comment: "")
+        labelSupervisor.text = NSLocalizedString("FIELD_SUPERVISOR", comment: "")
+        labelState.text = NSLocalizedString("FIELD_STATE", comment: "")
+        labelActiveDate.text = NSLocalizedString("FIELD_ACTIVEDATE", comment: "")
+        labelExpiredDate.text = NSLocalizedString("FIELD_EXPIREDDATE", comment: "")
         
         labelPropertyAgentCode.text = "123456"
         labelPropertyBranch.text = "InfoConnect Indonesia"
@@ -80,7 +98,15 @@ class HomeController: UIViewController
         labelPropertyActiveDate.text = "Thursday, 9 June 2016"
         labelPropertyExpiredDate.text = "Thursday, 9 June 2017"
         
-        // textFieldTodaysPlan.text = "No plan for today"
+        labelMonday.text = NSLocalizedString("FIELD_DATE_MON", comment: "").uppercaseString
+        labelTuesday.text = NSLocalizedString("FIELD_DATE_TUE", comment: "").uppercaseString
+        labelWednesday.text = NSLocalizedString("FIELD_DATE_WED", comment: "").uppercaseString
+        labelThursday.text = NSLocalizedString("FIELD_DATE_THU", comment: "").uppercaseString
+        labelFriday.text = NSLocalizedString("FIELD_DATE_FRI", comment: "").uppercaseString
+        labelSaturday.text = NSLocalizedString("FIELD_DATE_SAT", comment: "").uppercaseString
+        labelSunday.text = NSLocalizedString("FIELD_DATE_SUN", comment: "").uppercaseString
+        
+        textFieldTodaysPlan.text = "No plan for today"
     }
     
     

@@ -68,7 +68,7 @@ import Foundation
 
     // NAVIGATION
 
-    class LabelNavigation : UILabel
+    class ButtonNavigation : UIButton
     {
         required init?(coder aDecoder : (NSCoder!))
         {
@@ -76,15 +76,13 @@ import Foundation
             
             // GENERAL
             
-            self.font = UIFont(name : THEME_PRIMARY_FONT, size : FONTSIZE_NAVIGATION_MENU)
-            self.textColor = GeneratorUIColor(THEME_SEPTENARY_COLOR, Opacity : 1.0)
-            self.textAlignment = .Center
-            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
-            self.numberOfLines = 1
+            self.titleLabel?.font = UIFont(name : THEME_PRIMARY_FONT, size : FONTSIZE_NAVIGATION_MENU)
+            self.backgroundColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 0.0);
+            self.setTitleColor(GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0), forState: .Normal)
         }
     }
 
-    class LabelLoginNavigation : UILabel
+    class ButtonLoginNavigation : UIButton
     {
         required init?(coder aDecoder : (NSCoder!))
         {
@@ -92,11 +90,9 @@ import Foundation
             
             // GENERAL
             
-            self.font = UIFont(name : THEME_SECONDARY_FONT, size : FONTSIZE_NAVIGATION_LOGIN)
-            self.textColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0)
-            self.textAlignment = .Center
-            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
-            self.numberOfLines = 1
+            self.titleLabel?.font = UIFont(name : THEME_SECONDARY_FONT, size : FONTSIZE_NAVIGATION_LOGIN)
+            self.backgroundColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 0.0);
+            self.setTitleColor(GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0), forState: .Normal)
         }
     }
 
@@ -363,21 +359,98 @@ import Foundation
         }
     }
 
-class LabelPlan : UILabel
-{
-    required init?(coder aDecoder : (NSCoder!))
+    class LabelPlan : UILabel
     {
-        super.init(coder: aDecoder)
-        
-        // GENERAL
-        
-        self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_ENORMOUS)
-        self.textColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity : 1.0)
-        self.textAlignment = .Center
-        self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
-        self.numberOfLines = 1
+        required init?(coder aDecoder : (NSCoder!))
+        {
+            super.init(coder: aDecoder)
+            
+            // GENERAL
+            
+            self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_ENORMOUS)
+            self.textColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Center
+            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+            self.numberOfLines = 1
+        }
     }
-}
+
+
+    class LabelCalendarTextGrey : UILabel
+    {
+        required init?(coder aDecoder : (NSCoder!))
+        {
+            super.init(coder: aDecoder)
+            
+            // GENERAL
+            
+            self.widthAnchor.constraintEqualToConstant(CALENDAR_SIZE).active = true
+            self.heightAnchor.constraintEqualToConstant(CALENDAR_SIZE).active = true
+            self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_CALENDAR)
+            self.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Center
+            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+            self.numberOfLines = 1
+        }
+    }
+
+    class LabelCalendarTextRed : UILabel
+    {
+        required init?(coder aDecoder : (NSCoder!))
+        {
+            super.init(coder: aDecoder)
+            
+            // GENERAL
+            
+            self.widthAnchor.constraintEqualToConstant(CALENDAR_SIZE).active = true
+            self.heightAnchor.constraintEqualToConstant(CALENDAR_SIZE).active = true
+            self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_CALENDAR)
+            self.textColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Center
+            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+            self.numberOfLines = 1
+        }
+    }
+
+    class LabelCalendarCircleGrey : UILabel
+    {
+        required init?(coder aDecoder : (NSCoder!))
+        {
+            super.init(coder: aDecoder)
+            
+            // GENERAL
+            
+            self.widthAnchor.constraintEqualToConstant(CALENDAR_SIZE).active = true
+            self.heightAnchor.constraintEqualToConstant(CALENDAR_SIZE).active = true
+            self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_CALENDAR)
+            self.textColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Center
+            self.backgroundColor = GeneratorUIColor(THEME_SEPTENARY_COLOR, Opacity: 1.0)
+            self.layer.cornerRadius = CALENDAR_SIZE * 0.5
+            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+            self.numberOfLines = 1
+        }
+    }
+
+    class LabelCalendarCircleRed : UILabel
+    {
+        required init?(coder aDecoder : (NSCoder!))
+        {
+            super.init(coder: aDecoder)
+            
+            // GENERAL
+            
+            self.widthAnchor.constraintEqualToConstant(CALENDAR_SIZE).active = true
+            self.heightAnchor.constraintEqualToConstant(CALENDAR_SIZE).active = true
+            self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_CALENDAR)
+            self.textColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Center
+            self.backgroundColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity: 1.0)
+            self.layer.cornerRadius = CALENDAR_SIZE * 0.5
+            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+            self.numberOfLines = 1
+        }
+    }
 
 
     // FOOTER

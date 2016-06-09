@@ -21,10 +21,10 @@ class NavigationController : UIView
     
     @IBOutlet var viewNavigation : UIView!
     
-    @IBOutlet var labelProspect : UILabel!
-    @IBOutlet var labelCalendar : UILabel!
-    @IBOutlet var labelMail : UILabel!
-    @IBOutlet var labelNote : UILabel!
+    @IBOutlet var buttonProspect : UIButton!
+    @IBOutlet var buttonCalendar : UIButton!
+    @IBOutlet var buttonMail : UIButton!
+    @IBOutlet var buttonNote : UIButton!
     @IBOutlet var labelAgentName : UILabel!
     @IBOutlet var labelSignOut : UILabel!
     
@@ -51,10 +51,38 @@ class NavigationController : UIView
         
         // LANGUAGE
         
-        labelProspect.text = NSLocalizedString("NAVIGATION_PROSPECT", comment: "")
-        labelCalendar.text = NSLocalizedString("NAVIGATION_CALENDAR", comment: "")
-        labelMail.text = NSLocalizedString("NAVIGATION_MAIL", comment: "")
-        labelNote.text = NSLocalizedString("NAVIGATION_NOTE", comment: "")
+        buttonProspect.setTitle(NSLocalizedString("NAVIGATION_PROSPECT", comment: ""), forState: .Normal)
+        buttonCalendar.setTitle(NSLocalizedString("NAVIGATION_CALENDAR", comment: ""), forState: .Normal)
+        buttonMail.setTitle(NSLocalizedString("NAVIGATION_MAIL", comment: ""), forState: .Normal)
+        buttonNote.setTitle(NSLocalizedString("NAVIGATION_NOTE", comment: ""), forState: .Normal)
         labelSignOut.text = NSLocalizedString("PROFILE_AGENT_SIGNOUT", comment: "").lowercaseString
     }
+    
+    // EVENT
+    
+    @IBAction func goToCalendar(sender : UIButton)
+    {
+        UIApplication.sharedApplication().openURL(NSURL(string: "calshow://")!)
+    }
+    
+    @IBAction func goToMail(sender : UIButton)
+    {
+        /* let recipients : String = "mailto:first@example.com?cc=second@example.com,third@example.com&subject=Hello from California!"
+        let message : String = "&body=It is raining in sunny California!"
+        let email : String = String.localizedStringWithFormat("%@%@", recipients, message)
+        email.stringByAddingPercentEncodingWithAllowedCharacters(NSUTF8StringEncoding) */
+        
+        UIApplication.sharedApplication().openURL(NSURL(string: "mailto://")!)
+    }
+    
+//    @IBAction func goToProspect(sender : UIButton)
+//    {
+//        IBActiongoToProspect(sender, ViewController: self)
+//    }
+//    
+//    func IBActiongoToProspect(Sender : AnyObject, ViewController : UIViewController) -> Void
+//    {
+//        let pageProspect = ViewController.storyboard?.instantiateViewControllerWithIdentifier("PageProspect") as! ProspectAddBasicController
+//        ViewController.presentViewController(pageProspect, animated: true, completion: nil)
+//    }
 }

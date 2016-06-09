@@ -110,7 +110,7 @@ class StackViewQuestionHorizontalContainer : UIStackView
         super.init(coder: aDecoder)
         self.axis = .Horizontal
         self.alignment = .Leading
-        self.distribution = .Fill
+        self.distribution = .FillProportionally
         self.spacing = 10
     }
 }
@@ -139,15 +139,27 @@ class StackViewOptionContainer : UIStackView
     }
 }
 
-class StackViewLoginNavigationContainer : UIStackView
+class StackViewCalendarHorizontalContainer : UIStackView
 {
     required init?(coder aDecoder: (NSCoder!))
     {
         super.init(coder: aDecoder)
         self.axis = .Horizontal
-        self.alignment = .Trailing
+        self.alignment = .Center
         self.distribution = .Fill
         self.spacing = 40
+    }
+}
+
+class StackViewCalendarVerticalContainer : UIStackView
+{
+    required init?(coder aDecoder: (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        self.axis = .Vertical
+        self.alignment = .Center
+        self.distribution = .Fill
+        self.spacing = 5
     }
 }
 

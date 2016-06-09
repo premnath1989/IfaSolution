@@ -47,6 +47,8 @@
 		9B8DFF231D0190FD00C80A0F /* Database Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DFF211D0190FD00C80A0F /* Database Action.swift */; };
 		9B8DFF241D0190FD00C80A0F /* Database Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DFF221D0190FD00C80A0F /* Database Object.swift */; };
 		9B8DFF2C1D0319F800C80A0F /* Database Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DFF2B1D0319F800C80A0F /* Database Initialization.swift */; };
+		9BB8F3EF1D0929E500806A97 /* Profile Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8F3EE1D0929E500806A97 /* Profile Controller.swift */; };
+		9BB8F3F41D0929F800806A97 /* Profile Layout.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BB8F3F31D0929F800806A97 /* Profile Layout.xib */; };
 		9BF5DE0E1D07D3E5004AE484 /* Prospect Add Basic Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF5DE0D1D07D3E5004AE484 /* Prospect Add Basic Controller.swift */; };
 		9BF5DE131D08171C004AE484 /* Choose Financial Plan Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF5DE121D08171C004AE484 /* Choose Financial Plan Controller.swift */; };
 		9BF5DE151D08D5B7004AE484 /* Home Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF5DE141D08D5B7004AE484 /* Home Controller.swift */; };
@@ -171,6 +173,8 @@
 		9B8DFF211D0190FD00C80A0F /* Database Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database Action.swift"; sourceTree = "<group>"; };
 		9B8DFF221D0190FD00C80A0F /* Database Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database Object.swift"; sourceTree = "<group>"; };
 		9B8DFF2B1D0319F800C80A0F /* Database Initialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database Initialization.swift"; sourceTree = "<group>"; };
+		9BB8F3EE1D0929E500806A97 /* Profile Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Profile Controller.swift"; sourceTree = "<group>"; };
+		9BB8F3F31D0929F800806A97 /* Profile Layout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Profile Layout.xib"; sourceTree = "<group>"; };
 		9BF5DE0D1D07D3E5004AE484 /* Prospect Add Basic Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Prospect Add Basic Controller.swift"; sourceTree = "<group>"; };
 		9BF5DE121D08171C004AE484 /* Choose Financial Plan Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Choose Financial Plan Controller.swift"; sourceTree = "<group>"; };
 		9BF5DE141D08D5B7004AE484 /* Home Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Home Controller.swift"; sourceTree = "<group>"; };
@@ -359,6 +363,8 @@
 				0FF04F671CFFE9850048C7A2 /* Navigation Controller.swift */,
 				0FF04F651CFFE9730048C7A2 /* Guide Layout.xib */,
 				0FF04F691CFFE9960048C7A2 /* Guide Controller.swift */,
+				9BB8F3F31D0929F800806A97 /* Profile Layout.xib */,
+				9BB8F3EE1D0929E500806A97 /* Profile Controller.swift */,
 			);
 			name = Include;
 			sourceTree = "<group>";
@@ -553,6 +559,7 @@
 			files = (
 				0FCEA50F1CFEEC0E00823B1E /* Localizable.strings in Resources */,
 				0FB8FE1B1CF7DAD8005C85DE /* LaunchScreen.storyboard in Resources */,
+				9BB8F3F41D0929F800806A97 /* Profile Layout.xib in Resources */,
 				0FF04F621CFFE9400048C7A2 /* Navigation Layout.xib in Resources */,
 				0FB8FE181CF7DAD8005C85DE /* Assets.xcassets in Resources */,
 				0FB8FE131CF7DAD8005C85DE /* Main.storyboard in Resources */,
@@ -611,6 +618,7 @@
 				0F76D9C71CFC4FAE002A7F47 /* Rule.swift in Sources */,
 				0FF04F681CFFE9850048C7A2 /* Navigation Controller.swift in Sources */,
 				0FB8FE101CF7DAD8005C85DE /* Login Controller.swift in Sources */,
+				9BB8F3EF1D0929E500806A97 /* Profile Controller.swift in Sources */,
 				0FB8FE0E1CF7DAD8005C85DE /* AppDelegate.swift in Sources */,
 				9BF5DE131D08171C004AE484 /* Choose Financial Plan Controller.swift in Sources */,
 				0FCEA4E91CFE868900823B1E /* Button.swift in Sources */,

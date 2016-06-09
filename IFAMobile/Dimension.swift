@@ -25,6 +25,7 @@ public let ICON_SIZE_XXHDPI : CGFloat = 144.0
 public let ICON_SIZE_XXXHDPI : CGFloat = 192.0
 public let INPUT_SIDE_PADDING : CGFloat = 10.0
 public let GUIDE_ITEM_WIDTH : CGFloat = 90.0
+public let CALENDAR_SIZE : CGFloat = 30
 
 
 // LABEL
@@ -36,7 +37,6 @@ public let TEXTVIEW_GENERAL_HEIGHT : CGFloat = 120
 
 
 // INPUT
-
 
 public let TEXTFIELD_LONG_WIDTH : CGFloat = 300
 public let TEXTFIELD_SHORT_WIDTH : CGFloat = 100

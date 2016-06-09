@@ -6,12 +6,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationController" customModule="IFAMobile" customModuleProvider="target">
             <connections>
+                <outlet property="buttonCalendar" destination="ny3-Z4-kRR" id="Snn-fg-XS8"/>
+                <outlet property="buttonMail" destination="cNT-Iq-e2c" id="rHb-eX-mJD"/>
+                <outlet property="buttonNote" destination="X6F-5g-LRi" id="YAW-Ex-osw"/>
+                <outlet property="buttonProspect" destination="J4x-pP-4n4" id="ixF-RF-q2s"/>
                 <outlet property="imageViewAgentPhoto" destination="mQE-QS-R12" id="jLt-MG-IDj"/>
                 <outlet property="labelAgentName" destination="fq6-Yi-ER7" id="edn-Ce-zlp"/>
-                <outlet property="labelCalendar" destination="osJ-xZ-MHl" id="hc8-ix-vi9"/>
-                <outlet property="labelMail" destination="Bhd-H9-OHF" id="SH8-MN-QT2"/>
-                <outlet property="labelNote" destination="z5q-ZY-nEX" id="hFm-ru-ciG"/>
-                <outlet property="labelProspect" destination="nah-AJ-3ux" id="GR8-ZN-dGj"/>
                 <outlet property="labelSignOut" destination="h0U-Xe-UNx" id="RMT-6J-02F"/>
                 <outlet property="viewNavigation" destination="iN0-l3-epB" id="eJy-nL-2GL"/>
             </connections>
@@ -22,32 +22,30 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="MYM-0z-kOt">
-                    <rect key="frame" x="40" y="200" width="258" height="21"/>
+                    <rect key="frame" x="40" y="200" width="274" height="30"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nah-AJ-3ux" customClass="LabelNavigation" customModule="IFAMobile" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osJ-xZ-MHl" customClass="LabelNavigation" customModule="IFAMobile" customModuleProvider="target">
-                            <rect key="frame" x="72" y="0.0" width="42" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhd-H9-OHF" customClass="LabelNavigation" customModule="IFAMobile" customModuleProvider="target">
-                            <rect key="frame" x="144" y="0.0" width="42" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5q-ZY-nEX" customClass="LabelNavigation" customModule="IFAMobile" customModuleProvider="target">
-                            <rect key="frame" x="216" y="0.0" width="42" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4x-pP-4n4" customClass="ButtonNavigation" customModule="IFAMobile" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ny3-Z4-kRR" customClass="ButtonNavigation" customModule="IFAMobile" customModuleProvider="target">
+                            <rect key="frame" x="76" y="0.0" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="goToCalendar:" destination="-1" eventType="touchUpInside" id="frO-05-TD8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNT-Iq-e2c" customClass="ButtonNavigation" customModule="IFAMobile" customModuleProvider="target">
+                            <rect key="frame" x="152" y="0.0" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="goToMail:" destination="-1" eventType="touchUpInside" id="K3r-Wv-e6p"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6F-5g-LRi" customClass="ButtonNavigation" customModule="IFAMobile" customModuleProvider="target">
+                            <rect key="frame" x="228" y="0.0" width="46" height="30"/>
+                            <state key="normal" title="Button"/>
+                        </button>
                     </subviews>
                 </stackView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mQE-QS-R12" customClass="PhotoProfileNavigation" customModule="IFAMobile" customModuleProvider="target">
