@@ -71,8 +71,8 @@ class EducationAnalysisController: UIViewController
         
         // LANGUAGE
         
-        labelHeaderTitle.text = NSLocalizedString("HEADER_PROSPECT_TITLE", comment: "")
-        labelHeaderDescription.text = NSLocalizedString("HEADER_PROSPECT_DESCRIPTION", comment: "")
+        labelHeaderTitle.text = NSLocalizedString("Financial Planning Analysis", comment: "")
+        labelHeaderDescription.text = NSLocalizedString("Summary on the Financial Analysis", comment: "")
         
         labelBasicInformationTitle.text = NSLocalizedString("TITLE_EDUCATIONPLAN_BASICINFORMATION", comment: "").uppercaseString
         labelTotalEducationFundAvailableAtTertiaryAgeTitle.text = NSLocalizedString("TITLE_EDUCATIONPLAN_FUNDNEEDED", comment: "").uppercaseString
@@ -101,13 +101,13 @@ class EducationAnalysisController: UIViewController
         textFieldDate.text = "Tuesday, 06 June 2016"
         textFieldTertiaryAge.text = "29"
         textFieldCourseDuration.text = "2 years"
-        textFieldCourseFee.text = "Rp. 50.000.000"
-        textFieldLivingExpenses.text = "Rp. 20.000.000"
-        textFieldTotalEducationFundNeededAtTertiaryAge.text = "Rp. 30.000.000"
-        textFieldLumSumpSavings.text = "Rp. 10.000.000"
-        textFieldRegularMonthlySavings.text = "Rp. 2.000.000"
-        textFieldReturnAtMaturityAge.text = "Rp. 10.000.000"
-        textFieldTotalEducationFundAvailableAtTertiaryAge.text = "Rp. 30.000.000"
+        textFieldCourseFee.text = "RM 50.000.000"
+        textFieldLivingExpenses.text = "RM 20.000.000"
+        textFieldTotalEducationFundNeededAtTertiaryAge.text = "RM 30.000.000"
+        textFieldLumSumpSavings.text = "RM 10.000.000"
+        textFieldRegularMonthlySavings.text = "RM 2.000.000"
+        textFieldReturnAtMaturityAge.text = "RM 10.000.000"
+        textFieldTotalEducationFundAvailableAtTertiaryAge.text = "RM 30.000.000"
         
         buttonShare.setTitle(NSLocalizedString("BUTTON_SHARE", comment: ""), forState: .Normal)
         
