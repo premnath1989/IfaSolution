@@ -47,6 +47,9 @@
 		9B8DFF231D0190FD00C80A0F /* Database Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DFF211D0190FD00C80A0F /* Database Action.swift */; };
 		9B8DFF241D0190FD00C80A0F /* Database Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DFF221D0190FD00C80A0F /* Database Object.swift */; };
 		9B8DFF2C1D0319F800C80A0F /* Database Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DFF2B1D0319F800C80A0F /* Database Initialization.swift */; };
+		9BF5DE0E1D07D3E5004AE484 /* Prospect Add Basic Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF5DE0D1D07D3E5004AE484 /* Prospect Add Basic Controller.swift */; };
+		9BF5DE131D08171C004AE484 /* Choose Financial Plan Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF5DE121D08171C004AE484 /* Choose Financial Plan Controller.swift */; };
+		9BF5DE151D08D5B7004AE484 /* Home Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF5DE141D08D5B7004AE484 /* Home Controller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +171,9 @@
 		9B8DFF211D0190FD00C80A0F /* Database Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database Action.swift"; sourceTree = "<group>"; };
 		9B8DFF221D0190FD00C80A0F /* Database Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database Object.swift"; sourceTree = "<group>"; };
 		9B8DFF2B1D0319F800C80A0F /* Database Initialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Database Initialization.swift"; sourceTree = "<group>"; };
+		9BF5DE0D1D07D3E5004AE484 /* Prospect Add Basic Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Prospect Add Basic Controller.swift"; sourceTree = "<group>"; };
+		9BF5DE121D08171C004AE484 /* Choose Financial Plan Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Choose Financial Plan Controller.swift"; sourceTree = "<group>"; };
+		9BF5DE141D08D5B7004AE484 /* Home Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Home Controller.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +229,9 @@
 			children = (
 				0FCEA4F81CFEE07D00823B1E /* Include */,
 				0FB8FE0F1CF7DAD8005C85DE /* Login Controller.swift */,
+				9BF5DE141D08D5B7004AE484 /* Home Controller.swift */,
+				9BF5DE0D1D07D3E5004AE484 /* Prospect Add Basic Controller.swift */,
+				9BF5DE121D08171C004AE484 /* Choose Financial Plan Controller.swift */,
 				0FF04F5F1CFFE8AA0048C7A2 /* Education Detail Controller.swift */,
 				9B5B83DC1D0173DF002AE0F4 /* Fact Finding Questionnaire Controller.swift */,
 				9B276CC41D0500B200157817 /* Education Plan Analysis.swift */,
@@ -467,7 +476,7 @@
 				TargetAttributes = {
 					0FB8FE091CF7DAD8005C85DE = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 2YT8E2D9X6;
+						DevelopmentTeam = Q4NY74HXM4;
 					};
 					0FB8FE201CF7DAD8005C85DE = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -581,6 +590,7 @@
 				0FCEA4F21CFE86EE00823B1E /* Icon.swift in Sources */,
 				0FF04F601CFFE8AA0048C7A2 /* Education Detail Controller.swift in Sources */,
 				0F76D9C91CFC4FAE002A7F47 /* Theme Default.swift in Sources */,
+				9BF5DE0E1D07D3E5004AE484 /* Prospect Add Basic Controller.swift in Sources */,
 				0F76D9C61CFC4FAE002A7F47 /* Font Size.swift in Sources */,
 				9B8DFF231D0190FD00C80A0F /* Database Action.swift in Sources */,
 				9B8DFF141D018FAF00C80A0F /* Update.swift in Sources */,
@@ -592,6 +602,7 @@
 				0FF04F6A1CFFE9960048C7A2 /* Guide Controller.swift in Sources */,
 				9B8DFF121D018FAF00C80A0F /* Insert.swift in Sources */,
 				0FCEA4EB1CFE868900823B1E /* Layout.swift in Sources */,
+				9BF5DE151D08D5B7004AE484 /* Home Controller.swift in Sources */,
 				0F76D9C51CFC4FAE002A7F47 /* Dimension.swift in Sources */,
 				0FCEA4F31CFE86EE00823B1E /* Label.swift in Sources */,
 				9B8DFF241D0190FD00C80A0F /* Database Object.swift in Sources */,
@@ -601,6 +612,7 @@
 				0FF04F681CFFE9850048C7A2 /* Navigation Controller.swift in Sources */,
 				0FB8FE101CF7DAD8005C85DE /* Login Controller.swift in Sources */,
 				0FB8FE0E1CF7DAD8005C85DE /* AppDelegate.swift in Sources */,
+				9BF5DE131D08171C004AE484 /* Choose Financial Plan Controller.swift in Sources */,
 				0FCEA4E91CFE868900823B1E /* Button.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -762,14 +774,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Tsuey Shan Ho (VUDE7Q466L)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = IFAMobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Ifa.Solution;
+				PRODUCT_BUNDLE_IDENTIFIER = my.com.infoconnect.IFAMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a932eec7-39c4-4745-8f76-e1c235167610";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -777,14 +789,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Tsuey Shan Ho (VUDE7Q466L)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = IFAMobile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Ifa.Solution;
+				PRODUCT_BUNDLE_IDENTIFIER = my.com.infoconnect.IFAMobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a932eec7-39c4-4745-8f76-e1c235167610";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

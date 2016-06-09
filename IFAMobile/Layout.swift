@@ -74,6 +74,18 @@ class StackViewInputContainer : UIStackView
     }
 }
 
+class StackViewFormContainer : UIStackView
+{
+    required init?(coder aDecoder: (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        self.axis = .Horizontal
+        self.alignment = .Leading
+        self.distribution = .Fill
+        self.spacing = 10
+    }
+}
+
 class StackViewQuestionnaireContainer : UIStackView
 {
     required init?(coder aDecoder: (NSCoder!))

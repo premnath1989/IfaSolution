@@ -249,3 +249,49 @@ import UIKit
             self.setTitleColor(GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0), forState: .Normal)
         }
     }
+
+class ButtonPlan : UIButton
+{
+    required init?(coder aDecoder : (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        
+        // GENERAL
+        
+        self.widthAnchor.constraintEqualToConstant(BUTTON_LOGIN_WIDTH / 2).active = true
+        self.heightAnchor.constraintEqualToConstant(BUTTON_LOGIN_WIDTH / 2).active = true
+        
+        self.layer.borderWidth = BUTTON_GENERAL_BORDERWIDTH
+        self.layer.cornerRadius = BUTTON_LOGIN_WIDTH * 0.25
+        self.titleLabel?.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_TALL)
+        self.titleLabel?.text?.capitalizedString
+        self.backgroundColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity : 1.0);
+        
+        // ENABLE
+        
+        self.setTitleColor(GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0), forState:UIControlState.Normal)
+        self.addTarget(self, action: #selector(ButtonLoginPrimary.ButtonEnable(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        
+        // HIGHLIGHT
+        
+        self.setTitleColor(GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0), forState:UIControlState.Highlighted)
+        self.addTarget(self, action: #selector(ButtonLoginPrimary.ButtonClicked(_:)), forControlEvents: UIControlEvents.TouchDown)
+        
+        // DISABLED
+        
+        self.setTitleColor(GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0), forState:UIControlState.Disabled)
+    }
+    
+    
+    // FUNCTION
+    
+    func ButtonEnable(OnTouchUpInside: UIButton!)
+    {
+        self.backgroundColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity : 1.0);
+    }
+    
+    func ButtonClicked(OnTouchDown: UIButton!)
+    {
+        self.backgroundColor = GeneratorUIColor(THEME_SECONDARY_COLOR, Opacity : 1.0);
+    }
+}

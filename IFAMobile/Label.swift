@@ -314,6 +314,39 @@ import Foundation
         }
     }
 
+    class LabelPicker : UILabel
+    {
+        override func drawTextInRect(rect: CGRect)
+        {
+            let insets: UIEdgeInsets = UIEdgeInsets(top: 0.0, left: 10.0, bottom: 0.0, right: 10.0)
+            super.drawTextInRect(UIEdgeInsetsInsetRect(rect, insets))
+        }
+        
+        required init?(coder aDecoder : (NSCoder!))
+        {
+            super.init(coder: aDecoder)
+            
+            // GENERAL
+            
+            self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_FORM_FIELD)
+            self.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Center
+            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+            self.numberOfLines = 1
+        }
+        
+        override init(frame: CGRect)
+        {
+            super.init(frame: frame)
+            
+            self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_FORM_FIELD)
+            self.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Center
+            self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+            self.numberOfLines = 1
+        }
+    }
+
     class LabelText : UILabel
     {
         required init?(coder aDecoder : (NSCoder!))
@@ -329,6 +362,22 @@ import Foundation
             self.numberOfLines = 1
         }
     }
+
+class LabelPlan : UILabel
+{
+    required init?(coder aDecoder : (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        
+        // GENERAL
+        
+        self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_ENORMOUS)
+        self.textColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity : 1.0)
+        self.textAlignment = .Center
+        self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+        self.numberOfLines = 1
+    }
+}
 
 
     // FOOTER

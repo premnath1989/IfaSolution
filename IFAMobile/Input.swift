@@ -190,3 +190,54 @@ import UIKit
             
         }
     }
+
+    // PICKER
+
+    class PickerViewSinglelineShort : UIPickerView
+    {
+        required init?(coder aDecoder: (NSCoder!))
+        {
+            super.init(coder: aDecoder)
+            
+            self.widthAnchor.constraintEqualToConstant(TEXTFIELD_SHORT_WIDTH).active = true
+            self.heightAnchor.constraintEqualToConstant(PICKERVIEW_GENERAL_HEIGHT).active = true
+            
+            self.backgroundColor = GeneratorUIColor(THEME_QUATERNARY_COLOR, Opacity: 1.0)
+            self.layer.masksToBounds = true
+            self.layer.cornerRadius = INPUT_GENERAL_BORDERRADIUS
+        }
+    }
+
+    class DatePickerSinglelineGeneral : UIDatePicker
+    {
+        required init?(coder aDecoder: (NSCoder!))
+        {
+            super.init(coder: aDecoder)
+            
+            self.widthAnchor.constraintEqualToConstant(TEXTFIELD_LONG_WIDTH).active = true
+            self.heightAnchor.constraintEqualToConstant(PICKERVIEW_GENERAL_HEIGHT).active = true
+            
+            self.backgroundColor = GeneratorUIColor(THEME_QUATERNARY_COLOR, Opacity: 1.0)
+            self.layer.masksToBounds = true
+            self.layer.cornerRadius = INPUT_GENERAL_BORDERRADIUS
+            self.setValue(GeneratorUIColor(THEME_SENARY_COLOR, Opacity: 1.0), forKey: "textColor")
+            // self.setValue(UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_MEDIUM), forKey: "font")
+        }
+    }
+
+
+// SEGMENTED CONTROL
+
+class SegmentedControlFinancialPlan : UISegmentedControl
+{
+    required init?(coder aDecoder: (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        
+        self.layer.masksToBounds = true
+        self.layer.cornerRadius = INPUT_GENERAL_BORDERRADIUS
+        self.tintColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity: 1.0)
+        let attr = NSDictionary(object: UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_MEDIUM)!, forKey: NSFontAttributeName)
+        self.setTitleTextAttributes(attr as [NSObject : AnyObject] , forState: .Normal)
+    }
+}
