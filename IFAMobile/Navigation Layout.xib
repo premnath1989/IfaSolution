@@ -64,7 +64,7 @@
                         </label>
                     </subviews>
                 </stackView>
-                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLV-Xr-Eqc" customClass="PhotoProfileNavigation" customModule="IFAMobile" customModuleProvider="target">
+                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLV-Xr-Eqc" customClass="PhotoProfileNavigation" customModule="IFAMobile" customModuleProvider="target">
                     <rect key="frame" x="524" y="282" width="36" height="36"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="JXu-zr-aJD"/>

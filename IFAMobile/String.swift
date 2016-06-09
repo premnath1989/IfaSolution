@@ -26,7 +26,7 @@ public let CHARACTER_DATABASE_SEPARATOR = " \\ "
 
 public let PHOTO_PROFILE_SMALL : String = "Photo Profile Small"
 public let PHOTO_PROFILE_LARGE : String = "Photo Profile Large"
-public let TAG_BUTTON_AGENTPROFILE : Int = 2
+public let TAG_BUTTON_AGENTPROFILE : Int = 5
 public let TAG_BUTTON_NAVIGATIONPROSPECT : Int = 1
 public let TAG_BUTTON_ADDPROSPECT : Int = 3
 public let TAG_BUTTON_FINDPROSPECT : Int = 4

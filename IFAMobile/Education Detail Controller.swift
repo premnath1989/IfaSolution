@@ -104,6 +104,7 @@ class EducationDetailController: UIViewController
         
         var buttonFindProspect : UIButton? = UIButton()
         buttonFindProspect = self.view.viewWithTag(TAG_BUTTON_FINDPROSPECT) as? UIButton
+        buttonFindProspect?.backgroundColor = GeneratorUIColor(THEME_SECONDARY_COLOR, Opacity: 1.0)
         buttonFindProspect!.addTarget(self, action: #selector(self.goToFindProspect(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION)
     }
     
@@ -127,13 +128,13 @@ class EducationDetailController: UIViewController
     
     func goToAgentProfile(sender : UIButton)
     {
-        let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageAgentProfile") as! ProspectAddBasicController
+        let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageAgentProfile") as! HomeController
         self.presentViewController(page, animated: true, completion: nil)
     }
     
     func goToFindProspect(sender : UIButton)
     {
-        let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageFindProspect") as! ProspectAddBasicController
+        let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageFindProspect") as! FindProspectController
         self.presentViewController(page, animated: true, completion: nil)
     }
 }

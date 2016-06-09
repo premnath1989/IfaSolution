@@ -113,11 +113,11 @@ class HomeController: UIViewController
         
         var buttonNavigationProspect : UIButton? = UIButton()
         buttonNavigationProspect = self.view.viewWithTag(TAG_BUTTON_NAVIGATIONPROSPECT) as? UIButton
-        buttonNavigationProspect!.addTarget(self, action: #selector(self.goToFindProspect(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION)
+        buttonNavigationProspect!.addTarget(self, action: #selector(self.goToAddProspect(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION)
         
-        /* var buttonAgentProfile : UIButton? = UIButton()
+        var buttonAgentProfile : UIButton? = UIButton()
         buttonAgentProfile = self.view.viewWithTag(TAG_BUTTON_AGENTPROFILE) as? UIButton
-        buttonAgentProfile!.addTarget(self, action: #selector(self.goToAgentProfile(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION) */
+        buttonAgentProfile!.addTarget(self, action: #selector(self.goToAgentProfile(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION)
         
         var buttonAddProspect : UIButton? = UIButton()
         buttonAddProspect = self.view.viewWithTag(TAG_BUTTON_ADDPROSPECT) as? UIButton
@@ -148,13 +148,13 @@ class HomeController: UIViewController
     
     func goToAgentProfile(sender : UIButton)
     {
-        let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageAgentProfile") as! ProspectAddBasicController
+        let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageAgentProfile") as! HomeController
         self.presentViewController(page, animated: true, completion: nil)
     }
     
     func goToFindProspect(sender : UIButton)
     {
-        let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageFindProspect") as! ProspectAddBasicController
+        let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageFindProspect") as! FindProspectController
         self.presentViewController(page, animated: true, completion: nil)
     }
 }

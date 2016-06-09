@@ -127,13 +127,13 @@ class ExistingProspectController: UIViewController
     
     func goToAgentProfile(sender : UIButton)
     {
-        let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageAgentProfile") as! ProspectAddBasicController
+        let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageAgentProfile") as! HomeController
         self.presentViewController(page, animated: true, completion: nil)
     }
     
     func goToFindProspect(sender : UIButton)
     {
-        let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageFindProspect") as! ProspectAddBasicController
+        let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageFindProspect") as! FindProspectController
         self.presentViewController(page, animated: true, completion: nil)
     }
 }
