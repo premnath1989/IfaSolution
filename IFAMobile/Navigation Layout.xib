@@ -10,21 +10,20 @@
                 <outlet property="buttonMail" destination="cNT-Iq-e2c" id="rHb-eX-mJD"/>
                 <outlet property="buttonNote" destination="X6F-5g-LRi" id="YAW-Ex-osw"/>
                 <outlet property="buttonProspect" destination="J4x-pP-4n4" id="ixF-RF-q2s"/>
-                <outlet property="imageViewAgentPhoto" destination="mQE-QS-R12" id="jLt-MG-IDj"/>
                 <outlet property="labelAgentName" destination="fq6-Yi-ER7" id="edn-Ce-zlp"/>
                 <outlet property="labelSignOut" destination="h0U-Xe-UNx" id="RMT-6J-02F"/>
                 <outlet property="viewNavigation" destination="iN0-l3-epB" id="eJy-nL-2GL"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view tag="2" contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="MYM-0z-kOt">
-                    <rect key="frame" x="40" y="200" width="274" height="30"/>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="MYM-0z-kOt">
+                    <rect key="frame" x="40" y="285" width="274" height="30"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4x-pP-4n4" customClass="ButtonNavigation" customModule="IFAMobile" customModuleProvider="target">
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4x-pP-4n4" customClass="ButtonNavigation" customModule="IFAMobile" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
                             <state key="normal" title="Button"/>
                         </button>
@@ -48,15 +47,8 @@
                         </button>
                     </subviews>
                 </stackView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mQE-QS-R12" customClass="PhotoProfileNavigation" customModule="IFAMobile" customModuleProvider="target">
-                    <rect key="frame" x="524" y="282" width="36" height="36"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="36" id="XSc-gf-xfX"/>
-                        <constraint firstAttribute="width" constant="36" id="rZ6-E2-fh1"/>
-                    </constraints>
-                </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ktW-6B-yfu">
-                    <rect key="frame" x="462" y="100" width="42" height="41"/>
+                    <rect key="frame" x="472" y="100" width="42" height="41"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fq6-Yi-ER7" customClass="LabelProfileName" customModule="IFAMobile" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
@@ -72,15 +64,23 @@
                         </label>
                     </subviews>
                 </stackView>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dLV-Xr-Eqc" customClass="PhotoProfileNavigation" customModule="IFAMobile" customModuleProvider="target">
+                    <rect key="frame" x="524" y="282" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="JXu-zr-aJD"/>
+                        <constraint firstAttribute="width" constant="36" id="WTG-Sc-SQL"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="dLV-Xr-Eqc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="50x-fc-lK5"/>
+                <constraint firstAttribute="trailing" secondItem="dLV-Xr-Eqc" secondAttribute="trailing" constant="40" id="7zk-jV-3f7"/>
                 <constraint firstItem="MYM-0z-kOt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="9fA-Sy-fTU"/>
                 <constraint firstItem="ktW-6B-yfu" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="D0d-KB-h3B"/>
-                <constraint firstAttribute="trailing" secondItem="mQE-QS-R12" secondAttribute="trailing" constant="40" id="I1Z-jq-GaK"/>
-                <constraint firstItem="mQE-QS-R12" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="QFf-Em-jYo"/>
                 <constraint firstItem="MYM-0z-kOt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="UD1-fc-gAc"/>
-                <constraint firstItem="mQE-QS-R12" firstAttribute="leading" secondItem="ktW-6B-yfu" secondAttribute="trailing" constant="20" id="uxL-Qi-h1c"/>
+                <constraint firstItem="dLV-Xr-Eqc" firstAttribute="leading" secondItem="ktW-6B-yfu" secondAttribute="trailing" constant="10" id="f6d-ue-Mno"/>
             </constraints>
         </view>
     </objects>

@@ -94,6 +94,10 @@
 		9B4721DE1D096E05000FD917 /* Reader-Thumbs.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B4721BA1D096E05000FD917 /* Reader-Thumbs.png */; };
 		9B4721DF1D096E05000FD917 /* Reader-Thumbs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B4721BB1D096E05000FD917 /* Reader-Thumbs@2x.png */; };
 		9B4721E01D096E05000FD917 /* Reader-Thumbs@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B4721BC1D096E05000FD917 /* Reader-Thumbs@3x.png */; };
+		9B4721E91D09A3DB000FD917 /* Find Prospect Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4721E81D09A3DB000FD917 /* Find Prospect Controller.swift */; };
+		9B4721EB1D09A3E8000FD917 /* Existing Prospect Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4721EA1D09A3E8000FD917 /* Existing Prospect Controller.swift */; };
+		9B4721ED1D09A6BC000FD917 /* Find Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4721EC1D09A6BC000FD917 /* Find Controller.swift */; };
+		9B4721EF1D09A6CF000FD917 /* Find Layout.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B4721EE1D09A6CF000FD917 /* Find Layout.xib */; };
 		9B5B83DD1D0173DF002AE0F4 /* Fact Finding Questionnaire Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5B83DC1D0173DF002AE0F4 /* Fact Finding Questionnaire Controller.swift */; };
 		9B8DFF021D018E8E00C80A0F /* Insert Initialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DFF011D018E8E00C80A0F /* Insert Initialization.swift */; };
 		9B8DFF111D018FAF00C80A0F /* Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8DFF0D1D018FAF00C80A0F /* Delete.swift */; };
@@ -296,6 +300,10 @@
 		9B4721BA1D096E05000FD917 /* Reader-Thumbs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Reader-Thumbs.png"; path = "Reader-master/Graphics/Reader-Thumbs.png"; sourceTree = "<group>"; };
 		9B4721BB1D096E05000FD917 /* Reader-Thumbs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Reader-Thumbs@2x.png"; path = "Reader-master/Graphics/Reader-Thumbs@2x.png"; sourceTree = "<group>"; };
 		9B4721BC1D096E05000FD917 /* Reader-Thumbs@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Reader-Thumbs@3x.png"; path = "Reader-master/Graphics/Reader-Thumbs@3x.png"; sourceTree = "<group>"; };
+		9B4721E81D09A3DB000FD917 /* Find Prospect Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Find Prospect Controller.swift"; path = "../Find Prospect Controller.swift"; sourceTree = "<group>"; };
+		9B4721EA1D09A3E8000FD917 /* Existing Prospect Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Existing Prospect Controller.swift"; path = "../Existing Prospect Controller.swift"; sourceTree = "<group>"; };
+		9B4721EC1D09A6BC000FD917 /* Find Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Find Controller.swift"; sourceTree = "<group>"; };
+		9B4721EE1D09A6CF000FD917 /* Find Layout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Find Layout.xib"; sourceTree = "<group>"; };
 		9B5B83DC1D0173DF002AE0F4 /* Fact Finding Questionnaire Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fact Finding Questionnaire Controller.swift"; sourceTree = "<group>"; };
 		9B8DFF011D018E8E00C80A0F /* Insert Initialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Insert Initialization.swift"; sourceTree = "<group>"; };
 		9B8DFF0D1D018FAF00C80A0F /* Delete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delete.swift; sourceTree = "<group>"; };
@@ -368,6 +376,8 @@
 				0FB8FE0F1CF7DAD8005C85DE /* Login Controller.swift */,
 				9BF5DE141D08D5B7004AE484 /* Home Controller.swift */,
 				9BF5DE0D1D07D3E5004AE484 /* Prospect Add Basic Controller.swift */,
+				9B4721E81D09A3DB000FD917 /* Find Prospect Controller.swift */,
+				9B4721EA1D09A3E8000FD917 /* Existing Prospect Controller.swift */,
 				9BF5DE121D08171C004AE484 /* Choose Financial Plan Controller.swift */,
 				0FF04F5F1CFFE8AA0048C7A2 /* Education Detail Controller.swift */,
 				9B5B83DC1D0173DF002AE0F4 /* Fact Finding Questionnaire Controller.swift */,
@@ -500,6 +510,8 @@
 				0FF04F691CFFE9960048C7A2 /* Guide Controller.swift */,
 				9BB8F3F31D0929F800806A97 /* Profile Layout.xib */,
 				9BB8F3EE1D0929E500806A97 /* Profile Controller.swift */,
+				9B4721EE1D09A6CF000FD917 /* Find Layout.xib */,
+				9B4721EC1D09A6BC000FD917 /* Find Controller.swift */,
 			);
 			name = Include;
 			sourceTree = "<group>";
@@ -816,6 +828,7 @@
 				9B4721D81D096E05000FD917 /* Reader-Mark-Y.png in Resources */,
 				9B4721C41D096E05000FD917 /* AppIcon-167.png in Resources */,
 				9B4721D31D096E05000FD917 /* Reader-Export@2x.png in Resources */,
+				9B4721EF1D09A6CF000FD917 /* Find Layout.xib in Resources */,
 				9B4721C21D096E05000FD917 /* AppIcon-144.png in Resources */,
 				9B4721BD1D096E05000FD917 /* AppIcon-057.png in Resources */,
 				9B4721D11D096E05000FD917 /* Reader-Email@3x.png in Resources */,
@@ -859,6 +872,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B4721E91D09A3DB000FD917 /* Find Prospect Controller.swift in Sources */,
 				9B4720F61D096DC2000FD917 /* ReaderConstants.m in Sources */,
 				0FB8FE161CF7DAD8005C85DE /* IFAMobile.xcdatamodeld in Sources */,
 				9B8DFF021D018E8E00C80A0F /* Insert Initialization.swift in Sources */,
@@ -885,6 +899,7 @@
 				9B4721031D096DC2000FD917 /* ReaderThumbsView.m in Sources */,
 				0F76D9C81CFC4FAE002A7F47 /* String.swift in Sources */,
 				0FF04F6A1CFFE9960048C7A2 /* Guide Controller.swift in Sources */,
+				9B4721EB1D09A3E8000FD917 /* Existing Prospect Controller.swift in Sources */,
 				9B4720F81D096DC2000FD917 /* ReaderContentTile.m in Sources */,
 				9B4721041D096DC2000FD917 /* ReaderThumbView.m in Sources */,
 				9B8DFF121D018FAF00C80A0F /* Insert.swift in Sources */,
@@ -902,6 +917,7 @@
 				0FF04F681CFFE9850048C7A2 /* Navigation Controller.swift in Sources */,
 				0FB8FE101CF7DAD8005C85DE /* Login Controller.swift in Sources */,
 				9B4721071D096DC2000FD917 /* ThumbsViewController.m in Sources */,
+				9B4721ED1D09A6BC000FD917 /* Find Controller.swift in Sources */,
 				9B4720FC1D096DC2000FD917 /* ReaderMainPagebar.m in Sources */,
 				9B4720F91D096DC2000FD917 /* ReaderContentView.m in Sources */,
 				9BB8F3EF1D0929E500806A97 /* Profile Controller.swift in Sources */,

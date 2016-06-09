@@ -22,8 +22,7 @@ class GuideController : UIView
     @IBOutlet var viewGuide : UIView!
     @IBOutlet var viewGuideContainer : UIView!
     
-    @IBOutlet var stackViewStepGuide : UIStackView!
-    @IBOutlet var stackViewDetailGuide : UIStackView!
+    @IBOutlet var stackViewGuide : UIStackView!
     
     // @IBOutlet var buttonAdd : UIButton!
     // @IBOutlet var buttonSearch : UIButton!
@@ -47,8 +46,8 @@ class GuideController : UIView
             NSLocalizedString("GUIDE_GENERALINFORMATION_STEP", comment: ""),
             NSLocalizedString("GUIDE_FINANCIALPLAN_STEP", comment: ""),
             NSLocalizedString("GUIDE_DETAILINFORMATION_STEP", comment: ""),
-            NSLocalizedString("GUIDE_FACTFINDINGQUESTIONARE_STEP", comment: ""),
-            NSLocalizedString("GUIDE_GUIDE_ANALYSISRESULT_STEP", comment: ""),
+            NSLocalizedString("GUIDE_FACTFINDINGQUESTIONNAIRE_STEP", comment: ""),
+            NSLocalizedString("GUIDE_ANALYSISRESULT_STEP", comment: ""),
             NSLocalizedString("GUIDE_PDFRESULT_STEP", comment: "")
         ]
         let arrayDetail : Array<String> =
@@ -56,7 +55,7 @@ class GuideController : UIView
             NSLocalizedString("GUIDE_GENERALINFORMATION_DETAIL", comment: ""),
             NSLocalizedString("GUIDE_FINANCIALPLAN_DETAIL", comment: ""),
             NSLocalizedString("GUIDE_DETAILINFORMATION_DETAIL", comment: ""),
-            NSLocalizedString("GUIDE_FACTFINDINGRQUESTIONARE_DETAIL", comment: ""),
+            NSLocalizedString("GUIDE_FACTFINDINGQUESTIONNAIRE_DETAIL", comment: ""),
             NSLocalizedString("GUIDE_ANALYSISRESULT_DETAIL", comment: ""),
             NSLocalizedString("GUIDE_PDFRESULT_DETAIL", comment: "")
         ]
@@ -68,26 +67,21 @@ class GuideController : UIView
         
         for i : Int in 0 ..< arrayStep.count
         {
-            let viewStep = UIView()
-            viewStep.widthAnchor.constraintEqualToConstant(GUIDE_ITEM_WIDTH).active = true
-            viewStep.heightAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
+            let stackViewGuideItem = UIStackView()
+            stackViewGuideItem.axis = .Vertical
+            stackViewGuideItem.alignment = .Center
+            stackViewGuideItem.distribution = .EqualCentering
+            stackViewGuideItem.spacing = 5.0
+            
             let buttonStep = ButtonGuide()
             buttonStep.setTitle(arrayStep[i], forState: .Normal)
+            stackViewGuideItem.addArrangedSubview(buttonStep)
             
-            viewStep.addSubview(buttonStep)
-            stackViewStepGuide.addArrangedSubview(viewStep)
-        }
-        
-        for i : Int in 0 ..< arrayDetail.count
-        {
-            let viewDetail = UIView()
-            viewDetail.widthAnchor.constraintEqualToConstant(GUIDE_ITEM_WIDTH).active = true
-            viewDetail.heightAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
             let labelDetail = LabelGuideDetail()
-            labelDetail.text = arrayStep[i].lowercaseString
+            labelDetail.text = arrayDetail[i].lowercaseString
+            stackViewGuideItem.addArrangedSubview(labelDetail)
             
-            viewDetail.addSubview(labelDetail)
-            stackViewDetailGuide.addArrangedSubview(viewDetail)
+            stackViewGuide.addArrangedSubview(stackViewGuideItem)
         }
         
         

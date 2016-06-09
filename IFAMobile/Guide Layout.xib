@@ -6,8 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuideController" customModule="IFAMobile" customModuleProvider="target">
             <connections>
-                <outlet property="stackViewDetailGuide" destination="nhn-tv-v4e" id="cNv-DK-TyB"/>
-                <outlet property="stackViewStepGuide" destination="H1s-uv-7IA" id="FKV-Id-AIp"/>
+                <outlet property="stackViewGuide" destination="B9x-kR-m5w" id="9G3-pL-rhX"/>
                 <outlet property="viewGuide" destination="iN0-l3-epB" id="PI4-aP-YFG"/>
                 <outlet property="viewGuideContainer" destination="u4e-d4-mrU" id="tRm-F1-g4K"/>
             </connections>
@@ -20,11 +19,11 @@
                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LsU-ov-Rxv">
                     <rect key="frame" x="40" y="0.0" width="92" height="36"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5oH-Z0-KzH" customClass="ButtonAdd" customModule="IFAMobile" customModuleProvider="target">
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5oH-Z0-KzH" customClass="ButtonAdd" customModule="IFAMobile" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="46" height="36"/>
                             <state key="normal" title="Button"/>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mB-6v-n59" customClass="ButtonFind" customModule="IFAMobile" customModuleProvider="target">
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mB-6v-n59" customClass="ButtonFind" customModule="IFAMobile" customModuleProvider="target">
                             <rect key="frame" x="46" y="0.0" width="46" height="36"/>
                             <state key="normal" title="Button"/>
                         </button>
@@ -36,29 +35,27 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u4e-d4-mrU">
                     <rect key="frame" x="0.0" y="36" width="600" height="564"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="B9x-kR-m5w">
-                            <rect key="frame" x="40" y="25" width="520" height="61"/>
-                            <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="H1s-uv-7IA">
-                                    <rect key="frame" x="235" y="0.0" width="50" height="36"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="36" id="7iM-2Y-L0P"/>
-                                    </constraints>
-                                </stackView>
-                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nhn-tv-v4e">
-                                    <rect key="frame" x="235" y="41" width="50" height="20"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="20" id="oP6-Pe-xrY"/>
-                                    </constraints>
-                                </stackView>
-                            </subviews>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hFd-yc-YOM">
+                            <rect key="frame" x="180" y="218" width="240" height="128"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="aQO-gV-95p"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="center" ambiguous="YES" misplaced="YES" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="B9x-kR-m5w">
+                            <rect key="frame" x="300" y="255" width="0.0" height="54"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="72" id="Tso-vw-BLv"/>
+                            </constraints>
                         </stackView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="B9x-kR-m5w" firstAttribute="leading" secondItem="u4e-d4-mrU" secondAttribute="leading" constant="40" id="Zp5-7q-pff"/>
-                        <constraint firstAttribute="trailing" secondItem="B9x-kR-m5w" secondAttribute="trailing" constant="40" id="eX0-gR-scw"/>
-                        <constraint firstItem="B9x-kR-m5w" firstAttribute="top" secondItem="u4e-d4-mrU" secondAttribute="top" constant="25" id="nbU-em-duN"/>
+                        <constraint firstItem="hFd-yc-YOM" firstAttribute="centerY" secondItem="B9x-kR-m5w" secondAttribute="centerY" constant="-10" id="Er4-bz-C8K"/>
+                        <constraint firstItem="hFd-yc-YOM" firstAttribute="width" secondItem="B9x-kR-m5w" secondAttribute="width" constant="-100" id="HNr-k6-4Em"/>
+                        <constraint firstItem="hFd-yc-YOM" firstAttribute="centerX" secondItem="B9x-kR-m5w" secondAttribute="centerX" id="KG1-fb-ihn"/>
+                        <constraint firstItem="B9x-kR-m5w" firstAttribute="centerX" secondItem="u4e-d4-mrU" secondAttribute="centerX" id="Vmi-d1-4Ra"/>
+                        <constraint firstItem="B9x-kR-m5w" firstAttribute="centerY" secondItem="u4e-d4-mrU" secondAttribute="centerY" id="huL-fV-ywt"/>
                     </constraints>
                 </view>
             </subviews>

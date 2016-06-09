@@ -1,8 +1,8 @@
 //
-//  Choose Financial Plan Controller.swift
+//  Existing Prospect Controller.swift
 //  IFAMobile
 //
-//  Created by Ibrahim Aziz Tejokusumo on 6/8/16.
+//  Created by Ibrahim Aziz Tejokusumo on 6/9/16.
 //  Copyright © 2016 Ibrahim. All rights reserved.
 //
 
@@ -15,21 +15,40 @@ import UIKit
 
 // CLASS
 
-class ChooseFinancialPlanController: UIViewController
+class ExistingProspectController: UIViewController
 {
     // INITIALIZATION
+    
+    // OUTLET
     
     @IBOutlet var labelHeaderTitle : UILabel!
     @IBOutlet var labelHeaderDescription : UILabel!
     
-    @IBOutlet var segmentedControlPlan : UISegmentedControl!
+    @IBOutlet var labelBasicInformationTitle : UILabel!
     
-    @IBOutlet var imageViewPlan : UIImageView!
-    @IBOutlet var labelPlan : UILabel!
+    /* @IBOutlet var labelName : UILabel!
+    @IBOutlet var labelBirthday : UILabel!
+    @IBOutlet var labelGender : UILabel!
+    @IBOutlet var labelContactNumber : UILabel!
+    @IBOutlet var labelAddress : UILabel!
+    @IBOutlet var labelEmail : UILabel!
+    @IBOutlet var labelGenderMale : UILabel!
+    @IBOutlet var labelGenderFemale : UILabel!
+    
+    @IBOutlet var textFieldName : UITextField!
+    @IBOutlet var pickerViewNamePrefix : UIPickerView!
+    @IBOutlet var datePickerBirthday : UIDatePicker!
+    @IBOutlet var switchGender : UISwitch!
+    @IBOutlet var textFieldContactNumber : UITextField!
+    @IBOutlet var textFieldAddress : UITextField!
+    @IBOutlet var textFieldEmail : UITextField!
     
     @IBOutlet var buttonSubmit : UIButton!
+    @IBOutlet var buttonReset : UIButton! */
     
-    var arrayPlan : [String] = [String]()
+    // VARIABLE
+    
+    var arrayNamePrefix : [String] = [String]()
     
     
     // VIEW DID LOAD
@@ -42,29 +61,31 @@ class ChooseFinancialPlanController: UIViewController
         
         // LANGUAGE
         
-        labelHeaderTitle.text = NSLocalizedString("Plan's", comment: "")
-        labelHeaderDescription.text = NSLocalizedString("Choose your Assured plan to proceed ", comment: "")
+        labelHeaderTitle.text = NSLocalizedString("HEADER_PROSPECT_TITLE", comment: "")
+        labelHeaderDescription.text = NSLocalizedString("HEADER_PROSPECT_DESCRIPTION", comment: "")
         
-        buttonSubmit.setTitle(NSLocalizedString("BUTTON_SUBMIT", comment: ""), forState: .Normal)
+        labelBasicInformationTitle.text = NSLocalizedString("TITLE_PROSPECT_PROFILE", comment: "").uppercaseString
+        
+        /* labelName.text = NSLocalizedString("FIELD_NAME", comment: "")
+        labelBirthday.text = NSLocalizedString("FIELD_BIRTHDAY", comment: "")
+        labelGender.text = NSLocalizedString("FIELD_GENDER", comment: "")
+        labelContactNumber.text = NSLocalizedString("FIELD_CONTACTNUMBER", comment: "")
+        labelAddress.text = NSLocalizedString("FIELD_ADDRESS", comment: "")
+        labelEmail.text = NSLocalizedString("FIELD_EMAIL", comment: "")
+        labelGenderMale.text = NSLocalizedString("OPTION_MALE", comment: "")
+        labelGenderFemale.text = NSLocalizedString("OPTION_FEMALE", comment: "")
+        
+        textFieldName.placeholder = NSLocalizedString("PLACEHOLDER_NAME", comment: "")
+        textFieldContactNumber.placeholder = NSLocalizedString("PLACEHOLDER_CONTACTNUMBER", comment: "")
+        textFieldAddress.placeholder = NSLocalizedString("PLACEHOLDER_ADDRESS", comment: "")
+        textFieldEmail.placeholder = NSLocalizedString("PLACEHOLDER_EMAIL", comment: "")
+        
+        buttonSubmit.setTitle(NSLocalizedString("BUTTON_SUBMIT", comment: ""), forState: .Normal) */
         
         
         // LAYOUT SETTING
         
-        arrayPlan =
-        [
-            NSLocalizedString("TITLE_PLAN_EDUCATION", comment: "") + CHARACTER_DATABASE_SEPARATOR + "Education Large Primary",
-            NSLocalizedString("TITLE_PLAN_SAVINGS", comment: "") + CHARACTER_DATABASE_SEPARATOR + "Saving Large Primary",
-            NSLocalizedString("TITLE_PLAN_INVESTMENT", comment: "") + CHARACTER_DATABASE_SEPARATOR + "Investment Large Primary",
-            NSLocalizedString("TITLE_PLAN_INCOME", comment: "") + CHARACTER_DATABASE_SEPARATOR + "Income Large Primary",
-            NSLocalizedString("TITLE_PLAN_RETIREMENT", comment: "") + CHARACTER_DATABASE_SEPARATOR + "Retirement Large Primary",
-            NSLocalizedString("TITLE_PLAN_HEALTHCARE", comment: "") + CHARACTER_DATABASE_SEPARATOR + "Healthcare Large Primary",
-            NSLocalizedString("TITLE_PLAN_LIFE", comment: "") + CHARACTER_DATABASE_SEPARATOR + "Life Large Primary"
-        ]
         
-        segmentedControlPlan.selectedSegmentIndex = 0
-        var arrayPlanContent = arrayPlan[0].componentsSeparatedByString(CHARACTER_DATABASE_SEPARATOR)
-        imageViewPlan.image = UIImage(named: arrayPlanContent[1])
-        labelPlan.text = arrayPlanContent[0]
         
         
         // NAVIGATION
@@ -95,15 +116,6 @@ class ChooseFinancialPlanController: UIViewController
         // Dispose of any resources that can be recreated.
     }
     
-    
-    // EVENT
-    
-    @IBAction func financialPlan(sender:UISegmentedControl)
-    {
-        var arrayPlanContent = arrayPlan[segmentedControlPlan.selectedSegmentIndex].componentsSeparatedByString(CHARACTER_DATABASE_SEPARATOR)
-        imageViewPlan.image = UIImage(named: arrayPlanContent[1])
-        labelPlan.text = arrayPlanContent[0]
-    }
     
     // NAVIGATION
     

@@ -136,11 +136,12 @@ class EducationAnalysisController: UIViewController, ReaderViewControllerDelegat
             
             barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0, easingOption: .EaseInBounce)
             barChartView.xAxis.labelPosition = .Bottom
-            barChartView.xAxis.labelFont = UIFont(name :THEME_TERTIARY_FONT, size : FONTSIZE_LARGE)!
+            barChartView.xAxis.labelFont = UIFont(name :THEME_TERTIARY_FONT, size : FONTSIZE_LARGE - 5)!
             barChartView.xAxis.labelTextColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity: 1.0)
             barChartView.rightYAxisRenderer.yAxis?.drawLabelsEnabled = false
-            barChartView.leftAxis.labelFont = UIFont(name :THEME_TERTIARY_FONT, size : FONTSIZE_LARGE)!
+            barChartView.leftAxis.labelFont = UIFont(name :THEME_TERTIARY_FONT, size : FONTSIZE_LARGE - 5)!
             barChartView.leftAxis.labelTextColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity: 1.0)
+            barChartView.legend.enabled = false
             
             chartDataSet.colors =
             [
@@ -210,6 +211,25 @@ class EducationAnalysisController: UIViewController, ReaderViewControllerDelegat
         readerViewController.delegate = self
         readerViewController.modalTransitionStyle = .CrossDissolve
         readerViewController.modalPresentationStyle = .FullScreen
+        
+        
+        // NAVIGATION
+        
+        var buttonNavigationProspect : UIButton? = UIButton()
+        buttonNavigationProspect = self.view.viewWithTag(TAG_BUTTON_NAVIGATIONPROSPECT) as? UIButton
+        buttonNavigationProspect!.addTarget(self, action: #selector(self.goToFindProspect(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION)
+        
+        var buttonAgentProfile : UIButton? = UIButton()
+        buttonAgentProfile = self.view.viewWithTag(TAG_BUTTON_AGENTPROFILE) as? UIButton
+        buttonAgentProfile!.addTarget(self, action: #selector(self.goToAgentProfile(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION)
+        
+        var buttonAddProspect : UIButton? = UIButton()
+        buttonAddProspect = self.view.viewWithTag(TAG_BUTTON_ADDPROSPECT) as? UIButton
+        buttonAddProspect!.addTarget(self, action: #selector(self.goToAddProspect(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION)
+        
+        var buttonFindProspect : UIButton? = UIButton()
+        buttonFindProspect = self.view.viewWithTag(TAG_BUTTON_FINDPROSPECT) as? UIButton
+        buttonFindProspect!.addTarget(self, action: #selector(self.goToFindProspect(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION)
     }
     
     
@@ -240,5 +260,26 @@ class EducationAnalysisController: UIViewController, ReaderViewControllerDelegat
     func dismissReaderViewController(viewController: ReaderViewController!)
     {
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    
+    // NAVIGATION
+    
+    func goToAddProspect(sender : UIButton)
+    {
+        let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageAddProspect") as! ProspectAddBasicController
+        self.presentViewController(page, animated: true, completion: nil)
+    }
+    
+    func goToAgentProfile(sender : UIButton)
+    {
+        let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageAgentProfile") as! ProspectAddBasicController
+        self.presentViewController(page, animated: true, completion: nil)
+    }
+    
+    func goToFindProspect(sender : UIButton)
+    {
+        let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageFindProspect") as! ProspectAddBasicController
+        self.presentViewController(page, animated: true, completion: nil)
     }
 }

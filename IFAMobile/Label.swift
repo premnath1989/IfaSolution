@@ -107,11 +107,12 @@ import Foundation
             
             // GENERAL
             
+            self.widthAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
             self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_GUIDE_STEP)
             self.textColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0)
             self.textAlignment = .Center
             self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
-            self.numberOfLines = 1
+            self.numberOfLines = 2
         }
         
         override init(frame: CGRect)
@@ -122,7 +123,7 @@ import Foundation
             self.textColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0)
             self.textAlignment = .Center
             self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
-            self.numberOfLines = 1
+            self.numberOfLines = 2
         }
     }
 
@@ -208,7 +209,7 @@ import Foundation
             self.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
             self.textAlignment = .Left
             self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
-            self.numberOfLines = 1
+            self.numberOfLines = 2
             self.text?.capitalizedString
         }
     }

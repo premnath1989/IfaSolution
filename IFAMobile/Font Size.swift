@@ -15,20 +15,20 @@ import UIKit
 
 // GENERAL
 
-public let FONTSIZE_TINY : CGFloat = 9
-public let FONTSIZE_SMALL : CGFloat = 10
-public let FONTSIZE_MEDIUM : CGFloat = 11
-public let FONTSIZE_BIG : CGFloat = 12
-public let FONTSIZE_LARGE : CGFloat = 14
-public let FONTSIZE_HUGE : CGFloat = 18
-public let FONTSIZE_TALL : CGFloat = 21
+public let FONTSIZE_TINY : CGFloat = 9 + 2
+public let FONTSIZE_SMALL : CGFloat = 10 + 2
+public let FONTSIZE_MEDIUM : CGFloat = 11 + 5
+public let FONTSIZE_BIG : CGFloat = 12 + 4
+public let FONTSIZE_LARGE : CGFloat = 14 + 4
+public let FONTSIZE_HUGE : CGFloat = 18 + 2
+public let FONTSIZE_TALL : CGFloat = 21 + 2
 public let FONTSIZE_ENORMOUS : CGFloat = 36
 
 
 // NAVIGATION
 
-public let FONTSIZE_NAVIGATION_MENU : CGFloat = FONTSIZE_BIG
-public let FONTSIZE_NAVIGATION_LOGIN : CGFloat = FONTSIZE_HUGE
+public let FONTSIZE_NAVIGATION_MENU : CGFloat = FONTSIZE_BIG - 1
+public let FONTSIZE_NAVIGATION_LOGIN : CGFloat = FONTSIZE_HUGE - 1
 
 
 // USER
@@ -89,5 +89,5 @@ public let FONTSIZE_FORM_BUTTON:CGFloat = FONTSIZE_MEDIUM
 
 // FOOTER
 
-public let FONTSIZE_FOOTER_HEADER : CGFloat = FONTSIZE_MEDIUM
-public let FONTSIZE_FOOTER_DETAIL : CGFloat = FONTSIZE_SMALL
+public let FONTSIZE_FOOTER_HEADER : CGFloat = FONTSIZE_MEDIUM - 4
+public let FONTSIZE_FOOTER_DETAIL : CGFloat = FONTSIZE_SMALL - 1

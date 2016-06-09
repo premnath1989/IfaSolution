@@ -28,8 +28,6 @@ class NavigationController : UIView
     @IBOutlet var labelAgentName : UILabel!
     @IBOutlet var labelSignOut : UILabel!
     
-    @IBOutlet var imageViewAgentPhoto : UIImageView!
-    
     
     // SETUP
     
@@ -40,13 +38,13 @@ class NavigationController : UIView
         NSBundle.mainBundle().loadNibNamed("Navigation Layout", owner: self, options: nil)[0] as! UIView
         self.heightAnchor.constraintEqualToConstant(60).active = true
         self.addSubview(viewNavigation)
+        
         viewNavigation.frame = self.bounds
         
         
         // LAYOUT SETTING
         
         labelAgentName.text = NSLocalizedString("PROFILE_AGENT_DEFAULTNAME", comment: "")
-        imageViewAgentPhoto.image = UIImage(named: PHOTO_PROFILE_SMALL)
         
         
         // LANGUAGE
@@ -74,15 +72,4 @@ class NavigationController : UIView
         
         UIApplication.sharedApplication().openURL(NSURL(string: "mailto://")!)
     }
-    
-//    @IBAction func goToProspect(sender : UIButton)
-//    {
-//        IBActiongoToProspect(sender, ViewController: self)
-//    }
-//    
-//    func IBActiongoToProspect(Sender : AnyObject, ViewController : UIViewController) -> Void
-//    {
-//        let pageProspect = ViewController.storyboard?.instantiateViewControllerWithIdentifier("PageProspect") as! ProspectAddBasicController
-//        ViewController.presentViewController(pageProspect, animated: true, completion: nil)
-//    }
 }

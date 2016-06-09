@@ -28,13 +28,17 @@ class IconInput : UIImageView
     }
 }
 
-class PhotoProfileNavigation : UIImageView
+class PhotoProfileNavigation : UIButton
 {
     required init?(coder aDecoder: (NSCoder!))
     {
         super.init(coder: aDecoder)
         
-        self.image = UIImage(named: "Photo Profile Small")
+        self.widthAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
+        self.heightAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
+        self.layer.cornerRadius = ICON_SIZE_LDPI * 0.5
+        self.setImage(UIImage(named: "Photo Profile Small"), forState: .Normal)
+        self.tintColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity: 0.0)
     }
 }
 

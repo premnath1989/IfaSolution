@@ -33,6 +33,7 @@ class FooterController : UIView
         super.init(coder: aDecoder)
         
         NSBundle.mainBundle().loadNibNamed("Footer Layout", owner: self, options: nil)[0] as! UIView
+        self.heightAnchor.constraintEqualToConstant(90).active = true
         self.addSubview(viewFooter)
         viewFooter.frame = self.bounds
         
