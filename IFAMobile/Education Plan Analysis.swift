@@ -12,11 +12,15 @@
 import Foundation
 import UIKit
 import Charts
+import CoreGraphics
+import QuartzCore
+import ImageIO
+import MessageUI
 
 
 // CLASS
 
-class EducationAnalysisController: UIViewController
+class EducationAnalysisController: UIViewController, ReaderViewControllerDelegate
 {
     // INITIALIZATION
     
@@ -194,6 +198,18 @@ class EducationAnalysisController: UIViewController
         }
         
         createPDF()
+        
+        
+        // PDF VIEWER
+        
+        let filename = "file"
+        let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
+        let filePath = "\(documentsPath)/\(filename).pdf"
+        let readerDocument : ReaderDocument = ReaderDocument.withDocumentFilePath(filePath, password: nil)
+        let readerViewController : ReaderViewController = ReaderViewController.init(readerDocument: readerDocument)
+        readerViewController.delegate = self
+        readerViewController.modalTransitionStyle = .CrossDissolve
+        readerViewController.modalPresentationStyle = .FullScreen
     }
     
     
@@ -203,5 +219,26 @@ class EducationAnalysisController: UIViewController
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    // EVENT
+    
+    @IBAction func goToPDF (Sender : UIButton)
+    {
+        let filename = "file"
+        let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
+        let filePath = "\(documentsPath)/\(filename).pdf"
+        let readerDocument : ReaderDocument = ReaderDocument.withDocumentFilePath(filePath, password: nil)
+        let readerViewController : ReaderViewController = ReaderViewController.init(readerDocument: readerDocument)
+        readerViewController.delegate = self
+        readerViewController.modalTransitionStyle = .CrossDissolve
+        readerViewController.modalPresentationStyle = .FullScreen
+        self.presentViewController(readerViewController, animated: true, completion: nil)
+    }
+    
+    func dismissReaderViewController(viewController: ReaderViewController!)
+    {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

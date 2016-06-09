@@ -11,15 +11,20 @@
 
 import Foundation
 import UIKit
+import CoreGraphics
+import QuartzCore
+import ImageIO
+import MessageUI
 
 
 // CLASS
 
-class PDFController : UIViewController
+class PDFController : UIViewController, ReaderViewControllerDelegate
 {
     // INITIALIZATION
     
-    @IBOutlet var webViewPDF : UIWebView!
+    //@IBOutlet var webViewPDF : UIWebView!
+    @IBOutlet var buttonTest : UIButton!
     
     
     // VIEW DID LOAD
@@ -28,8 +33,8 @@ class PDFController : UIViewController
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    
-        func loadPDF(filename: String)
+
+        /* func loadPDF(filename: String)
         {
             let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
             let filePath = "\(documentsPath)/\(filename).pdf"
@@ -38,7 +43,16 @@ class PDFController : UIViewController
             webViewPDF.loadRequest(urlRequest)
         }
         
-        loadPDF("file")
+        loadPDF("file") */
+        
+        let filename = "file"
+        let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
+        let filePath = "\(documentsPath)/\(filename).pdf"
+        let readerDocument : ReaderDocument = ReaderDocument.withDocumentFilePath(filePath, password: nil)
+        let readerViewController : ReaderViewController = ReaderViewController.init(readerDocument: readerDocument)
+        readerViewController.delegate = self
+        readerViewController.modalTransitionStyle = .CrossDissolve
+        readerViewController.modalPresentationStyle = .FullScreen
     }
     
     
@@ -48,5 +62,23 @@ class PDFController : UIViewController
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func test (Sender : UIButton)
+    {
+        let filename = "file"
+        let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
+        let filePath = "\(documentsPath)/\(filename).pdf"
+        let readerDocument : ReaderDocument = ReaderDocument.withDocumentFilePath(filePath, password: nil)
+        let readerViewController : ReaderViewController = ReaderViewController.init(readerDocument: readerDocument)
+        readerViewController.delegate = self
+        readerViewController.modalTransitionStyle = .CrossDissolve
+        readerViewController.modalPresentationStyle = .FullScreen
+        self.presentViewController(readerViewController, animated: true, completion: nil)
+    }
+    
+    func dismissReaderViewController(viewController: ReaderViewController!)
+    {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 }

@@ -1206,7 +1206,7 @@
                                                         <rect key="frame" x="20" y="680" width="46" height="30"/>
                                                         <state key="normal" title="Button"/>
                                                         <connections>
-                                                            <segue destination="Nb9-xV-ktW" kind="show" id="aWh-rG-8Qm"/>
+                                                            <action selector="goToPDF:" destination="Xtb-bg-ueD" eventType="touchUpInside" id="flM-go-P0G"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -2369,39 +2369,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jsm-Ee-8Du" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1204" y="342"/>
-        </scene>
-        <!--Controller-->
-        <scene sceneID="vGf-7m-5Dv">
-            <objects>
-                <viewController id="Nb9-xV-ktW" customClass="PDFController" customModule="IFAMobile" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="q4P-uf-HlG"/>
-                        <viewControllerLayoutGuide type="bottom" id="Hvs-51-XHX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="wuh-cW-ICC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gXT-DS-z4a">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="gXT-DS-z4a" firstAttribute="leading" secondItem="wuh-cW-ICC" secondAttribute="leading" id="5qj-wV-mm6"/>
-                            <constraint firstItem="Hvs-51-XHX" firstAttribute="top" secondItem="gXT-DS-z4a" secondAttribute="bottom" id="U7g-hx-xnL"/>
-                            <constraint firstItem="gXT-DS-z4a" firstAttribute="top" secondItem="q4P-uf-HlG" secondAttribute="bottom" id="ab4-CZ-5oy"/>
-                            <constraint firstAttribute="trailing" secondItem="gXT-DS-z4a" secondAttribute="trailing" id="ykW-u4-sLd"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="webViewPDF" destination="gXT-DS-z4a" id="bGq-3X-Run"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hvx-j4-fIB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6544" y="342"/>
         </scene>
     </scenes>
     <resources>
