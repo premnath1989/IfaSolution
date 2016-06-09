@@ -42,8 +42,8 @@ class ChooseFinancialPlanController: UIViewController
         
         // LANGUAGE
         
-        labelHeaderTitle.text = NSLocalizedString("HEADER_PROSPECT_TITLE", comment: "")
-        labelHeaderDescription.text = NSLocalizedString("HEADER_PROSPECT_DESCRIPTION", comment: "")
+        labelHeaderTitle.text = NSLocalizedString("Plan's", comment: "")
+        labelHeaderDescription.text = NSLocalizedString("Choose your Assured plan to proceed ", comment: "")
         
         buttonSubmit.setTitle(NSLocalizedString("BUTTON_SUBMIT", comment: ""), forState: .Normal)
         

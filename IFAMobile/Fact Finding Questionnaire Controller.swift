@@ -73,8 +73,8 @@ class FactFindingQuestionnaireController : UIViewController
     {
         // LANGUAGE
         
-        labelHeaderTitle.text = NSLocalizedString("HEADER_PROSPECT_TITLE", comment: "")
-        labelHeaderDescription.text = NSLocalizedString("HEADER_PROSPECT_DESCRIPTION", comment: "")
+        labelHeaderTitle.text = NSLocalizedString("Questionaire", comment: "")
+        labelHeaderDescription.text = NSLocalizedString("Questions on the Financial outcome", comment: "")
         
         labelFactFindingQuestionnaireTitle.text = NSLocalizedString("TITLE_FINANCIALPLAN_FACTFINDINGQUESTIONNAIRE", comment: "").uppercaseString
         labelDontKnowRiskProfileTitle.text = NSLocalizedString("TITLE_FINANCIALPLAN_DONTKNOWRISKPROFILE", comment: "").uppercaseString
