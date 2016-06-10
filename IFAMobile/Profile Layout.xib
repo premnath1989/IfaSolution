@@ -46,8 +46,8 @@
                                         </label>
                                     </subviews>
                                 </stackView>
-                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YQn-oy-upw">
-                                    <rect key="frame" x="0.0" y="21" width="253" height="24"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YQn-oy-upw">
+                                    <rect key="frame" x="0.0" y="21" width="233" height="24"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="XyK-aR-HYC">
                                             <rect key="frame" x="0.0" y="0.0" width="71" height="24"/>
@@ -68,7 +68,7 @@
                                             </subviews>
                                         </stackView>
                                         <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dbr-aY-YY9">
-                                            <rect key="frame" x="91" y="0.0" width="71" height="24"/>
+                                            <rect key="frame" x="81" y="0.0" width="71" height="24"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Profile Telepone Secondary" translatesAutoresizingMaskIntoConstraints="NO" id="BMy-Xs-SRT">
                                                     <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
@@ -86,7 +86,7 @@
                                             </subviews>
                                         </stackView>
                                         <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8iP-yd-EnY">
-                                            <rect key="frame" x="182" y="0.0" width="71" height="24"/>
+                                            <rect key="frame" x="162" y="0.0" width="71" height="24"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Profile Email Secondary" translatesAutoresizingMaskIntoConstraints="NO" id="5yE-eJ-ZUq">
                                                     <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>

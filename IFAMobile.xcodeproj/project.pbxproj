@@ -112,6 +112,8 @@
 		9BF5DE0E1D07D3E5004AE484 /* Prospect Add Basic Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF5DE0D1D07D3E5004AE484 /* Prospect Add Basic Controller.swift */; };
 		9BF5DE131D08171C004AE484 /* Choose Financial Plan Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF5DE121D08171C004AE484 /* Choose Financial Plan Controller.swift */; };
 		9BF5DE151D08D5B7004AE484 /* Home Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF5DE141D08D5B7004AE484 /* Home Controller.swift */; };
+		9BFB274D1D0AAB9700D0D2B2 /* planningPDF.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9BFB274C1D0AAB9700D0D2B2 /* planningPDF.jpeg */; };
+		9BFB27521D0AB1B700D0D2B2 /* Planning.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9BFB27511D0AB1B700D0D2B2 /* Planning.pdf */; };
 		9BFF358E1D09D13600B9BB4E /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFF358D1D09D13600B9BB4E /* DatePickerDialog.swift */; };
 		9BFF35941D09D9F900B9BB4E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFF35931D09D9F900B9BB4E /* Alert.swift */; };
 /* End PBXBuildFile section */
@@ -321,6 +323,8 @@
 		9BF5DE0D1D07D3E5004AE484 /* Prospect Add Basic Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Prospect Add Basic Controller.swift"; sourceTree = "<group>"; };
 		9BF5DE121D08171C004AE484 /* Choose Financial Plan Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Choose Financial Plan Controller.swift"; sourceTree = "<group>"; };
 		9BF5DE141D08D5B7004AE484 /* Home Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Home Controller.swift"; sourceTree = "<group>"; };
+		9BFB274C1D0AAB9700D0D2B2 /* planningPDF.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = planningPDF.jpeg; sourceTree = "<group>"; };
+		9BFB27511D0AB1B700D0D2B2 /* Planning.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Planning.pdf; sourceTree = "<group>"; };
 		9BFF358D1D09D13600B9BB4E /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
 		9BFF35931D09D9F900B9BB4E /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -473,6 +477,8 @@
 				0F76D9811CFC3F4D002A7F47 /* Style */,
 				0F76D98B1CFC4AFD002A7F47 /* User Interface */,
 				9B8DFF001D018E3700C80A0F /* Database */,
+				9BFB274C1D0AAB9700D0D2B2 /* planningPDF.jpeg */,
+				9BFB27511D0AB1B700D0D2B2 /* Planning.pdf */,
 				0F76D9821CFC4A57002A7F47 /* View Controller */,
 				0F76D9831CFC4A79002A7F47 /* Composer */,
 				0FB8FE111CF7DAD8005C85DE /* Main.storyboard */,
@@ -840,6 +846,7 @@
 				9B4721C71D096E05000FD917 /* Default-667h@2x.png in Resources */,
 				0FB8FE131CF7DAD8005C85DE /* Main.storyboard in Resources */,
 				9B4721D81D096E05000FD917 /* Reader-Mark-Y.png in Resources */,
+				9BFB274D1D0AAB9700D0D2B2 /* planningPDF.jpeg in Resources */,
 				9B4721C41D096E05000FD917 /* AppIcon-167.png in Resources */,
 				9B4721D31D096E05000FD917 /* Reader-Export@2x.png in Resources */,
 				9B4721EF1D09A6CF000FD917 /* Find Layout.xib in Resources */,
@@ -852,6 +859,7 @@
 				0FCEA4F71CFEDCC400823B1E /* Footer Layout.xib in Resources */,
 				9B4721BF1D096E05000FD917 /* AppIcon-076.png in Resources */,
 				9B4721CF1D096E05000FD917 /* Reader-Email.png in Resources */,
+				9BFB27521D0AB1B700D0D2B2 /* Planning.pdf in Resources */,
 				9B4721C11D096E05000FD917 /* AppIcon-120.png in Resources */,
 				9B4721BE1D096E05000FD917 /* AppIcon-072.png in Resources */,
 				9B4721CD1D096E05000FD917 /* Reader-Button-N@2x.png in Resources */,

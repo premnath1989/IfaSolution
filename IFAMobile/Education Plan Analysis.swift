@@ -203,16 +203,25 @@ class EducationAnalysisController: UIViewController, ReaderViewControllerDelegat
         
         // PDF VIEWER
         
-        // let filename = "file"
-        let filename = "Planning"
-        let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
-        let filePath = "\(documentsPath)/\(filename).pdf"
-        NSLog(filePath, "filePath")
-        let readerDocument : ReaderDocument = ReaderDocument.withDocumentFilePath(filePath, password: nil)
-        let readerViewController : ReaderViewController = ReaderViewController.init(readerDocument: readerDocument)
-        readerViewController.delegate = self
-        readerViewController.modalTransitionStyle = .CrossDissolve
-        readerViewController.modalPresentationStyle = .FullScreen
+//        let filename = "file"
+//        // let filename = "Planning"
+//        let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
+//        let filePath = "\(documentsPath)/\(filename).pdf"
+        
+        
+        if let pdf = NSBundle.mainBundle().URLForResource("Planning", withExtension: "pdf", subdirectory: nil, localization: nil)  {
+//            let filePath = NSURLRequest(URL: pdf)
+//            NSLog(filePath.path, "filePath")
+            let filePath = pdf.path
+            
+            let readerDocument : ReaderDocument = ReaderDocument.withDocumentFilePath(filePath, password: nil)
+            let readerViewController : ReaderViewController = ReaderViewController.init(readerDocument: readerDocument)
+            readerViewController.delegate = self
+            readerViewController.modalTransitionStyle = .CrossDissolve
+            readerViewController.modalPresentationStyle = .FullScreen
+        }
+        
+        
         
         
         // NAVIGATION
@@ -281,7 +290,20 @@ class EducationAnalysisController: UIViewController, ReaderViewControllerDelegat
     
     @IBAction func goToPDF (Sender : UIButton)
     {
-        let filename = "file"
+        if let pdf = NSBundle.mainBundle().URLForResource("Planning", withExtension: "pdf", subdirectory: nil, localization: nil)  {
+            //            let filePath = NSURLRequest(URL: pdf)
+            //            NSLog(filePath.path, "filePath")
+            let filePath = pdf.path
+            
+            let readerDocument : ReaderDocument = ReaderDocument.withDocumentFilePath(filePath, password: nil)
+            let readerViewController : ReaderViewController = ReaderViewController.init(readerDocument: readerDocument)
+            readerViewController.delegate = self
+            readerViewController.modalTransitionStyle = .CrossDissolve
+            readerViewController.modalPresentationStyle = .FullScreen
+            self.presentViewController(readerViewController, animated: true, completion: nil)
+        }
+        
+        /* let filename = "file"
         let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
         let filePath = "\(documentsPath)/\(filename).pdf"
         let readerDocument : ReaderDocument = ReaderDocument.withDocumentFilePath(filePath, password: nil)
@@ -289,7 +311,7 @@ class EducationAnalysisController: UIViewController, ReaderViewControllerDelegat
         readerViewController.delegate = self
         readerViewController.modalTransitionStyle = .CrossDissolve
         readerViewController.modalPresentationStyle = .FullScreen
-        self.presentViewController(readerViewController, animated: true, completion: nil)
+        self.presentViewController(readerViewController, animated: true, completion: nil) */
     }
     
     func dismissReaderViewController(viewController: ReaderViewController!)
