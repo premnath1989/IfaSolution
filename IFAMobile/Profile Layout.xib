@@ -21,13 +21,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ssF-LJ-SXF">
-                    <rect key="frame" x="40" y="100" width="520" height="72"/>
+                    <rect key="frame" x="40" y="185" width="520" height="81"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Photo Profile Large" translatesAutoresizingMaskIntoConstraints="NO" id="UKF-Am-ebM" customClass="PhotoProfilePage" customModule="IFAMobile" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="72" height="72"/>
+                            <rect key="frame" x="0.0" y="4" width="72" height="72"/>
                         </imageView>
-                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Haj-pv-hN5">
-                            <rect key="frame" x="92" y="14" width="428" height="45"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Haj-pv-hN5">
+                            <rect key="frame" x="92" y="0.0" width="428" height="81"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="oUN-7U-558">
                                     <rect key="frame" x="0.0" y="0.0" width="89" height="21"/>
@@ -46,51 +46,78 @@
                                         </label>
                                     </subviews>
                                 </stackView>
-                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YQn-oy-upw">
-                                    <rect key="frame" x="0.0" y="21" width="248" height="24"/>
+                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gU8-D6-YW7">
+                                    <rect key="frame" x="0.0" y="31" width="428" height="50"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Profile Address Secondary" translatesAutoresizingMaskIntoConstraints="NO" id="CLu-iu-IHy">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile Address Secondary" translatesAutoresizingMaskIntoConstraints="NO" id="CLu-iu-IHy">
                                             <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="24" id="DOm-FL-IUU"/>
                                                 <constraint firstAttribute="height" constant="24" id="IYO-Gu-fyX"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGl-V4-0Eo" customClass="LabelProfileDetail" customModule="IFAMobile" customModuleProvider="target">
-                                            <rect key="frame" x="34" y="2" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGl-V4-0Eo" customClass="LabelProfileDetail" customModule="IFAMobile" customModuleProvider="target">
+                                            <rect key="frame" x="34" y="0.0" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Profile Telepone Secondary" translatesAutoresizingMaskIntoConstraints="NO" id="BMy-Xs-SRT">
-                                            <rect key="frame" x="86" y="0.0" width="24" height="24"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile Telepone Secondary" translatesAutoresizingMaskIntoConstraints="NO" id="BMy-Xs-SRT">
+                                            <rect key="frame" x="96" y="-6" width="24" height="24"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="24" id="GGO-Cn-cCZ"/>
                                                 <constraint firstAttribute="width" constant="24" id="jK7-AN-YgP"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="995-2n-RiI" customClass="LabelProfileDetail" customModule="IFAMobile" customModuleProvider="target">
-                                            <rect key="frame" x="120" y="2" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="995-2n-RiI" customClass="LabelProfileDetail" customModule="IFAMobile" customModuleProvider="target">
+                                            <rect key="frame" x="130" y="-4.5" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Profile Email Secondary" translatesAutoresizingMaskIntoConstraints="NO" id="5yE-eJ-ZUq">
-                                            <rect key="frame" x="172" y="0.0" width="24" height="24"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile Email Secondary" translatesAutoresizingMaskIntoConstraints="NO" id="5yE-eJ-ZUq">
+                                            <rect key="frame" x="96" y="18" width="24" height="24"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="24" id="MQY-UO-nHi"/>
                                                 <constraint firstAttribute="height" constant="24" id="Wve-Yb-a2j"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="108-sl-QBc" customClass="LabelProfileDetail" customModule="IFAMobile" customModuleProvider="target">
-                                            <rect key="frame" x="206" y="2" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="108-sl-QBc" customClass="LabelProfileDetail" customModule="IFAMobile" customModuleProvider="target">
+                                            <rect key="frame" x="130" y="19.5" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                </stackView>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="108-sl-QBc" firstAttribute="centerY" secondItem="5yE-eJ-ZUq" secondAttribute="centerY" id="3dl-HE-OVf"/>
+                                        <constraint firstItem="5yE-eJ-ZUq" firstAttribute="top" secondItem="BMy-Xs-SRT" secondAttribute="bottom" id="7Su-aU-aD6"/>
+                                        <constraint firstItem="CLu-iu-IHy" firstAttribute="leading" secondItem="gU8-D6-YW7" secondAttribute="leading" id="C5D-oL-twS"/>
+                                        <constraint firstItem="108-sl-QBc" firstAttribute="top" secondItem="5yE-eJ-ZUq" secondAttribute="top" id="Hkl-Uj-GrL"/>
+                                        <constraint firstItem="BMy-Xs-SRT" firstAttribute="leading" secondItem="TGl-V4-0Eo" secondAttribute="trailing" constant="20" id="J9b-lu-IiY"/>
+                                        <constraint firstItem="TGl-V4-0Eo" firstAttribute="leading" secondItem="CLu-iu-IHy" secondAttribute="trailing" constant="10" id="Jp8-2E-aeP"/>
+                                        <constraint firstItem="CLu-iu-IHy" firstAttribute="top" secondItem="gU8-D6-YW7" secondAttribute="top" id="Ly2-5O-tTm"/>
+                                        <constraint firstItem="BMy-Xs-SRT" firstAttribute="top" secondItem="TGl-V4-0Eo" secondAttribute="top" constant="-6" id="O5y-Oc-Zn4"/>
+                                        <constraint firstItem="108-sl-QBc" firstAttribute="leading" secondItem="5yE-eJ-ZUq" secondAttribute="trailing" constant="10" id="TOC-fz-DvC"/>
+                                        <constraint firstItem="995-2n-RiI" firstAttribute="top" secondItem="BMy-Xs-SRT" secondAttribute="top" id="XXy-WL-NCs"/>
+                                        <constraint firstItem="TGl-V4-0Eo" firstAttribute="top" secondItem="CLu-iu-IHy" secondAttribute="top" id="Y6W-8W-ynZ"/>
+                                        <constraint firstItem="5yE-eJ-ZUq" firstAttribute="leading" secondItem="BMy-Xs-SRT" secondAttribute="leading" id="iIF-vr-y69"/>
+                                        <constraint firstItem="995-2n-RiI" firstAttribute="leading" secondItem="BMy-Xs-SRT" secondAttribute="trailing" constant="10" id="s3U-Y7-ls6"/>
+                                        <constraint firstAttribute="bottom" secondItem="TGl-V4-0Eo" secondAttribute="bottom" id="xJc-TP-3eJ"/>
+                                        <constraint firstItem="995-2n-RiI" firstAttribute="centerY" secondItem="BMy-Xs-SRT" secondAttribute="centerY" id="yLE-ow-t0O"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="XXy-WL-NCs"/>
+                                            <exclude reference="Hkl-Uj-GrL"/>
+                                        </mask>
+                                    </variation>
+                                </view>
                             </subviews>
+                            <constraints>
+                                <constraint firstItem="gU8-D6-YW7" firstAttribute="width" secondItem="Haj-pv-hN5" secondAttribute="width" id="B05-1H-T4j"/>
+                            </constraints>
                         </stackView>
                     </subviews>
                 </stackView>
