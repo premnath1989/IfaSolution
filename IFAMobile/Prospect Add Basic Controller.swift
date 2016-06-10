@@ -181,6 +181,7 @@ class ProspectAddBasicController: UIViewController, UITextFieldDelegate
         AlertVariable.SetDropDownTitle("Name Prefix")
         AlertVariable.SetDropDownMessage("What we should call you ?")
         AlertVariable.SetArrayPositiveAction(arrayNamePrefix)
+        AlertVariable.SetAddState(false)
         
         self.presentViewController(AlertSheetDropDown(AlertVariable, Sender: sender, ViewController: self), animated: true, completion: nil)
     }

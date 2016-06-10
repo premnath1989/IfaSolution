@@ -42,6 +42,11 @@ func AlertSheetDropDown(AlertVariable : AlertDropDown, Sender : AnyObject, ViewC
         
     }
     
+    guard let textField = Sender as? UITextField else
+    {
+        return ActionSheetController
+    }
+    
     
     // NEGATIVE ACTION
     
@@ -76,6 +81,12 @@ func AlertSheetDropDown(AlertVariable : AlertDropDown, Sender : AnyObject, ViewC
             }
         }
         ActionSheetController.addAction(ActionPositive)
+    }
+    
+    if let presenter = ActionSheetController.popoverPresentationController
+    {
+        presenter.sourceView = textField
+        presenter.sourceRect = textField.bounds
     }
     
     return ActionSheetController
