@@ -83,33 +83,33 @@ class EducationAnalysisController: UIViewController, ReaderViewControllerDelegat
         labelTotalEducationFundNeededAtTertiaryAgeTitle.text = NSLocalizedString("TITLE_EDUCATIONPLAN_FUNDAVAILABLE", comment: "").uppercaseString
         labelBalanceTitle.text = NSLocalizedString("TITLE_EDUCATIONPLAN_BALANCE", comment: "").uppercaseString
         
-        labelName.text = NSLocalizedString("FIELD_NAME", comment: "")
-        labelAge.text = NSLocalizedString("FIELD_AGE", comment: "")
-        labelPayorName.text = NSLocalizedString("FIELD_PAYORNAME", comment: "")
-        labelDate.text = NSLocalizedString("FIELD_DATE", comment: "")
+        labelName.text = NSLocalizedString("Child Name", comment: "")
+        labelAge.text = NSLocalizedString("Age", comment: "")
+        labelPayorName.text = NSLocalizedString("Payor Name", comment: "")
+        labelDate.text = NSLocalizedString("Date", comment: "")
         
-        labelTertiaryAge.text = NSLocalizedString("FIELD_AGE", comment: "")
-        labelCourseDuration.text = NSLocalizedString("FIELD_COURSEDURATION", comment: "")
-        labelCourseFee.text = NSLocalizedString("FIELD_COURSEFEE", comment: "")
-        labelLivingExpenses.text = NSLocalizedString("FIELD_LIVINGEXPENSES", comment: "")
-        labelTotalEducationFundNeededAtTertiaryAge.text = NSLocalizedString("FIELD_TOTALEDUCATIONFUNDNEEDED", comment: "")
+        labelTertiaryAge.text = NSLocalizedString("Child Tertiary Education Age", comment: "")
+        labelCourseDuration.text = NSLocalizedString("Course duration", comment: "")
+        labelCourseFee.text = NSLocalizedString("Annual Tuition Fee", comment: "")
+        labelLivingExpenses.text = NSLocalizedString("annual Living Expenses", comment: "")
+        labelTotalEducationFundNeededAtTertiaryAge.text = NSLocalizedString("Total Education Fund Required", comment: "")
         
-        labelLumSumpSavings.text = NSLocalizedString("FIELD_LUMSUMPSAVINGS", comment: "")
-        labelRegularMonthlySavings.text = NSLocalizedString("FIELD_REGULARMONTHLYSAVINGS", comment: "")
-        labelReturnAtMaturityAge.text = NSLocalizedString("FIELD_RETURNATMATURITYAGE", comment: "")
-        labelTotalEducationFundAvailableAtTertiaryAge.text = NSLocalizedString("FIELD_TOTALEDUCATIONFUNDAVAILABLE", comment: "")
+        labelLumSumpSavings.text = NSLocalizedString("Lump Sum Saving", comment: "")
+        labelRegularMonthlySavings.text = NSLocalizedString("Regular Month Saving", comment: "")
+        labelReturnAtMaturityAge.text = NSLocalizedString("Annual Return Rate", comment: "")
+        labelTotalEducationFundAvailableAtTertiaryAge.text = NSLocalizedString("Total Education Fund Available at Child Tertiary Age ", comment: "")
         
-        textFieldName.text = "Premnath Vijayakumar"
-        textFieldAge.text = "26"
+        textFieldName.text = "Prem"
+        textFieldAge.text = "5"
         textFieldPayorName.text = "Andy Phan"
-        textFieldDate.text = "Tuesday, 06 June 2016"
-        textFieldTertiaryAge.text = "29"
-        textFieldCourseDuration.text = "2 years"
-        textFieldCourseFee.text = "RM 50.000.000"
-        textFieldLivingExpenses.text = "RM 20.000.000"
-        textFieldTotalEducationFundNeededAtTertiaryAge.text = "RM 30.000.000"
-        textFieldLumSumpSavings.text = "RM 10.000.000"
-        textFieldRegularMonthlySavings.text = "RM 2.000.000"
+        textFieldDate.text = "10 June 2016"
+        textFieldTertiaryAge.text = "20"
+        textFieldCourseDuration.text = "4"
+        textFieldCourseFee.text = "RM 100000"
+        textFieldLivingExpenses.text = "RM 50000"
+        textFieldTotalEducationFundNeededAtTertiaryAge.text = "RM 60000"
+        textFieldLumSumpSavings.text = "RM 30000"
+        textFieldRegularMonthlySavings.text = "RM 500"
         textFieldReturnAtMaturityAge.text = "RM 10.000.000"
         textFieldTotalEducationFundAvailableAtTertiaryAge.text = "RM 30.000.000"
         
