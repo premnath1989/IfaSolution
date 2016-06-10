@@ -547,75 +547,75 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Xrx-Tm-Pmn" customClass="StackViewQuestionVerticalContainer" customModule="IFAMobile" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="61" width="562" height="152"/>
+                                                        <rect key="frame" x="20" y="61" width="281" height="173"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QRT-eh-Pnb" customClass="StackViewQuestionHorizontalContainer" customModule="IFAMobile" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="0.0" width="562" height="31"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="281" height="31"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uTc-un-uyH" customClass="LabelQuestion" customModule="IFAMobile" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="6" width="513" height="21"/>
+                                                                        <rect key="frame" x="0.0" y="6" width="232" height="21"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mf7-nA-M1k">
-                                                                        <rect key="frame" x="513" y="0.0" width="51" height="31"/>
+                                                                        <rect key="frame" x="232" y="0.0" width="51" height="31"/>
                                                                     </switch>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IbV-BG-iml" customClass="StackViewQuestionHorizontalContainer" customModule="IFAMobile" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="31" width="562" height="31"/>
+                                                                <rect key="frame" x="0.0" y="31" width="281" height="31"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFo-pc-tCf" customClass="LabelQuestion" customModule="IFAMobile" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="6" width="513" height="21"/>
+                                                                        <rect key="frame" x="0.0" y="6" width="232" height="21"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xTa-ZF-Hm6">
-                                                                        <rect key="frame" x="513" y="0.0" width="51" height="31"/>
+                                                                        <rect key="frame" x="232" y="0.0" width="51" height="31"/>
                                                                     </switch>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="d8e-K9-dQr" customClass="StackViewQuestionHorizontalContainer" customModule="IFAMobile" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="62" width="562" height="31"/>
+                                                                <rect key="frame" x="0.0" y="62" width="281" height="31"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6a-wV-zYl" customClass="LabelQuestion" customModule="IFAMobile" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="6" width="513" height="21"/>
+                                                                        <rect key="frame" x="0.0" y="6" width="232" height="21"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ja-MT-LZc">
-                                                                        <rect key="frame" x="513" y="0.0" width="51" height="31"/>
+                                                                        <rect key="frame" x="232" y="0.0" width="51" height="31"/>
                                                                     </switch>
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="F3a-sZ-pcj" customClass="StackViewQuestionHorizontalContainer" customModule="IFAMobile" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="93" width="562" height="31"/>
+                                                                <rect key="frame" x="0.0" y="93" width="281" height="31"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APr-lz-13A" customClass="LabelQuestion" customModule="IFAMobile" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="6" width="513" height="21"/>
+                                                                        <rect key="frame" x="0.0" y="6" width="232" height="21"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yyb-ng-uUV">
-                                                                        <rect key="frame" x="513" y="0.0" width="51" height="31"/>
+                                                                        <rect key="frame" x="232" y="0.0" width="51" height="31"/>
                                                                     </switch>
                                                                 </subviews>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DCF-eY-Iex" customClass="StackViewQuestionHorizontalContainer" customModule="IFAMobile" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="124" width="562" height="28"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="DCF-eY-Iex" customClass="StackViewQuestionHorizontalContainer" customModule="IFAMobile" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="124" width="281" height="49"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXL-yi-JHS" customClass="LabelQuestion" customModule="IFAMobile" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="4" width="281" height="21"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hRW-Wn-Leb" customClass="SegmentedControlFinancialPlan" customModule="IFAMobile" customModuleProvider="target">
-                                                                        <rect key="frame" x="281" y="0.0" width="281" height="29"/>
+                                                                        <rect key="frame" x="0.0" y="21" width="281" height="29"/>
                                                                         <segments>
                                                                             <segment title="Moderate"/>
                                                                             <segment title="Conservative"/>
