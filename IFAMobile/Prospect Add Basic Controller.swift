@@ -75,6 +75,7 @@ class ProspectAddBasicController: UIViewController, UITextFieldDelegate
         textFieldAddress.placeholder = NSLocalizedString("PLACEHOLDER_ADDRESS", comment: "")
         textFieldEmail.placeholder = NSLocalizedString("PLACEHOLDER_EMAIL", comment: "")
         textFieldBirthday.placeholder = NSLocalizedString("PLACEHOLDER_BIRTHDAY", comment: "")
+        textFieldNamePrefix.placeholder = NSLocalizedString("PLACEHOLDER_TITLE", comment: "")
         
         buttonSubmit.setTitle(NSLocalizedString("BUTTON_SUBMIT", comment: ""), forState: .Normal)
         

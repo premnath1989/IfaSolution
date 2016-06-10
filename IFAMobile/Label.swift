@@ -295,13 +295,13 @@ class LabelFieldLong : UILabel
             
             // GENERAL
             
-            self.widthAnchor.constraintEqualToConstant(LABEL_QUESTION_WIDTH).active = true
+            self.widthAnchor.constraintEqualToConstant(LABEL_QUESTION_WIDTH * 0.85).active = true
             self.heightAnchor.constraintEqualToConstant(INPUT_GENERAL_HEIGHT).active = true
             self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_FORM_FIELD)
             self.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
             self.textAlignment = .Left
             self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
-            self.numberOfLines = 1
+            self.numberOfLines = 4
         }
         
         override init(frame: CGRect)

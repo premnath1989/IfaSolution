@@ -152,7 +152,7 @@ class EducationAnalysisController: UIViewController, ReaderViewControllerDelegat
         }
         
         let arrayLabel = ["Fund Needed", "Fund Available", "Balance"]
-        let arrayMoney = [20.0, 50.0, 30.0]
+        let arrayMoney = [600.0, 200.0, 400.0]
         
         setChart(arrayLabel, values: arrayMoney)
         
