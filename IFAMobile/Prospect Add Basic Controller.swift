@@ -36,7 +36,6 @@ class ProspectAddBasicController: UIViewController, UITextFieldDelegate
         @IBOutlet var textFieldName : UITextField!
         @IBOutlet var textFieldNamePrefix : UITextField!
         @IBOutlet var textFieldBirthday : UITextField!
-        @IBOutlet var switchGender : UISwitch!
         @IBOutlet var textFieldContactNumber : UITextField!
         @IBOutlet var textFieldAddress : UITextField!
         @IBOutlet var textFieldEmail : UITextField!
@@ -91,7 +90,7 @@ class ProspectAddBasicController: UIViewController, UITextFieldDelegate
         
         var buttonNavigationProspect : UIButton? = UIButton()
         buttonNavigationProspect = self.view.viewWithTag(TAG_BUTTON_NAVIGATIONPROSPECT) as? UIButton
-        buttonNavigationProspect!.addTarget(self, action: #selector(self.goToFindProspect(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION)
+        buttonNavigationProspect!.addTarget(self, action: #selector(self.goToAddProspect(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION)
         
         var buttonAgentProfile : UIButton? = UIButton()
         buttonAgentProfile = self.view.viewWithTag(TAG_BUTTON_AGENTPROFILE) as? UIButton

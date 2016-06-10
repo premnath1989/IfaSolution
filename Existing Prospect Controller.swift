@@ -24,7 +24,7 @@ class ExistingProspectController: UIViewController
     @IBOutlet var labelHeaderTitle : UILabel!
     @IBOutlet var labelHeaderDescription : UILabel!
     
-    @IBOutlet var labelBasicInformationTitle : UILabel!
+    // @IBOutlet var labelBasicInformationTitle : UILabel!
     
     /* @IBOutlet var labelName : UILabel!
     @IBOutlet var labelBirthday : UILabel!
@@ -64,7 +64,7 @@ class ExistingProspectController: UIViewController
         labelHeaderTitle.text = NSLocalizedString("HEADER_PROSPECT_TITLE", comment: "")
         labelHeaderDescription.text = NSLocalizedString("HEADER_PROSPECT_DESCRIPTION", comment: "")
         
-        labelBasicInformationTitle.text = NSLocalizedString("TITLE_PROSPECT_PROFILE", comment: "").uppercaseString
+        // labelBasicInformationTitle.text = NSLocalizedString("TITLE_PROSPECT_PROFILE", comment: "").uppercaseString
         
         /* labelName.text = NSLocalizedString("FIELD_NAME", comment: "")
         labelBirthday.text = NSLocalizedString("FIELD_BIRTHDAY", comment: "")

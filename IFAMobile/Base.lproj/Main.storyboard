@@ -938,18 +938,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E3p-1O-sL1" customClass="NavigationController" customModule="IFAMobile" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="20" width="600" height="0.0"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E3p-1O-sL1" customClass="NavigationController" customModule="IFAMobile" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="600" height="260"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Photo Education Plan Header" translatesAutoresizingMaskIntoConstraints="NO" id="LJM-aK-I49">
-                                <rect key="frame" x="0.0" y="20" width="600" height="120"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Photo Education Plan Header" translatesAutoresizingMaskIntoConstraints="NO" id="LJM-aK-I49">
+                                <rect key="frame" x="0.0" y="280" width="600" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="389-jy-OC3"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XuZ-Qq-Djb">
-                                <rect key="frame" x="60" y="50" width="42" height="41"/>
+                                <rect key="frame" x="40" y="295" width="42" height="41"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbQ-YB-olm" customClass="LabelHeaderTitle" customModule="IFAMobile" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
@@ -965,15 +965,15 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2z6-9n-VXu" customClass="GuideController" customModule="IFAMobile" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="232" width="600" height="136"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2z6-9n-VXu" customClass="GuideController" customModule="IFAMobile" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="364" width="600" height="136"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="136" id="JWH-CV-klq"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FiI-Yu-vk3" customClass="ScrollViewDesktopContainer" customModule="IFAMobile" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="140" width="600" height="380"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FiI-Yu-vk3" customClass="ScrollViewDesktopContainer" customModule="IFAMobile" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="500" width="600" height="0.0"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hW1-nY-AEQ">
                                         <rect key="frame" x="40" y="20" width="520" height="730"/>
@@ -1168,13 +1168,13 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="42" height="127"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMj-L1-F1f" customClass="LabelField" customModule="IFAMobile" customModuleProvider="target">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="42" height="51"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZ0-xt-IIH" customClass="LabelField" customModule="IFAMobile" customModuleProvider="target">
-                                                                                        <rect key="frame" x="0.0" y="26" width="42" height="51"/>
+                                                                                        <rect key="frame" x="0.0" y="56" width="42" height="21"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                                         <nil key="highlightedColor"/>
@@ -1243,7 +1243,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D4h-p0-BDb" customClass="BarChartView" customModule="Charts">
-                                                        <rect key="frame" x="20" y="490" width="648" height="160"/>
+                                                        <rect key="frame" x="20" y="490" width="480" height="160"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="160" id="wYS-PL-qIs"/>
@@ -1705,13 +1705,14 @@
                                                             <segue destination="VZA-vp-Dlm" kind="show" id="wGa-8v-ymw"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Bu-M6-EB9" customClass="ButtonReset" customModule="IFAMobile" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Bu-M6-EB9" customClass="ButtonReset" customModule="IFAMobile" customModuleProvider="target">
                                                         <rect key="frame" x="86" y="-310" width="46" height="30"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
+                                                    <constraint firstItem="6Bu-M6-EB9" firstAttribute="centerY" secondItem="381-UN-dlA" secondAttribute="centerY" id="0n3-HC-7b1"/>
                                                     <constraint firstItem="oOj-IN-jdT" firstAttribute="leading" secondItem="NdZ-LI-dpH" secondAttribute="leading" constant="20" id="6Ic-b0-d6H"/>
                                                     <constraint firstItem="wQK-WH-qSp" firstAttribute="top" secondItem="NdZ-LI-dpH" secondAttribute="top" constant="20" id="Rqn-qH-eoH"/>
                                                     <constraint firstItem="6Bu-M6-EB9" firstAttribute="leading" secondItem="381-UN-dlA" secondAttribute="trailing" constant="20" id="UQf-9d-2US"/>
@@ -1765,7 +1766,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="buttonReset" destination="6Bu-M6-EB9" id="5EE-HS-6tc"/>
+                        <outlet property="buttonReset" destination="6Bu-M6-EB9" id="205-g3-hXm"/>
                         <outlet property="buttonSubmit" destination="381-UN-dlA" id="xyY-KR-VmI"/>
                         <outlet property="labelAddress" destination="Gzi-C0-Ywq" id="g5z-AF-g2J"/>
                         <outlet property="labelBasicInformationTitle" destination="wQK-WH-qSp" id="Ukf-dW-eew"/>
@@ -2690,30 +2691,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="buttonReset" destination="Y04-0Y-GFv" id="BFc-pD-Frg"/>
-                        <outlet property="buttonSubmit" destination="TmB-m2-ENh" id="1Er-Or-aEV"/>
-                        <outlet property="labelActualTotalEducation" destination="a4w-NV-WTr" id="nsj-H2-bW2"/>
-                        <outlet property="labelDetailInformationTitle" destination="CDN-zT-1IJ" id="dcq-Uo-tsP"/>
-                        <outlet property="labelEntryAgeToUniversity" destination="UMN-QU-0oh" id="LvF-Ke-RSp"/>
-                        <outlet property="labelExistingSavingsPrograms" destination="qde-JQ-1q4" id="J97-qZ-pmM"/>
-                        <outlet property="labelExpectedRateOfReturn" destination="8c5-j1-Dvc" id="Q8v-8d-tB4"/>
                         <outlet property="labelHeaderDescription" destination="gfD-hU-AI8" id="Oid-lD-OiL"/>
                         <outlet property="labelHeaderTitle" destination="OAR-oy-F9Y" id="pph-Sd-j32"/>
-                        <outlet property="labelInflationRate" destination="d5k-O8-RdI" id="iwv-uy-fEL"/>
-                        <outlet property="labelLumpSumpSavings" destination="99O-B2-2L8" id="Qr0-2w-xA9"/>
-                        <outlet property="labelPlanName" destination="h2y-E6-e6o" id="3sx-6K-DFM"/>
-                        <outlet property="labelRegularAnnualSavings" destination="88G-8d-vuH" id="wyK-Bg-x8X"/>
-                        <outlet property="labelTotalAnnualCostAsAtTodayValue" destination="A8Y-Tz-U1n" id="ucv-4m-GPY"/>
-                        <outlet property="labelTotalAnnualLivingExpenses" destination="k9q-Kf-l7D" id="eb7-yL-dR6"/>
-                        <outlet property="textFieldActualTotalEducation" destination="Gal-og-8x1" id="3eW-Q0-uhd"/>
-                        <outlet property="textFieldExistingSavingsPrograms" destination="pyf-83-JQU" id="8bv-NF-CPI"/>
-                        <outlet property="textFieldExpectedRateOfReturn" destination="uDB-eh-fWo" id="e4U-tp-hjC"/>
-                        <outlet property="textFieldInflationRate" destination="nj2-na-hJO" id="Y7V-Mu-qDC"/>
-                        <outlet property="textFieldLumpSumpSavings" destination="exg-mx-fjA" id="eih-oD-goE"/>
-                        <outlet property="textFieldPlanName" destination="Tad-H7-pLt" id="VAv-0g-c3v"/>
-                        <outlet property="textFieldRegularAnnualSavings" destination="pUz-Um-xBI" id="QC1-k3-8AW"/>
-                        <outlet property="textFieldTotalAnnualCostAsAtTodayValue" destination="nsS-CN-D01" id="mYE-e1-7AS"/>
-                        <outlet property="textFieldTotalAnnualLivingExpenses" destination="Elb-Lz-wMN" id="nVK-b4-dda"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fpG-0j-8Yt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3005,28 +2984,8 @@
                     <connections>
                         <outlet property="buttonReset" destination="pVg-Ix-oc5" id="ZF6-el-vKn"/>
                         <outlet property="buttonSubmit" destination="cIC-Rc-W99" id="L9E-qK-4MW"/>
-                        <outlet property="labelActualTotalEducation" destination="5Tz-2i-qwj" id="4cr-vX-3AB"/>
-                        <outlet property="labelDetailInformationTitle" destination="5q1-f4-Wzq" id="Xxi-WB-Uzv"/>
-                        <outlet property="labelEntryAgeToUniversity" destination="maE-Fz-eH7" id="BP0-SM-54c"/>
-                        <outlet property="labelExistingSavingsPrograms" destination="NDv-nI-TKD" id="vPJ-Ig-EIa"/>
-                        <outlet property="labelExpectedRateOfReturn" destination="Qub-Q2-bB7" id="BPe-jr-sb6"/>
                         <outlet property="labelHeaderDescription" destination="H8j-Xb-bz2" id="hKM-53-GYv"/>
                         <outlet property="labelHeaderTitle" destination="qnR-to-tE4" id="EU4-I8-R2m"/>
-                        <outlet property="labelInflationRate" destination="4uP-Wh-Obz" id="gIH-R6-lZR"/>
-                        <outlet property="labelLumpSumpSavings" destination="jAq-aD-AGU" id="RPN-aT-vE8"/>
-                        <outlet property="labelPlanName" destination="VRD-hO-OKx" id="UAE-46-f44"/>
-                        <outlet property="labelRegularAnnualSavings" destination="oDB-iW-1Xa" id="Ry3-bm-xM3"/>
-                        <outlet property="labelTotalAnnualCostAsAtTodayValue" destination="2Sa-jB-Mag" id="wnM-mX-t2T"/>
-                        <outlet property="labelTotalAnnualLivingExpenses" destination="wg6-dJ-nfB" id="kH3-4H-mIQ"/>
-                        <outlet property="textFieldActualTotalEducation" destination="Ef6-Kd-Lpv" id="fLe-tE-VXh"/>
-                        <outlet property="textFieldExistingSavingsPrograms" destination="xqZ-yc-GLL" id="2Jy-wR-ZoK"/>
-                        <outlet property="textFieldExpectedRateOfReturn" destination="eTY-nn-Ano" id="ArJ-0g-KKV"/>
-                        <outlet property="textFieldInflationRate" destination="dNJ-RV-nJq" id="liV-4u-Qyq"/>
-                        <outlet property="textFieldLumpSumpSavings" destination="FdU-Ii-XlP" id="6tS-tr-Eu2"/>
-                        <outlet property="textFieldPlanName" destination="oRj-XY-9OO" id="Zkb-P2-GBt"/>
-                        <outlet property="textFieldRegularAnnualSavings" destination="GeH-ea-30i" id="OGr-bU-14V"/>
-                        <outlet property="textFieldTotalAnnualCostAsAtTodayValue" destination="hph-qR-ndM" id="fV5-wj-HZd"/>
-                        <outlet property="textFieldTotalAnnualLivingExpenses" destination="OxF-nk-Pwb" id="BcE-gl-Kzg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6kx-0a-fGs" userLabel="First Responder" sceneMemberID="firstResponder"/>
