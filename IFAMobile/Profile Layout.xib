@@ -46,63 +46,48 @@
                                         </label>
                                     </subviews>
                                 </stackView>
-                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YQn-oy-upw">
-                                    <rect key="frame" x="0.0" y="21" width="233" height="24"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YQn-oy-upw">
+                                    <rect key="frame" x="0.0" y="21" width="248" height="24"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="XyK-aR-HYC">
-                                            <rect key="frame" x="0.0" y="0.0" width="71" height="24"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Profile Address Secondary" translatesAutoresizingMaskIntoConstraints="NO" id="CLu-iu-IHy">
-                                                    <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="24" id="DOm-FL-IUU"/>
-                                                        <constraint firstAttribute="height" constant="24" id="IYO-Gu-fyX"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGl-V4-0Eo" customClass="LabelProfileDetail" customModule="IFAMobile" customModuleProvider="target">
-                                                    <rect key="frame" x="29" y="2" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </stackView>
-                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dbr-aY-YY9">
-                                            <rect key="frame" x="81" y="0.0" width="71" height="24"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Profile Telepone Secondary" translatesAutoresizingMaskIntoConstraints="NO" id="BMy-Xs-SRT">
-                                                    <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="24" id="GGO-Cn-cCZ"/>
-                                                        <constraint firstAttribute="width" constant="24" id="jK7-AN-YgP"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="995-2n-RiI" customClass="LabelProfileDetail" customModule="IFAMobile" customModuleProvider="target">
-                                                    <rect key="frame" x="29" y="2" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </stackView>
-                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8iP-yd-EnY">
-                                            <rect key="frame" x="162" y="0.0" width="71" height="24"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Profile Email Secondary" translatesAutoresizingMaskIntoConstraints="NO" id="5yE-eJ-ZUq">
-                                                    <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="24" id="MQY-UO-nHi"/>
-                                                        <constraint firstAttribute="height" constant="24" id="Wve-Yb-a2j"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="108-sl-QBc" customClass="LabelProfileDetail" customModule="IFAMobile" customModuleProvider="target">
-                                                    <rect key="frame" x="29" y="2" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </stackView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Profile Address Secondary" translatesAutoresizingMaskIntoConstraints="NO" id="CLu-iu-IHy">
+                                            <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="24" id="DOm-FL-IUU"/>
+                                                <constraint firstAttribute="height" constant="24" id="IYO-Gu-fyX"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGl-V4-0Eo" customClass="LabelProfileDetail" customModule="IFAMobile" customModuleProvider="target">
+                                            <rect key="frame" x="34" y="2" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Profile Telepone Secondary" translatesAutoresizingMaskIntoConstraints="NO" id="BMy-Xs-SRT">
+                                            <rect key="frame" x="86" y="0.0" width="24" height="24"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="24" id="GGO-Cn-cCZ"/>
+                                                <constraint firstAttribute="width" constant="24" id="jK7-AN-YgP"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="995-2n-RiI" customClass="LabelProfileDetail" customModule="IFAMobile" customModuleProvider="target">
+                                            <rect key="frame" x="120" y="2" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Profile Email Secondary" translatesAutoresizingMaskIntoConstraints="NO" id="5yE-eJ-ZUq">
+                                            <rect key="frame" x="172" y="0.0" width="24" height="24"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="24" id="MQY-UO-nHi"/>
+                                                <constraint firstAttribute="height" constant="24" id="Wve-Yb-a2j"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="108-sl-QBc" customClass="LabelProfileDetail" customModule="IFAMobile" customModuleProvider="target">
+                                            <rect key="frame" x="206" y="2" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </stackView>
                             </subviews>
