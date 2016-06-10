@@ -89,9 +89,9 @@ class HomeController: UIViewController
         labelExpiredDate.text = NSLocalizedString("FIELD_EXPIREDDATE", comment: "")
         
         labelPropertyAgentCode.text = "123456"
-        labelPropertyBranch.text = "InfoConnect Indonesia"
-        labelPropertyArea.text = "Jakarta"
-        labelPropertyKCU.text = "Thamrin"
+        labelPropertyBranch.text = "InfoConnect Malaysia"
+        labelPropertyArea.text = "Selangor"
+        labelPropertyKCU.text = "Petaling Jaya"
         labelPropertyChannelName.text = "In Branch"
         labelPropertySupervisor.text = "Mr. Lim"
         labelPropertyState.text = "Active"
