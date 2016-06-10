@@ -21,17 +21,17 @@ import UIKit
     {
         override func textRectForBounds(bounds: CGRect) -> CGRect
         {
-            return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+            return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_EDGE_PADDING)
         }
         
         override func editingRectForBounds(bounds: CGRect) -> CGRect
         {
-            return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+            return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_EDGE_PADDING)
         }
         
         override func placeholderRectForBounds(bounds: CGRect) -> CGRect
         {
-            return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+            return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_EDGE_PADDING)
         }
         
         required init?(coder aDecoder: (NSCoder!))
@@ -79,17 +79,17 @@ import UIKit
     {
         override func textRectForBounds(bounds: CGRect) -> CGRect
         {
-            return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+            return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_EDGE_PADDING)
         }
         
         override func editingRectForBounds(bounds: CGRect) -> CGRect
         {
-            return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+            return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_EDGE_PADDING)
         }
         
         override func placeholderRectForBounds(bounds: CGRect) -> CGRect
         {
-            return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+            return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_EDGE_PADDING)
         }
         
         required init?(coder aDecoder: (NSCoder!))
@@ -137,17 +137,17 @@ import UIKit
     {
         override func textRectForBounds(bounds: CGRect) -> CGRect
         {
-            return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+            return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_EDGE_PADDING)
         }
         
         override func editingRectForBounds(bounds: CGRect) -> CGRect
         {
-            return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+            return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_EDGE_PADDING)
         }
         
         override func placeholderRectForBounds(bounds: CGRect) -> CGRect
         {
-            return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+            return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_EDGE_PADDING)
         }
         
         required init?(coder aDecoder: (NSCoder!))
@@ -195,17 +195,17 @@ class TextFieldSinglelinePropertyShort : UITextField
 {
     override func textRectForBounds(bounds: CGRect) -> CGRect
     {
-        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_EDGE_PADDING)
     }
     
     override func editingRectForBounds(bounds: CGRect) -> CGRect
     {
-        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_EDGE_PADDING)
     }
     
     override func placeholderRectForBounds(bounds: CGRect) -> CGRect
     {
-        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_EDGE_PADDING)
     }
     
     required init?(coder aDecoder: (NSCoder!))
@@ -254,17 +254,17 @@ class TextFieldMultilineGeneral : UITextField
 {
     override func textRectForBounds(bounds: CGRect) -> CGRect
     {
-        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_EDGE_PADDING)
     }
     
     override func editingRectForBounds(bounds: CGRect) -> CGRect
     {
-        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_EDGE_PADDING)
     }
     
     override func placeholderRectForBounds(bounds: CGRect) -> CGRect
     {
-        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_EDGE_PADDING)
     }
     
     required init?(coder aDecoder: (NSCoder!))
@@ -408,17 +408,17 @@ class DropDownShort : UITextField
 {
     override func textRectForBounds(bounds: CGRect) -> CGRect
     {
-        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_EDGE_PADDING)
     }
     
     override func editingRectForBounds(bounds: CGRect) -> CGRect
     {
-        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_EDGE_PADDING)
     }
     
     override func placeholderRectForBounds(bounds: CGRect) -> CGRect
     {
-        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_EDGE_PADDING)
     }
     
     required init?(coder aDecoder: (NSCoder!))
@@ -475,17 +475,17 @@ class DropDownGeneral : UITextField
 {
     override func textRectForBounds(bounds: CGRect) -> CGRect
     {
-        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_EDGE_PADDING)
     }
     
     override func editingRectForBounds(bounds: CGRect) -> CGRect
     {
-        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_EDGE_PADDING)
     }
     
     override func placeholderRectForBounds(bounds: CGRect) -> CGRect
     {
-        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_EDGE_PADDING)
     }
     
     required init?(coder aDecoder: (NSCoder!))

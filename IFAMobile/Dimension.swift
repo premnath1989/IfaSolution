@@ -24,6 +24,7 @@ public let ICON_SIZE_XHDPI : CGFloat = 96.0
 public let ICON_SIZE_XXHDPI : CGFloat = 144.0
 public let ICON_SIZE_XXXHDPI : CGFloat = 192.0
 public let INPUT_SIDE_PADDING : CGFloat = 10.0
+public let INPUT_EDGE_PADDING : CGFloat = 4.0
 public let GUIDE_ITEM_WIDTH : CGFloat = 90.0
 public let CALENDAR_SIZE : CGFloat = 30
 

@@ -250,6 +250,75 @@ class ButtonFind : UIButton
         }
     }
 
+class ButtonGuideDone : UIButton
+{
+    required init?(coder aDecoder : (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        
+        // GENERAL
+        
+        self.widthAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
+        self.heightAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
+        
+        self.layer.borderWidth = BUTTON_GUIDE_BORDERWIDTH
+        self.layer.cornerRadius = ICON_SIZE_LDPI * 0.5
+        self.layer.borderColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0).CGColor as CGColorRef!
+        self.backgroundColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0)
+        self.setTitleColor(GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity : 1.0), forState: .Normal)
+    }
+    
+    override init(frame: CGRect)
+    {
+        super.init(frame: frame)
+        
+        self.widthAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
+        self.heightAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
+        
+        self.layer.borderWidth = BUTTON_GUIDE_BORDERWIDTH
+        self.layer.cornerRadius = ICON_SIZE_LDPI * 0.5
+        self.layer.borderColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0).CGColor as CGColorRef!
+        self.backgroundColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0)
+        self.setTitleColor(GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity : 1.0), forState: .Normal)
+    }
+}
+
+class ButtonGuideInProgress : UIButton
+{
+    required init?(coder aDecoder : (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        
+        // GENERAL
+        
+        self.widthAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
+        self.heightAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
+        
+        self.layer.borderWidth = BUTTON_GUIDE_BORDERWIDTH
+        self.layer.cornerRadius = ICON_SIZE_LDPI * 0.5
+        self.layer.borderColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0).CGColor as CGColorRef!
+        self.backgroundColor = GeneratorUIColor(THEME_SECONDARY_COLOR, Opacity : 1.0)
+        self.setTitleColor(GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0), forState: .Normal)
+    }
+    
+    override init(frame: CGRect)
+    {
+        super.init(frame: frame)
+        
+        self.widthAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
+        self.heightAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
+        
+        self.layer.borderWidth = BUTTON_GUIDE_BORDERWIDTH
+        self.layer.cornerRadius = ICON_SIZE_LDPI * 0.5
+        self.layer.borderColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0).CGColor as CGColorRef!
+        self.backgroundColor = GeneratorUIColor(THEME_SECONDARY_COLOR, Opacity : 1.0)
+        self.setTitleColor(GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0), forState: .Normal)
+    }
+}
+
+
+// PLAN
+
 class ButtonPlanInformation : UIButton
 {
     required init?(coder aDecoder : (NSCoder!))

@@ -106,25 +106,13 @@ class ProspectAddBasicController: UIViewController, UITextFieldDelegate
         buttonFindProspect?.backgroundColor = GeneratorUIColor(THEME_SECONDARY_COLOR, Opacity: 1.0)
         buttonFindProspect!.addTarget(self, action: #selector(self.goToFindProspect(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION)
         
-        /* var buttonStep1 : UIButton? = UIButton()
+        // GUIDE
+        
+        var buttonStep1 : UIButton? = UIButton()
         buttonStep1 = self.view.viewWithTag(TAG_GUIDE_STEP1) as? UIButton
+        buttonStep1!.backgroundColor = GeneratorUIColor(THEME_SECONDARY_COLOR, Opacity : 1.0)
+        buttonStep1!.setTitleColor(GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0), forState: .Normal)
         buttonStep1!.addTarget(self, action: #selector(self.goToAddProspect(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION)
-        
-        var buttonStep2 : UIButton? = UIButton()
-        buttonStep2 = self.view.viewWithTag(TAG_GUIDE_STEP2) as? UIButton
-        buttonStep2!.addTarget(self, action: #selector(self.goToChooseFinancialPlan(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION)
-        
-        var buttonStep3 : UIButton? = UIButton()
-        buttonStep3 = self.view.viewWithTag(TAG_GUIDE_STEP3) as? UIButton
-        buttonStep3!.addTarget(self, action: #selector(self.goToEducationDetail(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION)
-        
-        var buttonStep4 : UIButton? = UIButton()
-        buttonStep4 = self.view.viewWithTag(TAG_GUIDE_STEP4) as? UIButton
-        buttonStep4!.addTarget(self, action: #selector(self.goToFactFindingQuestionnaire(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION)
-        
-        var buttonStep5 : UIButton? = UIButton()
-        buttonStep5 = self.view.viewWithTag(TAG_GUIDE_STEP5) as? UIButton
-        buttonStep5!.addTarget(self, action: #selector(self.goToEducationAnalysis(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION) */
         
         
         // DROPDOWN ESCAPE
@@ -207,28 +195,4 @@ class ProspectAddBasicController: UIViewController, UITextFieldDelegate
         let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageFindProspect") as! FindProspectController
         self.presentViewController(page, animated: true, completion: nil)
     }
-    
-    /* func goToChooseFinancialPlan(sender : UIButton)
-    {
-        let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageChooseFinancialPlan") as! ChooseFinancialPlanController
-        self.presentViewController(page, animated: true, completion: nil)
-    }
-    
-    func goToEducationDetail(sender : UIButton)
-    {
-        let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageEducationPlanDetail") as! EducationDetailController
-        self.presentViewController(page, animated: true, completion: nil)
-    }
-    
-    func goToFactFindingQuestionnaire(sender : UIButton)
-    {
-        let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageFactFindingQuestionnaire") as! FactFindingQuestionnaireController
-        self.presentViewController(page, animated: true, completion: nil)
-    }
-    
-    func goToEducationAnalysis(sender : UIButton)
-    {
-        let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageEducationAnalysis") as! EducationAnalysisController
-        self.presentViewController(page, animated: true, completion: nil)
-    } */
 }
