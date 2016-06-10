@@ -16,12 +16,12 @@ HEADER_PROSPECT_DESCRIPTION = "mengatur prospek baru atau proses yang sudah terd
 HEADER_EDUCATIONPLAN_TITLE = "Education";
 HEADER_EDUCATIONPLAN_DESCRIPTION = "text";
 
-TITLE_EDUCATIONPLAN_DETAILINFORMATION = "Education Form Detail";
+TITLE_EDUCATIONPLAN_DETAILINFORMATION = "Andy Phan's Details";
 TITLE_FINANCIALPLAN_FACTFINDINGQUESTIONNAIRE = "Fact Finding Questionnaire";
 TITLE_FINANCIALPLAN_DONTKNOWRISKPROFILE = "If you do not know your personal risk profile, please check by answering the following questions.";
 TITLE_FINANCIALPLAN_DECLARATION = "Declaration";
 TITLE_FINANCIALPLAN_CONFIRMATION = "Confirmation";
-TITLE_EDUCATIONPLAN_BASICINFORMATION = "Informasi dasar";
+TITLE_EDUCATIONPLAN_BASICINFORMATION = "Basic Information";
 TITLE_EDUCATIONPLAN_FUNDNEEDED = "Total education fund needed at tertiary age";
 TITLE_EDUCATIONPLAN_FUNDAVAILABLE = "Total education fund available at tertiary age";
 TITLE_EDUCATIONPLAN_BALANCE = "Balance amount needed at tertiary age";
@@ -119,7 +119,7 @@ FIELD_BIRTHDAY = "Ulang tahun";
 FIELD_GENDER = "Jenis kelamin";
 FIELD_CONTACTNUMBER = "Nomor telepon";
 FIELD_ADDRESS = "Alamat";
-FIELD_EMAIL = "Surat elektronik";
+FIELD_EMAIL = "E-Mail";
 
 FIELD_WELCOMEBACK = "Selamat datang kembali, ";
 FIELD_AGENTCODE = "Kode";
