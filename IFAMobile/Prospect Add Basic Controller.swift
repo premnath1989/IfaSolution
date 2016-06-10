@@ -32,8 +32,6 @@ class ProspectAddBasicController: UIViewController, UITextFieldDelegate
         @IBOutlet var labelContactNumber : UILabel!
         @IBOutlet var labelAddress : UILabel!
         @IBOutlet var labelEmail : UILabel!
-        @IBOutlet var labelGenderMale : UILabel!
-        @IBOutlet var labelGenderFemale : UILabel!
         
         @IBOutlet var textFieldName : UITextField!
         @IBOutlet var textFieldNamePrefix : UITextField!
@@ -72,8 +70,6 @@ class ProspectAddBasicController: UIViewController, UITextFieldDelegate
         labelContactNumber.text = NSLocalizedString("FIELD_CONTACTNUMBER", comment: "")
         labelAddress.text = NSLocalizedString("FIELD_ADDRESS", comment: "")
         labelEmail.text = NSLocalizedString("FIELD_EMAIL", comment: "")
-        labelGenderMale.text = NSLocalizedString("OPTION_MALE", comment: "")
-        labelGenderFemale.text = NSLocalizedString("OPTION_FEMALE", comment: "")
         
         textFieldName.placeholder = NSLocalizedString("PLACEHOLDER_NAME", comment: "")
         textFieldContactNumber.placeholder = NSLocalizedString("PLACEHOLDER_CONTACTNUMBER", comment: "")

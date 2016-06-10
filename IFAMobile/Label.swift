@@ -230,6 +230,25 @@ import Foundation
         }
     }
 
+class LabelFieldShort : UILabel
+{
+    required init?(coder aDecoder : (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        
+        // GENERAL
+        
+        self.bounds = CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+        self.widthAnchor.constraintEqualToConstant(FIELD_GENERAL_WIDTH * 0.8).active = true
+        self.heightAnchor.constraintEqualToConstant(INPUT_GENERAL_HEIGHT).active = true
+        self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_FORM_FIELD)
+        self.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
+        self.textAlignment = .Left
+        self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
+        self.numberOfLines = 1
+    }
+}
+
     class LabelField : UILabel
     {
         required init?(coder aDecoder : (NSCoder!))
