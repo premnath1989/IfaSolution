@@ -38,7 +38,7 @@ class PhotoProfileNavigation : UIButton
         self.heightAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
         self.layer.cornerRadius = ICON_SIZE_LDPI * 0.5
         self.setImage(UIImage(named: "Photo Profile Small"), forState: .Normal)
-        self.tintColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity: 0.0)
+        // self.tintColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity: 0.0)
     }
 }
 
