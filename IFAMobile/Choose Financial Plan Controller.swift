@@ -85,6 +85,20 @@ class ChooseFinancialPlanController: UIViewController
         buttonFindProspect = self.view.viewWithTag(TAG_BUTTON_FINDPROSPECT) as? UIButton
         buttonFindProspect?.backgroundColor = GeneratorUIColor(THEME_SECONDARY_COLOR, Opacity: 1.0)
         buttonFindProspect!.addTarget(self, action: #selector(self.goToFindProspect(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION)
+        
+        // GUIDE
+        
+        var buttonStep1 : UIButton? = ButtonGuideDone()
+        buttonStep1 = self.view.viewWithTag(TAG_GUIDE_STEP1) as? UIButton
+        buttonStep1!.backgroundColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0)
+        buttonStep1!.setTitleColor(GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity : 1.0), forState: .Normal)
+        buttonStep1!.addTarget(self, action: #selector(self.goToAddProspect(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION)
+        
+        var buttonStep2 : UIButton? = ButtonGuideInProgress()
+        buttonStep2 = self.view.viewWithTag(TAG_GUIDE_STEP2) as? UIButton
+        buttonStep2!.backgroundColor = GeneratorUIColor(THEME_SECONDARY_COLOR, Opacity : 1.0)
+        buttonStep2!.setTitleColor(GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0), forState: .Normal)
+        buttonStep2!.addTarget(self, action: #selector(self.goToChooseFinancialPlan(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION)
     }
     
     
@@ -123,6 +137,14 @@ class ChooseFinancialPlanController: UIViewController
     func goToFindProspect(sender : UIButton)
     {
         let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageFindProspect") as! FindProspectController
+        self.presentViewController(page, animated: true, completion: nil)
+    }
+    
+    // GUIDE
+    
+    func goToChooseFinancialPlan(sender : UIButton)
+    {
+        let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageChooseFinancialPlan") as! ChooseFinancialPlanController
         self.presentViewController(page, animated: true, completion: nil)
     }
 }

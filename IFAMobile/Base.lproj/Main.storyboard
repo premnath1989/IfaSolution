@@ -121,7 +121,7 @@
         <!--Education Detail Controller-->
         <scene sceneID="tBh-bh-Lrr">
             <objects>
-                <viewController id="ceB-LG-Z53" customClass="EducationDetailController" customModule="IFAMobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PageEducationPlanDetail" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ceB-LG-Z53" customClass="EducationDetailController" customModule="IFAMobile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Hz2-Mb-wd0"/>
                         <viewControllerLayoutGuide type="bottom" id="QaB-rR-3tw"/>
@@ -485,7 +485,7 @@
         <!--Fact Finding Questionnaire Controller-->
         <scene sceneID="pjY-ue-Rgd">
             <objects>
-                <viewController id="aI0-aZ-BGq" customClass="FactFindingQuestionnaireController" customModule="IFAMobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PageFactFindingQuestionnaire" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aI0-aZ-BGq" customClass="FactFindingQuestionnaireController" customModule="IFAMobile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aNw-Oq-iKd"/>
                         <viewControllerLayoutGuide type="bottom" id="eut-vg-QkV"/>
@@ -605,7 +605,7 @@
                                                                     </switch>
                                                                 </subviews>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="DCF-eY-Iex" customClass="StackViewQuestionHorizontalContainer" customModule="IFAMobile" customModuleProvider="target">
+                                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="DCF-eY-Iex">
                                                                 <rect key="frame" x="0.0" y="124" width="281" height="49"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXL-yi-JHS" customClass="LabelQuestion" customModule="IFAMobile" customModuleProvider="target">
@@ -901,7 +901,7 @@
         <!--Education Analysis Controller-->
         <scene sceneID="EKJ-9O-yxf">
             <objects>
-                <viewController id="Xtb-bg-ueD" customClass="EducationAnalysisController" customModule="IFAMobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PageEducationAnalysis" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Xtb-bg-ueD" customClass="EducationAnalysisController" customModule="IFAMobile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nkb-DP-ZBN"/>
                         <viewControllerLayoutGuide type="bottom" id="Neb-jh-ssy"/>
@@ -1133,13 +1133,13 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="42" height="127"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMj-L1-F1f" customClass="LabelField" customModule="IFAMobile" customModuleProvider="target">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="42" height="51"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZ0-xt-IIH" customClass="LabelField" customModule="IFAMobile" customModuleProvider="target">
-                                                                                        <rect key="frame" x="0.0" y="56" width="42" height="21"/>
+                                                                                        <rect key="frame" x="0.0" y="26" width="42" height="51"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                                         <nil key="highlightedColor"/>
@@ -1336,7 +1336,7 @@
         <!--Choose Financial Plan Controller-->
         <scene sceneID="Nh8-R4-UU9">
             <objects>
-                <viewController id="VZA-vp-Dlm" customClass="ChooseFinancialPlanController" customModule="IFAMobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PageChooseFinancialPlan" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VZA-vp-Dlm" customClass="ChooseFinancialPlanController" customModule="IFAMobile" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="U43-0y-BWc"/>
                         <viewControllerLayoutGuide type="bottom" id="2uq-6m-ei2"/>
