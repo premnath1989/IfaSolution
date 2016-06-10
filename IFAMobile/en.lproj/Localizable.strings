@@ -175,7 +175,8 @@ OPTION_MSS = "Mss. ";
 PLACEHOLDER_AGENT_CODE = "agent code";
 PLACEHOLDER_AGENT_PASSWORD = "agent password";
 
-PLACEHOLDER_PLAN_NAME = "Your financial plan name";
+PLACEHOLDER_PLANNAME = "Your financial plan name";
+PLACEHOLDER_PAYORNAME = "Please input your payor name";
 PLACEHOLDER_ENTRYAGETOUNIVERSITY = "How old is your child when enter university";
 PLACEHOLDER_TOTALANNUALCOSTASATTODAYVALUE = "Total annual cost based on today value";
 PLACEHOLDER_TOTALANNUALLIVINGEXPENSES = "The total annual living expenses";
@@ -196,6 +197,8 @@ PLACEHOLDER_ADDRESS = "Where do you live now ?";
 PLACEHOLDER_EMAIL = "Your relgularly checked email";
 
 PLACEHOLDER_FINDPROSPECT = "Find prospect by address, name or email";
+
+PLACEHOLDER_BIRTHDAY = "When is your birthday ?";
 
 INFORMATION_DISCLAIMERCLAUSE = "1. I, the undersigned, hereby authorize the undersigned Associate(s) of Great Vision (GV) to submit any personal information contained herein to GV, who will perform an analysis of and prepare a proposal on the recommended solutions based on the information given herein. \n 2. I  understand that, GV and the Associate(s) will treat my personal information in strict confidentiality, but not limited to the disclosure of such information to the relevant consultant(s) and employee(s) of GV in the normal course of performing their respective function(s). \n 3. I hereby understand that any analysis and proposals that are submitted to me by GV or the Associate(s) are for reference and / or illustration purposes only prior to the implementation of the said recommended solutions without the further involvement of the Associate. \n 4. I  shall not hold  GV or the Associate(s) responsible for any outcome whatsoever in the event that I  proceed with the implementation of the proposal without their said involvement. \n 5. I confirm that the above information provided in this Questionnaire is correct and true.  In the event of any changes to or cancellation of any of my personal information as already given herein,  I shall keep GV informed in writing of such developments as it may affect the analysis process. \n 6. I hereby irrevocably agree to indemnify GV and the Associate(s) against all claims and waive all claims and rights that I may have against GV, its employees, consultants and Associate(s). \n 7. GV reserves the right to reject any request for analysis or development of financial solutions upon submission of this Questionnaire for whatsoever reasons thereof.";
 

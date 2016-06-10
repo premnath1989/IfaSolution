@@ -112,6 +112,8 @@
 		9BF5DE0E1D07D3E5004AE484 /* Prospect Add Basic Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF5DE0D1D07D3E5004AE484 /* Prospect Add Basic Controller.swift */; };
 		9BF5DE131D08171C004AE484 /* Choose Financial Plan Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF5DE121D08171C004AE484 /* Choose Financial Plan Controller.swift */; };
 		9BF5DE151D08D5B7004AE484 /* Home Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF5DE141D08D5B7004AE484 /* Home Controller.swift */; };
+		9BFF358E1D09D13600B9BB4E /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFF358D1D09D13600B9BB4E /* DatePickerDialog.swift */; };
+		9BFF35941D09D9F900B9BB4E /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFF35931D09D9F900B9BB4E /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -319,6 +321,8 @@
 		9BF5DE0D1D07D3E5004AE484 /* Prospect Add Basic Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Prospect Add Basic Controller.swift"; sourceTree = "<group>"; };
 		9BF5DE121D08171C004AE484 /* Choose Financial Plan Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Choose Financial Plan Controller.swift"; sourceTree = "<group>"; };
 		9BF5DE141D08D5B7004AE484 /* Home Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Home Controller.swift"; sourceTree = "<group>"; };
+		9BFF358D1D09D13600B9BB4E /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
+		9BFF35931D09D9F900B9BB4E /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -414,6 +418,7 @@
 		0F76D9861CFC4AAD002A7F47 /* Object */ = {
 			isa = PBXGroup;
 			children = (
+				9BFF35931D09D9F900B9BB4E /* Alert.swift */,
 			);
 			name = Object;
 			sourceTree = "<group>";
@@ -471,6 +476,7 @@
 				0F76D9821CFC4A57002A7F47 /* View Controller */,
 				0F76D9831CFC4A79002A7F47 /* Composer */,
 				0FB8FE111CF7DAD8005C85DE /* Main.storyboard */,
+				9BFF35921D09D14600B9BB4E /* Date Picker Dialog */,
 				9B471FF81D096C6A000FD917 /* Charts.xcodeproj */,
 				9B4721E11D096E0A000FD917 /* Reader-master */,
 				0FB8FE191CF7DAD8005C85DE /* LaunchScreen.storyboard */,
@@ -656,6 +662,14 @@
 				9B8DFF221D0190FD00C80A0F /* Database Object.swift */,
 			);
 			name = Entity;
+			sourceTree = "<group>";
+		};
+		9BFF35921D09D14600B9BB4E /* Date Picker Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				9BFF358D1D09D13600B9BB4E /* DatePickerDialog.swift */,
+			);
+			name = "Date Picker Dialog";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -874,6 +888,7 @@
 			files = (
 				9B4721E91D09A3DB000FD917 /* Find Prospect Controller.swift in Sources */,
 				9B4720F61D096DC2000FD917 /* ReaderConstants.m in Sources */,
+				9BFF358E1D09D13600B9BB4E /* DatePickerDialog.swift in Sources */,
 				0FB8FE161CF7DAD8005C85DE /* IFAMobile.xcdatamodeld in Sources */,
 				9B8DFF021D018E8E00C80A0F /* Insert Initialization.swift in Sources */,
 				0F76D9A11CFC4DF9002A7F47 /* User Interface.swift in Sources */,
@@ -923,6 +938,7 @@
 				9BB8F3EF1D0929E500806A97 /* Profile Controller.swift in Sources */,
 				9B4720F51D096DC2000FD917 /* CGPDFDocument.m in Sources */,
 				9B4720FB1D096DC2000FD917 /* ReaderDocumentOutline.m in Sources */,
+				9BFF35941D09D9F900B9BB4E /* Alert.swift in Sources */,
 				0FB8FE0E1CF7DAD8005C85DE /* AppDelegate.swift in Sources */,
 				9B4720FA1D096DC2000FD917 /* ReaderDocument.m in Sources */,
 				9BF5DE131D08171C004AE484 /* Choose Financial Plan Controller.swift in Sources */,

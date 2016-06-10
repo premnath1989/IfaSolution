@@ -76,6 +76,7 @@ class GuideController : UIView
             let buttonStep = ButtonGuide()
             buttonStep.setTitle(arrayStep[i], forState: .Normal)
             stackViewGuideItem.addArrangedSubview(buttonStep)
+            buttonStep.tag = i + 10
             
             let labelDetail = LabelGuideDetail()
             labelDetail.text = arrayDetail[i].lowercaseString

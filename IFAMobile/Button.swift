@@ -183,36 +183,36 @@ import UIKit
         }
     }
 
-    class ButtonFind : UIButton
+class ButtonFind : UIButton
+{
+    required init?(coder aDecoder : (NSCoder!))
     {
-        required init?(coder aDecoder : (NSCoder!))
-        {
-            super.init(coder: aDecoder)
-            
-            // GENERAL
-            
-            self.widthAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
-            self.heightAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
-            
-            self.backgroundColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity : 1.0)
-            self.setTitle("", forState: .Normal)
-            self.setImage(UIImage(named: "Find Secondary"), forState: .Normal)
-            self.tintColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0)
-        }
+        super.init(coder: aDecoder)
         
-        override init(frame: CGRect)
-        {
-            super.init(frame: frame)
-            
-            self.widthAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
-            self.heightAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
-            
-            self.backgroundColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity : 1.0)
-            self.setTitle("", forState: .Normal)
-            self.setImage(UIImage(named: "Find Secondary"), forState: .Normal)
-            self.tintColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0)
-        }
+        // GENERAL
+        
+        self.widthAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
+        self.heightAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
+        
+        self.backgroundColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity : 1.0)
+        self.setTitle("", forState: .Normal)
+        self.setImage(UIImage(named: "Find Secondary"), forState: .Normal)
+        self.tintColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0)
     }
+    
+    override init(frame: CGRect)
+    {
+        super.init(frame: frame)
+        
+        self.widthAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
+        self.heightAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
+        
+        self.backgroundColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity : 1.0)
+        self.setTitle("", forState: .Normal)
+        self.setImage(UIImage(named: "Find Secondary"), forState: .Normal)
+        self.tintColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0)
+    }
+}
 
 
     // GUIDE
@@ -249,6 +249,34 @@ import UIKit
             self.setTitleColor(GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0), forState: .Normal)
         }
     }
+
+class ButtonPlanInformation : UIButton
+{
+    required init?(coder aDecoder : (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        
+        // GENERAL
+        
+        self.layer.borderWidth = BUTTON_GUIDE_BORDERWIDTH
+        self.layer.cornerRadius = ICON_SIZE_LDPI * 0.5
+        self.layer.borderColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0).CGColor as CGColorRef!
+        self.backgroundColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity : 0.0)
+        self.setTitle("", forState: .Normal)
+    }
+    
+    override init(frame: CGRect)
+    {
+        super.init(frame: frame)
+        
+        self.layer.borderWidth = BUTTON_GUIDE_BORDERWIDTH
+        self.layer.cornerRadius = ICON_SIZE_LDPI * 0.5
+        self.layer.borderColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0).CGColor as CGColorRef!
+        self.backgroundColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity : 0.0)
+        self.setTitleColor(GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0), forState: .Normal)
+        self.setTitle("", forState: .Normal)
+    }
+}
 
 class ButtonPlan : UIButton
 {

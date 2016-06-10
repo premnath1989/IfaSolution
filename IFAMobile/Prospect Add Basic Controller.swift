@@ -15,7 +15,7 @@ import UIKit
 
 // CLASS
 
-class ProspectAddBasicController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
+class ProspectAddBasicController: UIViewController, UITextFieldDelegate
 {
     // INITIALIZATION
     
@@ -36,8 +36,8 @@ class ProspectAddBasicController: UIViewController, UIPickerViewDelegate, UIPick
         @IBOutlet var labelGenderFemale : UILabel!
         
         @IBOutlet var textFieldName : UITextField!
-        @IBOutlet var pickerViewNamePrefix : UIPickerView!
-        @IBOutlet var datePickerBirthday : UIDatePicker!
+        @IBOutlet var textFieldNamePrefix : UITextField!
+        @IBOutlet var textFieldBirthday : UITextField!
         @IBOutlet var switchGender : UISwitch!
         @IBOutlet var textFieldContactNumber : UITextField!
         @IBOutlet var textFieldAddress : UITextField!
@@ -79,16 +79,16 @@ class ProspectAddBasicController: UIViewController, UIPickerViewDelegate, UIPick
         textFieldContactNumber.placeholder = NSLocalizedString("PLACEHOLDER_CONTACTNUMBER", comment: "")
         textFieldAddress.placeholder = NSLocalizedString("PLACEHOLDER_ADDRESS", comment: "")
         textFieldEmail.placeholder = NSLocalizedString("PLACEHOLDER_EMAIL", comment: "")
+        textFieldBirthday.placeholder = NSLocalizedString("PLACEHOLDER_BIRTHDAY", comment: "")
         
         buttonSubmit.setTitle(NSLocalizedString("BUTTON_SUBMIT", comment: ""), forState: .Normal)
         
         
         // LAYOUT SETTING
         
-        self.pickerViewNamePrefix.delegate = self
-        self.pickerViewNamePrefix.dataSource = self
-        
         arrayNamePrefix = [NSLocalizedString("OPTION_MR", comment: ""), NSLocalizedString("OPTION_MRS", comment: ""), NSLocalizedString("OPTION_MS", comment: ""), NSLocalizedString("OPTION_MSS", comment: "")]
+        
+        textFieldNamePrefix.delegate = self
         
         
         // NAVIGATION
@@ -109,6 +109,54 @@ class ProspectAddBasicController: UIViewController, UIPickerViewDelegate, UIPick
         buttonFindProspect = self.view.viewWithTag(TAG_BUTTON_FINDPROSPECT) as? UIButton
         buttonFindProspect?.backgroundColor = GeneratorUIColor(THEME_SECONDARY_COLOR, Opacity: 1.0)
         buttonFindProspect!.addTarget(self, action: #selector(self.goToFindProspect(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION)
+        
+        /* var buttonStep1 : UIButton? = UIButton()
+        buttonStep1 = self.view.viewWithTag(TAG_GUIDE_STEP1) as? UIButton
+        buttonStep1!.addTarget(self, action: #selector(self.goToAddProspect(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION)
+        
+        var buttonStep2 : UIButton? = UIButton()
+        buttonStep2 = self.view.viewWithTag(TAG_GUIDE_STEP2) as? UIButton
+        buttonStep2!.addTarget(self, action: #selector(self.goToChooseFinancialPlan(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION)
+        
+        var buttonStep3 : UIButton? = UIButton()
+        buttonStep3 = self.view.viewWithTag(TAG_GUIDE_STEP3) as? UIButton
+        buttonStep3!.addTarget(self, action: #selector(self.goToEducationDetail(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION)
+        
+        var buttonStep4 : UIButton? = UIButton()
+        buttonStep4 = self.view.viewWithTag(TAG_GUIDE_STEP4) as? UIButton
+        buttonStep4!.addTarget(self, action: #selector(self.goToFactFindingQuestionnaire(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION)
+        
+        var buttonStep5 : UIButton? = UIButton()
+        buttonStep5 = self.view.viewWithTag(TAG_GUIDE_STEP5) as? UIButton
+        buttonStep5!.addTarget(self, action: #selector(self.goToEducationAnalysis(_:)), forControlEvents: EVENT_BUTTON_NAVIGATION) */
+        
+        
+        // DROPDOWN ESCAPE
+        
+        /**
+         * Called when 'return' key pressed. return NO to ignore.
+         */
+        func textFieldShouldReturn(textField: UITextField) -> Bool
+        {
+            textField.resignFirstResponder()
+            return true
+        }
+        
+        func textFieldShouldBeginEditing(textField: UITextField) -> Bool
+        {
+            if textField == textFieldNamePrefix
+            {
+                dropDownPrefixName(textField)
+                
+                return false
+            }
+            else
+            {
+                
+            }
+            
+            return true
+        }
     }
     
     
@@ -121,31 +169,25 @@ class ProspectAddBasicController: UIViewController, UIPickerViewDelegate, UIPick
     }
     
     
-    // PICKER VIEW
+    // EVENT
     
-    // The number of columns of data
-    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int
+    @IBAction func datePickerBirthday(sender: AnyObject)
     {
-        return 1
+        DatePickerDialog().show("DatePicker", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: .Date)
+        {
+            (date) -> Void in
+            self.textFieldBirthday.text = "\(date)"
+        }
     }
     
-    // The number of rows of data
-    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int
+    @IBAction func dropDownPrefixName(sender: AnyObject)
     {
-        return arrayNamePrefix.count
-    }
-    
-    // The data to return for the row and component (column) that's being passed in
-//    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String?
-//    {
-//        return arrayNamePrefix[row]
-//    }
-    
-    func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView?) -> UIView
-    {
-        let label = LabelPicker()
-        label.text = arrayNamePrefix[row]
-        return label
+        let AlertVariable : AlertDropDown = AlertDropDown.init()
+        AlertVariable.SetDropDownTitle("Name Prefix")
+        AlertVariable.SetDropDownMessage("What we should call you ?")
+        AlertVariable.SetArrayPositiveAction(arrayNamePrefix)
+        
+        self.presentViewController(AlertSheetDropDown(AlertVariable, Sender: sender, ViewController: self), animated: true, completion: nil)
     }
     
     
@@ -168,4 +210,28 @@ class ProspectAddBasicController: UIViewController, UIPickerViewDelegate, UIPick
         let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageFindProspect") as! FindProspectController
         self.presentViewController(page, animated: true, completion: nil)
     }
+    
+    /* func goToChooseFinancialPlan(sender : UIButton)
+    {
+        let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageChooseFinancialPlan") as! ChooseFinancialPlanController
+        self.presentViewController(page, animated: true, completion: nil)
+    }
+    
+    func goToEducationDetail(sender : UIButton)
+    {
+        let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageEducationPlanDetail") as! EducationDetailController
+        self.presentViewController(page, animated: true, completion: nil)
+    }
+    
+    func goToFactFindingQuestionnaire(sender : UIButton)
+    {
+        let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageFactFindingQuestionnaire") as! FactFindingQuestionnaireController
+        self.presentViewController(page, animated: true, completion: nil)
+    }
+    
+    func goToEducationAnalysis(sender : UIButton)
+    {
+        let page = self.storyboard?.instantiateViewControllerWithIdentifier("PageEducationAnalysis") as! EducationAnalysisController
+        self.presentViewController(page, animated: true, completion: nil)
+    } */
 }

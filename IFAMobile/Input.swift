@@ -283,6 +283,8 @@ class TextFieldMultiline : UITextField
         
         self.clearButtonMode = UITextFieldViewMode.UnlessEditing
         self.returnKeyType = UIReturnKeyType.Done
+        self.textAlignment = .Left
+        self.contentVerticalAlignment = .Top
         
         // ENABLE
         
@@ -339,6 +341,143 @@ class TextFieldMultiline : UITextField
             // self.setValue(UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_MEDIUM), forKey: "font")
         }
     }
+
+
+// DROPDOWN
+
+class DropDownShort : UITextField
+{
+    override func textRectForBounds(bounds: CGRect) -> CGRect
+    {
+        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+    }
+    
+    override func editingRectForBounds(bounds: CGRect) -> CGRect
+    {
+        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+    }
+    
+    override func placeholderRectForBounds(bounds: CGRect) -> CGRect
+    {
+        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+    }
+    
+    required init?(coder aDecoder: (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        
+        self.widthAnchor.constraintEqualToConstant(TEXTFIELD_SHORT_WIDTH).active = true
+        self.heightAnchor.constraintEqualToConstant(INPUT_GENERAL_HEIGHT).active = true
+        
+        self.backgroundColor = GeneratorUIColor(THEME_QUATERNARY_COLOR, Opacity: 1.0)
+        self.layer.masksToBounds = true
+        self.borderStyle = UITextBorderStyle.None
+        self.layer.cornerRadius = INPUT_GENERAL_BORDERRADIUS
+        
+        let TailImageView = UIImageView()
+        let TailImage = UIImage(named: "Tail Secondary")
+        TailImageView.image = TailImage
+        TailImageView.frame = CGRectMake(0, 0, 10 + 38 + 10, 38)
+        TailImageView.contentMode = .Center
+        self.rightView = TailImageView
+        self.rightViewMode = .Always
+        
+        self.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
+        self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_FORM_INPUT)
+        
+        self.clearButtonMode = UITextFieldViewMode.UnlessEditing
+        self.returnKeyType = UIReturnKeyType.Done
+        
+        
+        // ENABLE
+        
+        //self.addTarget(self, action: "InputEnable:", forControlEvents: UIControlEvents.TouchUpInside)
+        
+        // HIGHLIGHT
+        
+        //self.addTarget(self, action: "InputHighlight:", forControlEvents: UIControlEvents.TouchDown)
+        
+        // EDITING DID BEGIN
+        
+        // self.addTarget(self, action: "DismissKeyboard:", forControlEvents: UIControlEvents.AllEvents)
+    }
+    
+    
+    
+    // FUNCTION
+    
+    func DismissKeyboard(EditingDidBegin: UITextField!)
+    {
+        EditingDidBegin.endEditing(true)
+    }
+}
+
+class DropDownGeneral : UITextField
+{
+    override func textRectForBounds(bounds: CGRect) -> CGRect
+    {
+        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+    }
+    
+    override func editingRectForBounds(bounds: CGRect) -> CGRect
+    {
+        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+    }
+    
+    override func placeholderRectForBounds(bounds: CGRect) -> CGRect
+    {
+        return CGRectInset(bounds, INPUT_SIDE_PADDING, INPUT_SIDE_PADDING)
+    }
+    
+    required init?(coder aDecoder: (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        
+        self.widthAnchor.constraintEqualToConstant(TEXTFIELD_GENERAL_WIDTH).active = true
+        self.heightAnchor.constraintEqualToConstant(INPUT_GENERAL_HEIGHT).active = true
+        
+        self.backgroundColor = GeneratorUIColor(THEME_QUATERNARY_COLOR, Opacity: 1.0)
+        self.layer.masksToBounds = true
+        self.borderStyle = UITextBorderStyle.None
+        self.layer.cornerRadius = INPUT_GENERAL_BORDERRADIUS
+        
+        let TailImageView = UIImageView()
+        let TailImage = UIImage(named: "Tail Secondary")
+        TailImageView.image = TailImage
+        TailImageView.frame = CGRectMake(0, 0, 10 + 38 + 10, 38)
+        TailImageView.contentMode = .Center
+        self.rightView = TailImageView
+        self.rightViewMode = .Always
+        
+        self.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
+        self.font = UIFont(name : THEME_TERTIARY_FONT, size : FONTSIZE_FORM_INPUT)
+        
+        self.clearButtonMode = UITextFieldViewMode.UnlessEditing
+        self.returnKeyType = UIReturnKeyType.Done
+        
+        
+        // ENABLE
+        
+        //self.addTarget(self, action: "InputEnable:", forControlEvents: UIControlEvents.TouchUpInside)
+        
+        // HIGHLIGHT
+        
+        //self.addTarget(self, action: "InputHighlight:", forControlEvents: UIControlEvents.TouchDown)
+        
+        // EDITING DID BEGIN
+        
+        // self.addTarget(self, action: "DismissKeyboard:", forControlEvents: UIControlEvents.AllEvents)
+    }
+    
+    
+    
+    // FUNCTION
+    
+    func DismissKeyboard(EditingDidBegin: UITextField!)
+    {
+        EditingDidBegin.endEditing(true)
+    }
+}
 
 
 // SEGMENTED CONTROL

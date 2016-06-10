@@ -31,6 +31,11 @@ public let TAG_BUTTON_NAVIGATIONPROSPECT : Int = 1
 public let TAG_BUTTON_ADDPROSPECT : Int = 3
 public let TAG_BUTTON_FINDPROSPECT : Int = 4
 public let EVENT_BUTTON_NAVIGATION : UIControlEvents = UIControlEvents.TouchDown
+public let TAG_GUIDE_STEP1 : Int = 11
+public let TAG_GUIDE_STEP2 : Int = 12
+public let TAG_GUIDE_STEP3 : Int = 13
+public let TAG_GUIDE_STEP4 : Int = 14
+public let TAG_GUIDE_STEP5 : Int = 15
 
 
 // DATABASE

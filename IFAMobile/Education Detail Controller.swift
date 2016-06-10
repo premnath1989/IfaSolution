@@ -25,6 +25,7 @@ class EducationDetailController: UIViewController
     @IBOutlet var labelDetailInformationTitle : UILabel!
 
     @IBOutlet var labelPlanName : UILabel!
+    @IBOutlet var labelPayorName : UILabel!
     @IBOutlet var labelEntryAgeToUniversity : UILabel!
     @IBOutlet var labelTotalAnnualCostAsAtTodayValue : UILabel!
     @IBOutlet var labelTotalAnnualLivingExpenses : UILabel!
@@ -36,6 +37,8 @@ class EducationDetailController: UIViewController
     @IBOutlet var labelExpectedRateOfReturn : UILabel!
     
     @IBOutlet var textFieldPlanName : UITextField!
+    @IBOutlet var textFieldPayorName : UITextField!
+    @IBOutlet var textFieldEntryAge : UITextField!
     @IBOutlet var textFieldTotalAnnualCostAsAtTodayValue : UITextField!
     @IBOutlet var textFieldTotalAnnualLivingExpenses : UITextField!
     @IBOutlet var textFieldLumpSumpSavings : UITextField!
@@ -65,6 +68,7 @@ class EducationDetailController: UIViewController
         labelDetailInformationTitle.text = NSLocalizedString("TITLE_EDUCATIONPLAN_DETAILINFORMATION", comment: "").uppercaseString
         
         labelPlanName.text = NSLocalizedString("FIELD_PLANNAME", comment: "")
+        labelPayorName.text = NSLocalizedString("FIELD_PAYORNAME", comment: "")
         labelEntryAgeToUniversity.text = NSLocalizedString("FIELD_ENTRYAGETOUNIVERSITY", comment: "")
         labelTotalAnnualCostAsAtTodayValue.text = NSLocalizedString("FIELD_TOTALANNUALCOSTASATTODAYVALUE", comment: "")
         labelTotalAnnualLivingExpenses.text = NSLocalizedString("FIELD_TOTALANNUALLIVINGEXPENSES", comment: "")
@@ -76,11 +80,13 @@ class EducationDetailController: UIViewController
         labelExpectedRateOfReturn.text = NSLocalizedString("FIELD_EXPECTEDRATEOFRETURN", comment: "")
         
         textFieldPlanName.placeholder = NSLocalizedString("PLACEHOLDER_PLANNAME", comment: "")
+        textFieldPayorName.placeholder = NSLocalizedString("PLACEHOLDER_PAYORNAME", comment: "")
+        textFieldEntryAge.placeholder = NSLocalizedString("PLACEHOLDER_ENTRYAGETOUNIVERSITY", comment: "")
         textFieldTotalAnnualCostAsAtTodayValue.placeholder = NSLocalizedString("PLACEHOLDER_TOTALANNUALCOSTASATTODAYVALUE", comment: "")
         textFieldTotalAnnualLivingExpenses.placeholder = NSLocalizedString("PLACEHOLDER_TOTALANNUALLIVINGEXPENSES", comment: "")
         textFieldLumpSumpSavings.placeholder = NSLocalizedString("PLACEHOLDER_LUMSUMPSAVINGS", comment: "")
         textFieldRegularAnnualSavings.placeholder = NSLocalizedString("PLACEHOLDER_REGULARANNUALSAVINGS", comment: "")
-        textFieldExistingSavingsPrograms.placeholder = NSLocalizedString("PLACEHOLDER_EXISTINGSAVINGPROGRAMS", comment: "")
+        textFieldExistingSavingsPrograms.placeholder = NSLocalizedString("PLACEHOLDER_EXISTINGSAVINGSPROGRAMS", comment: "")
         textFieldActualTotalEducation.placeholder = NSLocalizedString("PLACEHOLDER_ACTUALTOTALEDUCATION", comment: "")
         textFieldInflationRate.placeholder = NSLocalizedString("PLACEHOLDER_INFLATIONRATE", comment: "")
         textFieldExpectedRateOfReturn.placeholder = NSLocalizedString("PLACEHOLDER_EXPECTEDRATEOFRETURN", comment: "")
@@ -115,6 +121,18 @@ class EducationDetailController: UIViewController
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    // EVENT
+    
+    @IBAction func datePickerEntryAge(sender: AnyObject)
+    {
+        DatePickerDialog().show("DatePicker", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: .Date)
+        {
+            (date) -> Void in
+            self.textFieldEntryAge.text = "\(date)"
+        }
     }
     
     
