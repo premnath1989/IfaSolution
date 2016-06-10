@@ -203,9 +203,11 @@ class EducationAnalysisController: UIViewController, ReaderViewControllerDelegat
         
         // PDF VIEWER
         
-        let filename = "file"
+        // let filename = "file"
+        let filename = "Planning"
         let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0]
         let filePath = "\(documentsPath)/\(filename).pdf"
+        NSLog(filePath, "filePath")
         let readerDocument : ReaderDocument = ReaderDocument.withDocumentFilePath(filePath, password: nil)
         let readerViewController : ReaderViewController = ReaderViewController.init(readerDocument: readerDocument)
         readerViewController.delegate = self

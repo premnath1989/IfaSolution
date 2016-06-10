@@ -171,10 +171,10 @@ import Foundation
             // GENERAL
             
             self.font = UIFont(name : THEME_PRIMARY_FONT, size : FONTSIZE_USER_HEADER)
-            self.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
-            self.textAlignment = .Right
+            self.textColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Left
             self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
-            self.numberOfLines = 1
+            self.numberOfLines = 2
         }
     }
 
@@ -187,10 +187,10 @@ import Foundation
             // GENERAL
             
             self.font = UIFont(name : THEME_SECONDARY_FONT, size : FONTSIZE_USER_DETAIL)
-            self.textColor = GeneratorUIColor(THEME_SEPTENARY_COLOR, Opacity : 1.0)
-            self.textAlignment = .Right
+            self.textColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity : 1.0)
+            self.textAlignment = .Left
             self.baselineAdjustment = UIBaselineAdjustment.AlignCenters
-            self.numberOfLines = 1
+            self.numberOfLines = 2
         }
     }
 

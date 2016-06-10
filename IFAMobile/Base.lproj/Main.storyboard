@@ -38,7 +38,7 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o8X-RV-Cyr" customClass="TextFieldSinglelineLogin" customModule="IFAMobile" customModuleProvider="target">
                                         <rect key="frame" x="287.5" y="141" width="25" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="06K-9v-TLI" customClass="TextFieldSinglelineLogin" customModule="IFAMobile" customModuleProvider="target">
                                         <rect key="frame" x="287.5" y="91" width="25" height="30"/>
@@ -547,7 +547,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Xrx-Tm-Pmn" customClass="StackViewQuestionVerticalContainer" customModule="IFAMobile" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="61" width="281" height="173"/>
+                                                        <rect key="frame" x="20" y="61" width="281" height="183"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QRT-eh-Pnb" customClass="StackViewQuestionHorizontalContainer" customModule="IFAMobile" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="281" height="31"/>
@@ -605,8 +605,8 @@
                                                                     </switch>
                                                                 </subviews>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="DCF-eY-Iex">
-                                                                <rect key="frame" x="0.0" y="124" width="281" height="49"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DCF-eY-Iex">
+                                                                <rect key="frame" x="0.0" y="124" width="281" height="59"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXL-yi-JHS" customClass="LabelQuestion" customModule="IFAMobile" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
@@ -615,7 +615,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hRW-Wn-Leb" customClass="SegmentedControlFinancialPlan" customModule="IFAMobile" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="21" width="281" height="29"/>
+                                                                        <rect key="frame" x="0.0" y="31" width="281" height="29"/>
                                                                         <segments>
                                                                             <segment title="Moderate"/>
                                                                             <segment title="Conservative"/>
@@ -837,7 +837,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wjy-57-jOv" firstAttribute="top" secondItem="Bdm-Xp-XJ9" secondAttribute="bottom" id="0B8-t5-10t"/>
                             <constraint firstItem="Bdm-Xp-XJ9" firstAttribute="top" secondItem="tnu-uL-A4o" secondAttribute="bottom" constant="-36" id="5er-kb-xwa"/>
                             <constraint firstItem="nvi-2t-dBd" firstAttribute="leading" secondItem="RNe-LV-BQc" secondAttribute="leading" constant="40" id="FuN-rR-lhs"/>
                             <constraint firstItem="9wY-I2-uN6" firstAttribute="top" secondItem="wjy-57-jOv" secondAttribute="bottom" id="HTl-L7-JIf"/>
@@ -845,6 +844,7 @@
                             <constraint firstItem="tnu-uL-A4o" firstAttribute="top" secondItem="uyu-pZ-xNS" secondAttribute="bottom" id="Lv8-Fv-E1z"/>
                             <constraint firstItem="wjy-57-jOv" firstAttribute="leading" secondItem="RNe-LV-BQc" secondAttribute="leading" id="OSa-md-T14"/>
                             <constraint firstAttribute="trailing" secondItem="uyu-pZ-xNS" secondAttribute="trailing" id="Pqd-Yk-Rzn"/>
+                            <constraint firstItem="wjy-57-jOv" firstAttribute="top" secondItem="Bdm-Xp-XJ9" secondAttribute="bottom" id="Su5-Rd-uDl"/>
                             <constraint firstAttribute="trailing" secondItem="9wY-I2-uN6" secondAttribute="trailing" id="eDf-6G-olD"/>
                             <constraint firstAttribute="trailing" secondItem="wjy-57-jOv" secondAttribute="trailing" id="fDG-Fv-W0r"/>
                             <constraint firstItem="uyu-pZ-xNS" firstAttribute="leading" secondItem="RNe-LV-BQc" secondAttribute="leading" id="foz-FQ-Isf"/>
@@ -1133,13 +1133,13 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="42" height="127"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMj-L1-F1f" customClass="LabelField" customModule="IFAMobile" customModuleProvider="target">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="42" height="51"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZ0-xt-IIH" customClass="LabelField" customModule="IFAMobile" customModuleProvider="target">
-                                                                                        <rect key="frame" x="0.0" y="26" width="42" height="51"/>
+                                                                                        <rect key="frame" x="0.0" y="56" width="42" height="21"/>
                                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                                         <nil key="highlightedColor"/>
@@ -1803,6 +1803,13 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fk7-v1-wDB" customClass="ProfileController" customModule="IFAMobile" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="190" width="600" height="112"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="yuV-Ly-JS2"/>
+                                </constraints>
+                            </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KgB-xQ-771" customClass="ScrollViewDesktopContainer" customModule="IFAMobile" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="290" width="600" height="230"/>
                                 <subviews>
@@ -2311,13 +2318,6 @@
                                     <constraint firstAttribute="height" constant="100" id="ll4-xL-D93"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fk7-v1-wDB" customClass="GuideController" customModule="IFAMobile" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="154" width="600" height="136"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="136" id="yuV-Ly-JS2"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -2334,7 +2334,7 @@
                             <constraint firstAttribute="trailing" secondItem="4Ep-Ur-kmJ" secondAttribute="trailing" id="b7V-Gw-kQ9"/>
                             <constraint firstItem="NJo-qO-Jsh" firstAttribute="leading" secondItem="rfJ-S5-NUU" secondAttribute="leading" constant="40" id="dXt-Tk-Q4t"/>
                             <constraint firstItem="4Ep-Ur-kmJ" firstAttribute="leading" secondItem="rfJ-S5-NUU" secondAttribute="leading" id="go2-r6-vji"/>
-                            <constraint firstItem="Fk7-v1-wDB" firstAttribute="top" secondItem="tTg-lc-Vju" secondAttribute="bottom" constant="-36" id="hUb-vg-ObS"/>
+                            <constraint firstItem="Fk7-v1-wDB" firstAttribute="top" secondItem="tTg-lc-Vju" secondAttribute="bottom" id="hUb-vg-ObS"/>
                             <constraint firstItem="Fk7-v1-wDB" firstAttribute="leading" secondItem="rfJ-S5-NUU" secondAttribute="leading" id="kZe-uP-WNN"/>
                             <constraint firstItem="NJo-qO-Jsh" firstAttribute="top" secondItem="tTg-lc-Vju" secondAttribute="top" constant="15" id="rX7-Gp-VbM"/>
                             <constraint firstItem="KQl-Eh-754" firstAttribute="leading" secondItem="rfJ-S5-NUU" secondAttribute="leading" id="uxV-El-NlX"/>
