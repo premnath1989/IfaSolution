@@ -72,7 +72,7 @@ class HomeController: UIViewController
         labelHeaderTitle.text = NSLocalizedString("HEADER_PROSPECT_TITLE", comment: "")
         labelHeaderDescription.text = NSLocalizedString("HEADER_PROSPECT_DESCRIPTION", comment: "")
         
-        labelAgentInformationTitle.text = NSLocalizedString("TITLE_EDUCATIONPLAN_DETAILINFORMATION", comment: "").uppercaseString
+        labelAgentInformationTitle.text = NSLocalizedString("Andy Phan Info", comment: "").uppercaseString
         labelCalendarTitle.text = NSLocalizedString("NAVIGATION_CALENDAR", comment: "").uppercaseString
         labelNoteTitle.text = NSLocalizedString("NAVIGATION_NOTE", comment: "").uppercaseString
         
