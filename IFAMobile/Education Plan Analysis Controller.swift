@@ -60,6 +60,9 @@ class EducationAnalysisController: UIViewController, ReaderViewControllerDelegat
     @IBOutlet var textFieldReturnAtMaturityAge : UITextField!
     @IBOutlet var textFieldTotalEducationFundAvailableAtTertiaryAge : UITextField!
     
+    @IBOutlet var labelTableTitle : UILabel!
+    @IBOutlet var stackViewTable : UIStackView!
+    
     @IBOutlet weak var barChartView : BarChartView!
     
     @IBOutlet var buttonShare : UIButton!
@@ -114,6 +117,113 @@ class EducationAnalysisController: UIViewController, ReaderViewControllerDelegat
         textFieldTotalEducationFundAvailableAtTertiaryAge.text = "RM 30.000.000"
         
         buttonShare.setTitle(NSLocalizedString("BUTTON_SHARE", comment: ""), forState: .Normal)
+        
+        labelTableTitle.text = "Investment table".uppercaseString
+        
+        
+        // TABLE
+        
+        var arrayTable : Array<String> =
+        [
+            "%" + CHARACTER_DATABASE_SEPARATOR + "Lum sump investment" + CHARACTER_DATABASE_SEPARATOR + "%" + CHARACTER_DATABASE_SEPARATOR + "Savings",
+            "2 %" + CHARACTER_DATABASE_SEPARATOR + "RM 100" + CHARACTER_DATABASE_SEPARATOR + "2 %" + CHARACTER_DATABASE_SEPARATOR + "RM 50",
+            "4 %" + CHARACTER_DATABASE_SEPARATOR + "RM 200" + CHARACTER_DATABASE_SEPARATOR + "4 %" + CHARACTER_DATABASE_SEPARATOR + "RM 100",
+            "6 %" + CHARACTER_DATABASE_SEPARATOR + "RM 300" + CHARACTER_DATABASE_SEPARATOR + "6 %" + CHARACTER_DATABASE_SEPARATOR + "RM 150",
+            "8 %" + CHARACTER_DATABASE_SEPARATOR + "RM 400" + CHARACTER_DATABASE_SEPARATOR + "8 %" + CHARACTER_DATABASE_SEPARATOR + "RM 200",
+            "10 %" + CHARACTER_DATABASE_SEPARATOR + "RM 500" + CHARACTER_DATABASE_SEPARATOR + "10 %" + CHARACTER_DATABASE_SEPARATOR + "RM 250"
+        ]
+        
+        for i : Int in 0 ..< arrayTable.count
+        {
+            var arrayTableContent = arrayTable[i].componentsSeparatedByString(CHARACTER_DATABASE_SEPARATOR)
+            
+            if (i == 0)
+            {
+                var labelTableHeader1 : UILabel = LabelTableHeader()
+                var labelTableHeader2 : UILabel = LabelTableHeader()
+                var labelTableHeader3 : UILabel = LabelTableHeader()
+                var labelTableHeader4 : UILabel = LabelTableHeader()
+                labelTableHeader1.text = arrayTableContent[0]
+                labelTableHeader2.text = arrayTableContent[1]
+                labelTableHeader3.text = arrayTableContent[2]
+                labelTableHeader4.text = arrayTableContent[3]
+                
+                var stackViewTableHeader : UIStackView = UIStackView()
+                stackViewTableHeader.widthAnchor.constraintEqualToConstant(self.view.frame.width).active = true
+                stackViewTableHeader.heightAnchor.constraintEqualToConstant(INPUT_LOGIN_HEIGHT).active = true
+                stackViewTableHeader.alignment = .Center
+                stackViewTableHeader.axis = .Horizontal
+                stackViewTableHeader.distribution = .FillEqually
+                stackViewTableHeader.spacing = 0
+                stackViewTableHeader.backgroundColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity: 1.0)
+                
+                stackViewTableHeader.addArrangedSubview(labelTableHeader1)
+                stackViewTableHeader.addArrangedSubview(labelTableHeader2)
+                stackViewTableHeader.addArrangedSubview(labelTableHeader3)
+                stackViewTableHeader.addArrangedSubview(labelTableHeader4)
+                
+                stackViewTable.addArrangedSubview(stackViewTableHeader)
+            }
+            else
+            {
+                var j = i
+                
+                if (j % 2 == 0)
+                {
+                    var labelTableRow1 : UILabel = LabelTableRowEven()
+                    var labelTableRow2 : UILabel = LabelTableRowEven()
+                    var labelTableRow3 : UILabel = LabelTableRowEven()
+                    var labelTableRow4 : UILabel = LabelTableRowEven()
+                    labelTableRow1.text = arrayTableContent[0]
+                    labelTableRow2.text = arrayTableContent[1]
+                    labelTableRow3.text = arrayTableContent[2]
+                    labelTableRow4.text = arrayTableContent[3]
+                    
+                    var stackViewTableOdd : UIStackView = UIStackView()
+                    stackViewTableOdd.alignment = .Center
+                    stackViewTableOdd.axis = .Horizontal
+                    stackViewTableOdd.distribution = .FillEqually
+                    stackViewTableOdd.spacing = 0
+                    stackViewTableOdd.backgroundColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity: 1.0)
+                    stackViewTableOdd.widthAnchor.constraintEqualToConstant(self.view.frame.width).active = true
+                    stackViewTableOdd.heightAnchor.constraintEqualToConstant(INPUT_LOGIN_HEIGHT).active = true
+
+                    stackViewTableOdd.addArrangedSubview(labelTableRow1)
+                    stackViewTableOdd.addArrangedSubview(labelTableRow2)
+                    stackViewTableOdd.addArrangedSubview(labelTableRow3)
+                    stackViewTableOdd.addArrangedSubview(labelTableRow4)
+                    
+                    stackViewTable.addArrangedSubview(stackViewTableOdd)
+                }
+                else
+                {
+                    var labelTableRow1 : UILabel = LabelTableRowOdd()
+                    var labelTableRow2 : UILabel = LabelTableRowOdd()
+                    var labelTableRow3 : UILabel = LabelTableRowOdd()
+                    var labelTableRow4 : UILabel = LabelTableRowOdd()
+                    labelTableRow1.text = arrayTableContent[0]
+                    labelTableRow2.text = arrayTableContent[1]
+                    labelTableRow3.text = arrayTableContent[2]
+                    labelTableRow4.text = arrayTableContent[3]
+                    
+                    var stackViewTableEven : UIStackView = UIStackView()
+                    
+                    stackViewTableEven.addArrangedSubview(labelTableRow1)
+                    stackViewTableEven.addArrangedSubview(labelTableRow2)
+                    stackViewTableEven.addArrangedSubview(labelTableRow3)
+                    stackViewTableEven.addArrangedSubview(labelTableRow4)
+                    stackViewTableEven.alignment = .Center
+                    stackViewTableEven.axis = .Horizontal
+                    stackViewTableEven.distribution = .FillEqually
+                    stackViewTableEven.spacing = 0
+                    stackViewTableEven.backgroundColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity: 1.0)
+                    stackViewTableEven.widthAnchor.constraintEqualToConstant(self.view.frame.width).active = true
+                    stackViewTableEven.heightAnchor.constraintEqualToConstant(INPUT_LOGIN_HEIGHT).active = true
+                    
+                    stackViewTable.addArrangedSubview(stackViewTableEven)
+                }
+            }
+        }
         
         
         // CHART

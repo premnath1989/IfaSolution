@@ -35,7 +35,7 @@
 		0FF04F661CFFE9730048C7A2 /* Guide Layout.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FF04F651CFFE9730048C7A2 /* Guide Layout.xib */; };
 		0FF04F681CFFE9850048C7A2 /* Navigation Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF04F671CFFE9850048C7A2 /* Navigation Controller.swift */; };
 		0FF04F6A1CFFE9960048C7A2 /* Guide Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF04F691CFFE9960048C7A2 /* Guide Controller.swift */; };
-		9B276CC51D0500B200157817 /* Education Plan Analysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B276CC41D0500B200157817 /* Education Plan Analysis.swift */; };
+		9B276CC51D0500B200157817 /* Education Plan Analysis Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B276CC41D0500B200157817 /* Education Plan Analysis Controller.swift */; };
 		9B4720071D096C87000FD917 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4720001D096C6A000FD917 /* Charts.framework */; };
 		9B4720081D096C87000FD917 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4720001D096C6A000FD917 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9B4720F51D096DC2000FD917 /* CGPDFDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B4720CE1D096DC2000FD917 /* CGPDFDocument.m */; };
@@ -225,7 +225,7 @@
 		0FF04F651CFFE9730048C7A2 /* Guide Layout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Guide Layout.xib"; sourceTree = "<group>"; };
 		0FF04F671CFFE9850048C7A2 /* Navigation Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Navigation Controller.swift"; sourceTree = "<group>"; };
 		0FF04F691CFFE9960048C7A2 /* Guide Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Guide Controller.swift"; sourceTree = "<group>"; };
-		9B276CC41D0500B200157817 /* Education Plan Analysis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Education Plan Analysis.swift"; sourceTree = "<group>"; };
+		9B276CC41D0500B200157817 /* Education Plan Analysis Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Education Plan Analysis Controller.swift"; sourceTree = "<group>"; };
 		9B471FF81D096C6A000FD917 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 		9B4720CD1D096DC2000FD917 /* CGPDFDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGPDFDocument.h; path = "Reader-master/Sources/CGPDFDocument.h"; sourceTree = "<group>"; };
 		9B4720CE1D096DC2000FD917 /* CGPDFDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGPDFDocument.m; path = "Reader-master/Sources/CGPDFDocument.m"; sourceTree = "<group>"; };
@@ -387,7 +387,7 @@
 				9BF5DE121D08171C004AE484 /* Choose Financial Plan Controller.swift */,
 				0FF04F5F1CFFE8AA0048C7A2 /* Education Detail Controller.swift */,
 				9B5B83DC1D0173DF002AE0F4 /* Fact Finding Questionnaire Controller.swift */,
-				9B276CC41D0500B200157817 /* Education Plan Analysis.swift */,
+				9B276CC41D0500B200157817 /* Education Plan Analysis Controller.swift */,
 				9BB8F3FD1D095C2D00806A97 /* IFAMobile-Bridging-Header.h */,
 			);
 			name = "View Controller";
@@ -896,7 +896,7 @@
 				0FB8FE161CF7DAD8005C85DE /* IFAMobile.xcdatamodeld in Sources */,
 				9B8DFF021D018E8E00C80A0F /* Insert Initialization.swift in Sources */,
 				0F76D9A11CFC4DF9002A7F47 /* User Interface.swift in Sources */,
-				9B276CC51D0500B200157817 /* Education Plan Analysis.swift in Sources */,
+				9B276CC51D0500B200157817 /* Education Plan Analysis Controller.swift in Sources */,
 				9B5B83DD1D0173DF002AE0F4 /* Fact Finding Questionnaire Controller.swift in Sources */,
 				0FCEA4F21CFE86EE00823B1E /* Icon.swift in Sources */,
 				0FF04F601CFFE8AA0048C7A2 /* Education Detail Controller.swift in Sources */,

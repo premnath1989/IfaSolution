@@ -175,3 +175,146 @@ class ImageViewSignature : UIImageView
     }
 }
 
+class StackViewTableHeaderPrimary : UIStackView
+{
+    init()
+    {
+        super.init(frame: CGRectZero)
+        
+        self.axis = .Horizontal
+        self.alignment = .Center
+        self.distribution = .FillEqually
+        self.spacing = 0
+        self.backgroundColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity: 1.0)
+    }
+    
+    required init?(coder aDecoder: (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        
+        self.axis = .Horizontal
+        self.alignment = .Center
+        self.distribution = .FillEqually
+        self.spacing = 0
+        self.backgroundColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity: 1.0)
+    }
+    
+    override init(frame: CGRect)
+    {
+        super.init(frame: frame)
+        
+        self.axis = .Horizontal
+        self.alignment = .Center
+        self.distribution = .FillEqually
+        self.spacing = 0
+        self.backgroundColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity: 1.0)
+    }
+}
+
+class StackViewTableHeaderSecondary : UIStackView
+{
+    init()
+    {
+        super.init(frame: CGRectZero)
+        
+        self.axis = .Horizontal
+        self.alignment = .Center
+        self.distribution = .FillEqually
+        self.spacing = 0
+        self.backgroundColor = GeneratorUIColor(THEME_SECONDARY_COLOR, Opacity: 1.0)
+    }
+    
+    required init?(coder aDecoder: (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        
+        self.axis = .Horizontal
+        self.alignment = .Center
+        self.distribution = .FillEqually
+        self.spacing = 0
+        self.backgroundColor = GeneratorUIColor(THEME_SECONDARY_COLOR, Opacity: 1.0)
+    }
+    
+    override init(frame: CGRect)
+    {
+        super.init(frame: frame)
+        
+        self.axis = .Horizontal
+        self.alignment = .Center
+        self.distribution = .FillEqually
+        self.spacing = 0
+        self.backgroundColor = GeneratorUIColor(THEME_SECONDARY_COLOR, Opacity: 1.0)
+    }
+}
+
+class StackViewTableRowEven : UIStackView
+{
+    init()
+    {
+        super.init(frame: CGRectZero)
+        
+        self.axis = .Horizontal
+        self.alignment = .Center
+        self.distribution = .FillEqually
+        self.spacing = 0
+        self.backgroundColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity: 1.0)
+    }
+    
+    required init?(coder aDecoder: (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        
+        self.axis = .Horizontal
+        self.alignment = .Center
+        self.distribution = .FillEqually
+        self.spacing = 0
+        self.backgroundColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity: 1.0)
+    }
+    
+    override init(frame: CGRect)
+    {
+        super.init(frame: frame)
+        
+        self.axis = .Horizontal
+        self.alignment = .Center
+        self.distribution = .FillEqually
+        self.spacing = 0
+        self.backgroundColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity: 1.0)
+    }
+}
+
+class StackViewTableRowOdd : UIStackView
+{
+    init()
+    {
+        super.init(frame: CGRectZero)
+        
+        self.axis = .Horizontal
+        self.alignment = .Center
+        self.distribution = .FillEqually
+        self.spacing = 0
+        self.backgroundColor = GeneratorUIColor(THEME_QUATERNARY_COLOR, Opacity: 1.0)
+    }
+    
+    required init?(coder aDecoder: (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        
+        self.axis = .Horizontal
+        self.alignment = .Center
+        self.distribution = .FillEqually
+        self.spacing = 0
+        self.backgroundColor = GeneratorUIColor(THEME_QUATERNARY_COLOR, Opacity: 1.0)
+    }
+    
+    override init(frame: CGRect)
+    {
+        super.init(frame: frame)
+        
+        self.axis = .Horizontal
+        self.alignment = .Center
+        self.distribution = .FillEqually
+        self.spacing = 0
+        self.backgroundColor = GeneratorUIColor(THEME_QUATERNARY_COLOR, Opacity: 1.0)
+    }
+}
