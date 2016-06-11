@@ -78,8 +78,8 @@ class EducationAnalysisController: UIViewController, ReaderViewControllerDelegat
         
         // LANGUAGE
         
-        labelHeaderTitle.text = NSLocalizedString("Financial Planning Analysis", comment: "")
-        labelHeaderDescription.text = NSLocalizedString("Summary on the Financial Analysis", comment: "")
+        labelHeaderTitle.text = NSLocalizedString("Education Planning Analysis", comment: "")
+        labelHeaderDescription.text = NSLocalizedString("Summary on the Education Analysis", comment: "")
         
         labelBasicInformationTitle.text = NSLocalizedString("TITLE_EDUCATIONPLAN_BASICINFORMATION", comment: "").uppercaseString
         labelTotalEducationFundAvailableAtTertiaryAgeTitle.text = NSLocalizedString("TITLE_EDUCATIONPLAN_FUNDNEEDED", comment: "").uppercaseString
