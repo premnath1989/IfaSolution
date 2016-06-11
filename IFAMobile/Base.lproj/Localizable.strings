@@ -19,8 +19,8 @@ TITLE_FINANCIALPLAN_DONTKNOWRISKPROFILE = "If you do not know your personal risk
 TITLE_FINANCIALPLAN_DECLARATION = "Declaration";
 TITLE_FINANCIALPLAN_CONFIRMATION = "Confirmation";
 TITLE_EDUCATIONPLAN_BASICINFORMATION = "Basic Information";
-TITLE_EDUCATIONPLAN_FUNDNEEDED = "Total education fund needed at tertiary age";
-TITLE_EDUCATIONPLAN_FUNDAVAILABLE = "Total education fund available at tertiary age";
+TITLE_EDUCATIONPLAN_FUNDNEEDED = "Total Education Fund Required";
+TITLE_EDUCATIONPLAN_FUNDAVAILABLE = "Total Education Fund Available";
 TITLE_EDUCATIONPLAN_BALANCE = "Balance amount needed at tertiary age";
 
 TITLE_PROFILE_AGENTINFORMATION = "Agent Information";
