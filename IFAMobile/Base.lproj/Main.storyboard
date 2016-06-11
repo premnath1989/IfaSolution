@@ -1643,8 +1643,8 @@
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oOj-IN-jdT">
-                                                        <rect key="frame" x="20" y="61" width="164" height="401"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oOj-IN-jdT">
+                                                        <rect key="frame" x="20" y="61" width="164" height="402"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GcI-ZI-aQD" customClass="StackViewFormContainer" customModule="IFAMobile" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="92" height="30"/>
@@ -1689,8 +1689,8 @@
                                                                     </textField>
                                                                 </subviews>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="p6q-1J-xYX" customClass="StackViewFormContainer" customModule="IFAMobile" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="80" width="164" height="201"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="p6q-1J-xYX" customClass="StackViewFormContainer" customModule="IFAMobile" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="80" width="164" height="202"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09e-lt-tg9" customClass="LabelField" customModule="IFAMobile" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="91" width="42" height="21"/>
@@ -1707,8 +1707,8 @@
                                                                     </segmentedControl>
                                                                 </subviews>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ml0-OB-iUu" customClass="StackViewFormContainer" customModule="IFAMobile" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="291" width="67" height="30"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ml0-OB-iUu" customClass="StackViewFormContainer" customModule="IFAMobile" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="292" width="67" height="30"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUH-04-wSX" customClass="LabelField" customModule="IFAMobile" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="42" height="30"/>
@@ -1723,8 +1723,8 @@
                                                                     </textField>
                                                                 </subviews>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZWS-oT-KtG" customClass="StackViewFormContainer" customModule="IFAMobile" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="331" width="67" height="30"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZWS-oT-KtG" customClass="StackViewFormContainer" customModule="IFAMobile" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="332" width="67" height="30"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzi-C0-Ywq" customClass="LabelField" customModule="IFAMobile" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="42" height="30"/>
@@ -1739,8 +1739,8 @@
                                                                     </textField>
                                                                 </subviews>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c2K-sj-d0O" customClass="StackViewFormContainer" customModule="IFAMobile" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="371" width="67" height="30"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c2K-sj-d0O" customClass="StackViewFormContainer" customModule="IFAMobile" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="372" width="67" height="30"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psD-8Z-mZa" customClass="LabelField" customModule="IFAMobile" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="42" height="30"/>
