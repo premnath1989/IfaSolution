@@ -82,7 +82,7 @@ class EducationAnalysisController: UIViewController, ReaderViewControllerDelegat
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         viewHighlight.backgroundColor = GeneratorUIColor(0xFFFF00 as UInt32, Opacity: 1.0)
-        textFieldAdditionalRegularSavings.backgroundColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity: 1.0)
+        textFieldAdditionalEducationFund.backgroundColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity: 1.0)
         textFieldNumberOfYears.backgroundColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity: 1.0)
         textFieldAdditionalRegularSavings.backgroundColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity: 1.0)
         
