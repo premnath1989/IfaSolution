@@ -36,6 +36,7 @@ class EducationDetailController: UIViewController
     @IBOutlet var labelInflationRate : UILabel!
     @IBOutlet var labelExpectedRateOfReturn : UILabel!
     
+    
     @IBOutlet var textFieldPlanName : UITextField!
     @IBOutlet var textFieldPayorName : UITextField!
     @IBOutlet var textFieldEntryAge : UITextField!
@@ -47,6 +48,7 @@ class EducationDetailController: UIViewController
     @IBOutlet var textFieldActualTotalEducation : UITextField!
     @IBOutlet var textFieldInflationRate : UITextField!
     @IBOutlet var textFieldExpectedRateOfReturn : UITextField!
+    
     
     @IBOutlet var buttonSubmit : UIButton!
     @IBOutlet var buttonReset : UIButton!
@@ -79,6 +81,7 @@ class EducationDetailController: UIViewController
         labelInflationRate.text = NSLocalizedString("FIELD_INFLATIONRATE", comment: "")
         labelExpectedRateOfReturn.text = NSLocalizedString("FIELD_EXPECTEDRATEOFRETURN", comment: "")
         
+        
         textFieldPlanName.placeholder = NSLocalizedString("PLACEHOLDER_PLANNAME", comment: "")
         textFieldPayorName.placeholder = NSLocalizedString("PLACEHOLDER_PAYORNAME", comment: "")
         textFieldEntryAge.placeholder = NSLocalizedString("PLACEHOLDER_ENTRYAGETOUNIVERSITY", comment: "")
@@ -90,6 +93,7 @@ class EducationDetailController: UIViewController
         textFieldActualTotalEducation.placeholder = NSLocalizedString("PLACEHOLDER_ACTUALTOTALEDUCATION", comment: "")
         textFieldInflationRate.placeholder = NSLocalizedString("PLACEHOLDER_INFLATIONRATE", comment: "")
         textFieldExpectedRateOfReturn.placeholder = NSLocalizedString("PLACEHOLDER_EXPECTEDRATEOFRETURN", comment: "")
+        
         
         buttonSubmit.setTitle(NSLocalizedString("BUTTON_SUBMIT", comment: ""), forState: .Normal)
         

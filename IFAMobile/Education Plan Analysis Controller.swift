@@ -45,6 +45,9 @@ class EducationAnalysisController: UIViewController, ReaderViewControllerDelegat
     @IBOutlet var labelRegularMonthlySavings : UILabel!
     @IBOutlet var labelReturnAtMaturityAge : UILabel!
     @IBOutlet var labelTotalEducationFundAvailableAtTertiaryAge : UILabel!
+    @IBOutlet var labelAdditionalEducationFund : UILabel!
+    @IBOutlet var labelNumberOfYears : UILabel!
+    @IBOutlet var labelAdditionalRegularSavings : UILabel!
     
     @IBOutlet var textFieldName : UITextField!
     @IBOutlet var textFieldAge : UITextField!
@@ -59,9 +62,13 @@ class EducationAnalysisController: UIViewController, ReaderViewControllerDelegat
     @IBOutlet var textFieldRegularMonthlySavings : UITextField!
     @IBOutlet var textFieldReturnAtMaturityAge : UITextField!
     @IBOutlet var textFieldTotalEducationFundAvailableAtTertiaryAge : UITextField!
+    @IBOutlet var textFieldAdditionalEducationFund : UITextField!
+    @IBOutlet var textFieldNumberOfYears : UITextField!
+    @IBOutlet var textFieldAdditionalRegularSavings : UITextField!
     
     @IBOutlet var labelTableTitle : UILabel!
     @IBOutlet var stackViewTable : UIStackView!
+    @IBOutlet var viewHighlight : UIView!
     
     @IBOutlet weak var barChartView : BarChartView!
     
@@ -74,7 +81,7 @@ class EducationAnalysisController: UIViewController, ReaderViewControllerDelegat
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        viewHighlight.backgroundColor = GeneratorUIColor(0xdc5a5a as UInt32, Opacity: 1.0)
         
         // LANGUAGE
         
@@ -102,6 +109,10 @@ class EducationAnalysisController: UIViewController, ReaderViewControllerDelegat
         labelReturnAtMaturityAge.text = NSLocalizedString("Annual Return Rate", comment: "")
         labelTotalEducationFundAvailableAtTertiaryAge.text = NSLocalizedString("Total Education Fund Available at Child Tertiary Age ", comment: "")
         
+        labelAdditionalEducationFund.text = NSLocalizedString("FIELD_", comment: "")
+        labelNumberOfYears.text = NSLocalizedString("FIELD_", comment: "")
+        labelAdditionalRegularSavings.text = NSLocalizedString("FIELD_", comment: "")
+        
         textFieldName.text = "Prem"
         textFieldAge.text = "5"
         textFieldPayorName.text = "Andy Phan"
@@ -115,6 +126,10 @@ class EducationAnalysisController: UIViewController, ReaderViewControllerDelegat
         textFieldRegularMonthlySavings.text = "RM 500"
         textFieldReturnAtMaturityAge.text = "RM 10.000.000"
         textFieldTotalEducationFundAvailableAtTertiaryAge.text = "RM 30.000.000"
+        
+        textFieldAdditionalEducationFund.text = NSLocalizedString("PLACEHOLDER_ACTUALTOTALEDUCATION", comment: "")
+        textFieldNumberOfYears.text = NSLocalizedString("PLACEHOLDER_INFLATIONRATE", comment: "")
+        textFieldAdditionalRegularSavings.text = NSLocalizedString("PLACEHOLDER_EXPECTEDRATEOFRETURN", comment: "")
         
         buttonShare.setTitle(NSLocalizedString("BUTTON_SHARE", comment: ""), forState: .Normal)
         
