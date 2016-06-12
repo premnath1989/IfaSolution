@@ -35,6 +35,8 @@
 		0FF04F661CFFE9730048C7A2 /* Guide Layout.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FF04F651CFFE9730048C7A2 /* Guide Layout.xib */; };
 		0FF04F681CFFE9850048C7A2 /* Navigation Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF04F671CFFE9850048C7A2 /* Navigation Controller.swift */; };
 		0FF04F6A1CFFE9960048C7A2 /* Guide Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF04F691CFFE9960048C7A2 /* Guide Controller.swift */; };
+		9B13F8F71D0D474300E1D559 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B13F8F61D0D474300E1D559 /* User.swift */; };
+		9B13F8FC1D0D47C400E1D559 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B13F8FB1D0D47C400E1D559 /* Prospect.swift */; };
 		9B276CC51D0500B200157817 /* Education Plan Analysis Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B276CC41D0500B200157817 /* Education Plan Analysis Controller.swift */; };
 		9B4720071D096C87000FD917 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4720001D096C6A000FD917 /* Charts.framework */; };
 		9B4720081D096C87000FD917 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4720001D096C6A000FD917 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -225,6 +227,8 @@
 		0FF04F651CFFE9730048C7A2 /* Guide Layout.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Guide Layout.xib"; sourceTree = "<group>"; };
 		0FF04F671CFFE9850048C7A2 /* Navigation Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Navigation Controller.swift"; sourceTree = "<group>"; };
 		0FF04F691CFFE9960048C7A2 /* Guide Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Guide Controller.swift"; sourceTree = "<group>"; };
+		9B13F8F61D0D474300E1D559 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9B13F8FB1D0D47C400E1D559 /* Prospect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
 		9B276CC41D0500B200157817 /* Education Plan Analysis Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Education Plan Analysis Controller.swift"; sourceTree = "<group>"; };
 		9B471FF81D096C6A000FD917 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 		9B4720CD1D096DC2000FD917 /* CGPDFDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGPDFDocument.h; path = "Reader-master/Sources/CGPDFDocument.h"; sourceTree = "<group>"; };
@@ -413,6 +417,8 @@
 		0F76D9851CFC4AA2002A7F47 /* Session */ = {
 			isa = PBXGroup;
 			children = (
+				9B13F8F61D0D474300E1D559 /* User.swift */,
+				9B13F8FB1D0D47C400E1D559 /* Prospect.swift */,
 			);
 			name = Session;
 			sourceTree = "<group>";
@@ -891,6 +897,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B4721E91D09A3DB000FD917 /* Find Prospect Controller.swift in Sources */,
+				9B13F8FC1D0D47C400E1D559 /* Prospect.swift in Sources */,
 				9B4720F61D096DC2000FD917 /* ReaderConstants.m in Sources */,
 				9BFF358E1D09D13600B9BB4E /* DatePickerDialog.swift in Sources */,
 				0FB8FE161CF7DAD8005C85DE /* IFAMobile.xcdatamodeld in Sources */,
@@ -915,6 +922,7 @@
 				0FCEA4FA1CFEE09C00823B1E /* Footer Controller.swift in Sources */,
 				9B4720FD1D096DC2000FD917 /* ReaderMainToolbar.m in Sources */,
 				9B8DFF2C1D0319F800C80A0F /* Database Initialization.swift in Sources */,
+				9B13F8F71D0D474300E1D559 /* User.swift in Sources */,
 				9B4721031D096DC2000FD917 /* ReaderThumbsView.m in Sources */,
 				0F76D9C81CFC4FAE002A7F47 /* String.swift in Sources */,
 				0FF04F6A1CFFE9960048C7A2 /* Guide Controller.swift in Sources */,

@@ -160,7 +160,11 @@ class ProspectAddBasicController: UIViewController, UITextFieldDelegate
         DatePickerDialog().show("DatePicker", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: .Date)
         {
             (date) -> Void in
-            self.textFieldBirthday.text = "\(date)"
+            
+            let stringDate : String = date.formattedWithToString("dd/M/yyyy")
+            
+            // self.textFieldBirthday.text = "\(date)"
+            self.textFieldBirthday.text = stringDate
         }
     }
     
@@ -173,6 +177,24 @@ class ProspectAddBasicController: UIViewController, UITextFieldDelegate
         AlertVariable.SetAddState(false)
         
         self.presentViewController(AlertSheetDropDown(AlertVariable, Sender: sender, ViewController: self), animated: true, completion: nil)
+    }
+    
+    @IBAction func buttonSubmit(button : UIButton)
+    {
+        let stringBirthday : String = self.textFieldBirthday.text!
+        let dateBirthday : NSDate = stringBirthday.formattedWithToNSDate("dd/M/yyyy")
+        
+        ProspectBasicInformation.SharedInstance.SetProspectBasicInformation(
+            1,
+            Title: "",
+            Name: "",
+            Birthday: dateBirthday,
+            Gender: "Female",
+            Address: "",
+            ContactNumber: "",
+            Email: "",
+            State: true)
+        self.performSegueWithIdentifier("ProspectAddBasicToChooseFinancialPlan", sender: nil)
     }
     
     

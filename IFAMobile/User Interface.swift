@@ -25,6 +25,56 @@ public func GeneratorUIColor(HexColor : UInt32, Opacity : Double = 1.0) -> UICol
     return UIColor(red : RedValue, green : GreenValue, blue : BlueValue, alpha : CGFloat(Opacity))
 }
 
+
+// DATEPICKER
+
+extension NSDate
+{
+    var formatted:String
+    {
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "dd/M/yyyy"
+        return formatter.stringFromDate(self)
+    }
+    
+    func formattedWithToString(format:String) -> String
+    {
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = format
+        return formatter.stringFromDate(self)
+    }
+    
+    func formattedWithToNSDate(format:String) -> NSDate
+    {
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = format
+        return self
+    }
+    
+    
+}
+
+extension String
+{
+    func formattedWithToNSDate (format:String) -> NSDate
+    {
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "dd/M/yyyy"
+        let date = dateFormatter.dateFromString(self)
+        return date!
+    }
+}
+
+func showAge(fromDate : NSDate, toDate : NSDate) -> String
+{
+    let calendar : NSCalendar = NSCalendar.currentCalendar()
+    let ageComponents = calendar.components(.Year, fromDate: fromDate, toDate: toDate, options: [])
+    return String(ageComponents.year)
+}
+
+
+// ALERT
+
 func AlertSheetDropDown(AlertVariable : AlertDropDown, Sender : AnyObject, ViewController : UIViewController) -> UIAlertController
 {
     // ALERT CONTROLLER

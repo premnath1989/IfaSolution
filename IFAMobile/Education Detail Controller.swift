@@ -39,7 +39,7 @@ class EducationDetailController: UIViewController
     
     @IBOutlet var textFieldPlanName : UITextField!
     @IBOutlet var textFieldPayorName : UITextField!
-    @IBOutlet var textFieldEntryAge : UITextField!
+    @IBOutlet var textFieldEntryDate : UITextField!
     @IBOutlet var textFieldTotalAnnualCostAsAtTodayValue : UITextField!
     @IBOutlet var textFieldTotalAnnualLivingExpenses : UITextField!
     @IBOutlet var textFieldLumpSumpSavings : UITextField!
@@ -48,6 +48,7 @@ class EducationDetailController: UIViewController
     @IBOutlet var textFieldActualTotalEducation : UITextField!
     @IBOutlet var textFieldInflationRate : UITextField!
     @IBOutlet var textFieldExpectedRateOfReturn : UITextField!
+    @IBOutlet var textFieldEntryAge : UITextField!
     
     
     @IBOutlet var buttonSubmit : UIButton!
@@ -84,7 +85,7 @@ class EducationDetailController: UIViewController
         
         textFieldPlanName.placeholder = NSLocalizedString("PLACEHOLDER_PLANNAME", comment: "")
         textFieldPayorName.placeholder = NSLocalizedString("PLACEHOLDER_PAYORNAME", comment: "")
-        textFieldEntryAge.placeholder = NSLocalizedString("PLACEHOLDER_ENTRYAGETOUNIVERSITY", comment: "")
+        textFieldEntryDate.placeholder = NSLocalizedString("PLACEHOLDER_ENTRYDATETOUNIVERSITY", comment: "")
         textFieldTotalAnnualCostAsAtTodayValue.placeholder = NSLocalizedString("PLACEHOLDER_TOTALANNUALCOSTASATTODAYVALUE", comment: "")
         textFieldTotalAnnualLivingExpenses.placeholder = NSLocalizedString("PLACEHOLDER_TOTALANNUALLIVINGEXPENSES", comment: "")
         textFieldLumpSumpSavings.placeholder = NSLocalizedString("PLACEHOLDER_LUMSUMPSAVINGS", comment: "")
@@ -93,6 +94,7 @@ class EducationDetailController: UIViewController
         textFieldActualTotalEducation.placeholder = NSLocalizedString("PLACEHOLDER_ACTUALTOTALEDUCATION", comment: "")
         textFieldInflationRate.placeholder = NSLocalizedString("PLACEHOLDER_INFLATIONRATE", comment: "")
         textFieldExpectedRateOfReturn.placeholder = NSLocalizedString("PLACEHOLDER_EXPECTEDRATEOFRETURN", comment: "")
+        textFieldEntryAge.placeholder = NSLocalizedString("PLACEHOLDER_ENTRYAGETOUNIVERSITY", comment: "")
         
         
         buttonSubmit.setTitle(NSLocalizedString("BUTTON_SUBMIT", comment: ""), forState: .Normal)
@@ -152,12 +154,20 @@ class EducationDetailController: UIViewController
     
     // EVENT
     
-    @IBAction func datePickerEntryAge(sender: AnyObject)
+    @IBAction func datePickerEntryDate(sender: AnyObject)
     {
         DatePickerDialog().show("DatePicker", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: .Date)
         {
             (date) -> Void in
-            self.textFieldEntryAge.text = "\(date)"
+            
+            let stringDate : String = date.formattedWithToString("dd/M/yyyy")
+            
+            self.textFieldEntryDate.text = "\(stringDate)"
+            
+            let dateBirthday = ProspectBasicInformation.SharedInstance.GetBirthday()
+            let dateTertiaryAge = date.formattedWithToNSDate("dd/M/yyyy")
+            let stringAge : String = showAge(dateBirthday, toDate: dateTertiaryAge)
+            self.textFieldEntryAge.text = stringAge
         }
     }
     

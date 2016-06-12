@@ -113,7 +113,7 @@ class EducationAnalysisController: UIViewController, ReaderViewControllerDelegat
         labelLumSumpSavings.text = NSLocalizedString("Lump Sum Saving", comment: "")
         labelRegularMonthlySavings.text = NSLocalizedString("Regular Month Saving", comment: "")
         labelReturnAtMaturityAge.text = NSLocalizedString("Annual Return Rate", comment: "")
-        labelTotalEducationFundAvailableAtTertiaryAge.text = NSLocalizedString("Total Education Fund Available at Child Tertiary Age ", comment: "")
+        labelTotalEducationFundAvailableAtTertiaryAge.text = NSLocalizedString("Total Education Fund Available", comment: "")
         
         labelAdditionalEducationFund.text = NSLocalizedString("FIELD_", comment: "")
         labelNumberOfYears.text = NSLocalizedString("FIELD_", comment: "")
