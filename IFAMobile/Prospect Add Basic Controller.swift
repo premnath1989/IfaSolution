@@ -172,7 +172,7 @@ class ProspectAddBasicController: UIViewController, UITextFieldDelegate
     {
         let AlertVariable : AlertDropDown = AlertDropDown.init()
         AlertVariable.SetDropDownTitle("Name Prefix")
-        AlertVariable.SetDropDownMessage("What we should call you ?")
+        AlertVariable.SetDropDownMessage("What should we call you ?")
         AlertVariable.SetArrayPositiveAction(arrayNamePrefix)
         AlertVariable.SetAddState(false)
         
@@ -182,19 +182,28 @@ class ProspectAddBasicController: UIViewController, UITextFieldDelegate
     @IBAction func buttonSubmit(button : UIButton)
     {
         let stringBirthday : String = self.textFieldBirthday.text!
-        let dateBirthday : NSDate = stringBirthday.formattedWithToNSDate("dd/M/yyyy")
         
-        ProspectBasicInformation.SharedInstance.SetProspectBasicInformation(
-            1,
-            Title: "",
-            Name: "",
-            Birthday: dateBirthday,
-            Gender: "Female",
-            Address: "",
-            ContactNumber: "",
-            Email: "",
-            State: true)
-        self.performSegueWithIdentifier("ProspectAddBasicToChooseFinancialPlan", sender: nil)
+        if (stringBirthday.isEmpty == true)
+        {
+            self.presentViewController(AlertInformation("Birthday", Message: "Please fill up the birthday column"), animated: true, completion: nil)
+        }
+        else
+        {
+            let dateBirthday : NSDate = stringBirthday.formattedWithToNSDate("dd/M/yyyy")
+            
+            ProspectBasicInformation.SharedInstance.SetProspectBasicInformation(
+                1,
+                Title: "",
+                Name: "",
+                Birthday: dateBirthday,
+                Gender: "Female",
+                Address: "",
+                ContactNumber: "",
+                Email: "",
+                State: true)
+            
+            self.performSegueWithIdentifier("ProspectAddBasicToChooseFinancialPlan", sender: nil)
+        }
     }
     
     

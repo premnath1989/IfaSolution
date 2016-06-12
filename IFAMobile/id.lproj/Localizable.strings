@@ -120,6 +120,11 @@ FIELD_GENDER = "Jenis kelamin";
 FIELD_CONTACTNUMBER = "Nomor telepon";
 FIELD_ADDRESS = "Alamat";
 FIELD_EMAIL = "E-Mail";
+FIELD_CHILDNAME = "Nama anak"
+FIELD_ADDITIONALEDUCATIONFUND = "Biaya pendidikan tambahan";
+FIELD_NUMBEROFYEARS = "Jumlah tahun";
+FIELD_ADDITIONALREGULARSAVINGS = "Tabungan reguler tambahan";
+FIELD_ANNUALRETURNRATE = "Bunga balikan tahunan";
 
 FIELD_WELCOMEBACK = "Selamat datang kembali, ";
 FIELD_AGENTCODE = "Kode";
@@ -180,7 +185,7 @@ PLACEHOLDER_AGENT_PASSWORD = "kata sandi agen";
 
 PLACEHOLDER_PLANNAME = "Nama rencana finansial ini adalah";
 PLACEHOLDER_PAYORNAME = "Masukkan nama penanggung";
-PLACEHOLDER_ENTRYAGETOUNIVERSITY = "Umur anak anda saat masuk universitas";
+PLACEHOLDER_ENTRYDATETOUNIVERSITY = "Umur anak anda saat masuk universitas";
 PLACEHOLDER_TOTALANNUALCOSTASATTODAYVALUE = "Total biaya tahunan dengan nilai saat ini";
 PLACEHOLDER_TOTALANNUALLIVINGEXPENSES = "Total biaya hidup tahunan";
 PLACEHOLDER_LUMSUMPSAVINGS = "Tabungan lum sump";
@@ -189,6 +194,7 @@ PLACEHOLDER_EXISTINGSAVINGSPROGRAMS = "Program tabungan yang sudah ada";
 PLACEHOLDER_ACTUALTOTALEDUCATION = "Total edukasi sesungguhnya";
 PLACEHOLDER_INFLATIONRATE = "Tingkat inflasi";
 PLACEHOLDER_EXPECTEDRATEOFRETURN = "Nilai balik yang anda harapkan";
+PLACEHOLDER_ENTRYAGETOUNIVERSITY = "Age";
 
 PLACEHOLDER_CLIENT_NAME = "Masukkan nama pelanggan";
 PLACEHOLDER_CLIENT_NUMBER = "Masukkan nomor NIRC";
@@ -215,6 +221,7 @@ BUTTON_SUBMIT = "Submit";
 BUTTON_SIGN = "Tanda tangan";
 BUTTON_SHARE = "Bagi";
 BUTTON_ADD = "Tambah baru";
+BUTTON_DONE = "Selesai";
 
 
 // FOOTER

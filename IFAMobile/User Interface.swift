@@ -75,6 +75,24 @@ func showAge(fromDate : NSDate, toDate : NSDate) -> String
 
 // ALERT
 
+func AlertInformation(Title : String, Message : String) -> UIAlertController
+{
+    // ALERT CONTROLLER
+    
+    let AlertInformationController: UIAlertController = UIAlertController(title: Title, message: Message, preferredStyle: UIAlertControllerStyle.Alert)
+    
+    // POSITIVE ACTION
+    
+    let ActionPositive : UIAlertAction = UIAlertAction(title: NSLocalizedString("BUTTON_DONE", comment: ""), style: .Default)
+    {
+        action -> Void in
+    }
+    
+    AlertInformationController.addAction(ActionPositive)
+    
+    return AlertInformationController
+}
+
 func AlertSheetDropDown(AlertVariable : AlertDropDown, Sender : AnyObject, ViewController : UIViewController) -> UIAlertController
 {
     // ALERT CONTROLLER
