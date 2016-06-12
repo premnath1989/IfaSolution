@@ -110,14 +110,14 @@ class EducationAnalysisController: UIViewController, ReaderViewControllerDelegat
         labelLivingExpenses.text = NSLocalizedString("FIELD_LIVINGEXPENSES", comment: "")
         labelTotalEducationFundNeededAtTertiaryAge.text = NSLocalizedString("FIELD_TOTALEDUCATIONFUNDNEEDED", comment: "")
         
-        labelLumSumpSavings.text = NSLocalizedString("FIELD_LUMSUMPSAVING", comment: "")
+        labelLumSumpSavings.text = NSLocalizedString("FIELD_LUMSUMPSAVINGS", comment: "")
         labelRegularMonthlySavings.text = NSLocalizedString("FIELD_REGULARMONTHLYSAVINGS", comment: "")
         labelReturnAtMaturityAge.text = NSLocalizedString("FIELD_ANNUALRETURNRATE", comment: "")
         labelTotalEducationFundAvailableAtTertiaryAge.text = NSLocalizedString("FIELD_TOTALEDUCATIONFUNDAVAILABLE", comment: "")
         
-        labelAdditionalEducationFund.text = NSLocalizedString("FIELD_ADDITIONALEDUCATIONFUND", comment: "")
-        labelNumberOfYears.text = NSLocalizedString("FIELD_NUMBEROFYEARS", comment: "")
-        labelAdditionalRegularSavings.text = NSLocalizedString("FIELD_ADDITIONALREGULARSAVINGS", comment: "")
+        labelAdditionalEducationFund.text = NSLocalizedString("Additional EducationFund Required", comment: "")
+        labelNumberOfYears.text = NSLocalizedString("Numbers of years", comment: "")
+        labelAdditionalRegularSavings.text = NSLocalizedString("Additional Regular Monthly Saving Required", comment: "")
         
         textFieldName.text = "Prem"
         textFieldAge.text = "5"
@@ -127,15 +127,15 @@ class EducationAnalysisController: UIViewController, ReaderViewControllerDelegat
         textFieldCourseDuration.text = "4"
         textFieldCourseFee.text = "RM 100000"
         textFieldLivingExpenses.text = "RM 50000"
-        textFieldTotalEducationFundNeededAtTertiaryAge.text = "RM 60000"
+        textFieldTotalEducationFundNeededAtTertiaryAge.text = "RM 600000"
         textFieldLumSumpSavings.text = "RM 30000"
         textFieldRegularMonthlySavings.text = "RM 500"
-        textFieldReturnAtMaturityAge.text = "RM 10.000.000"
-        textFieldTotalEducationFundAvailableAtTertiaryAge.text = "RM 30.000.000"
+        textFieldReturnAtMaturityAge.text = "5 %"
+        textFieldTotalEducationFundAvailableAtTertiaryAge.text = "RM 197612"
         
-        textFieldAdditionalEducationFund.text = NSLocalizedString("PLACEHOLDER_ACTUALTOTALEDUCATION", comment: "")
-        textFieldNumberOfYears.text = NSLocalizedString("PLACEHOLDER_INFLATIONRATE", comment: "")
-        textFieldAdditionalRegularSavings.text = NSLocalizedString("PLACEHOLDER_EXPECTEDRATEOFRETURN", comment: "")
+        textFieldAdditionalEducationFund.text = NSLocalizedString("RM 402388", comment: "")
+        textFieldNumberOfYears.text = NSLocalizedString("15", comment: "")
+        textFieldAdditionalRegularSavings.text = NSLocalizedString("RM 1554", comment: "")
         
         buttonShare.setTitle(NSLocalizedString("BUTTON_SHARE", comment: ""), forState: .Normal)
         
