@@ -354,6 +354,36 @@ class EntityProspect
         return self.Gender
     }
     
+    func SetAddress(Address : String) -> Void
+    {
+        self.Address = Address
+    }
+    
+    func GetAddress() -> String
+    {
+        return self.Address
+    }
+    
+    func SetTelephoneNumber(TelephoneNumber : String) -> Void
+    {
+        self.TelephoneNumber = TelephoneNumber
+    }
+    
+    func GetTelephoneNumber() -> String
+    {
+        return self.TelephoneNumber
+    }
+    
+    func SetEmail(Email : String) -> Void
+    {
+        self.Email = Email
+    }
+    
+    func GetEmail() -> String
+    {
+        return self.Email
+    }
+    
     func SetState(State : Bool) -> Void
     {
         self.State = State
@@ -362,5 +392,45 @@ class EntityProspect
     func GetState() -> Bool
     {
         return self.State
+    }
+    
+    func SetCreatedOn(CreatedOn : NSDate) -> Void
+    {
+        self.CreatedOn = CreatedOn
+    }
+    
+    func GetCreatedOn() -> NSDate
+    {
+        return self.CreatedOn
+    }
+    
+    func SetCreatedBy(CreatedBy : Int) -> Void
+    {
+        self.CreatedBy = CreatedBy
+    }
+    
+    func GetCreatedBy() -> Int
+    {
+        return self.CreatedBy
+    }
+    
+    func SetUpdatedOn(UpdatedOn : NSDate) -> Void
+    {
+        self.UpdatedOn = UpdatedOn
+    }
+    
+    func GetUpdatedOn() -> NSDate
+    {
+        return self.UpdatedOn
+    }
+    
+    func SetUpdatedBy(UpdatedBy : Int) -> Void
+    {
+        self.UpdatedBy = UpdatedBy
+    }
+    
+    func GetUpdatedBy() -> Int
+    {
+        return self.UpdatedBy
     }
 }

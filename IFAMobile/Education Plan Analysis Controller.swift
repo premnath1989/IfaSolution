@@ -115,7 +115,7 @@ class EducationAnalysisController: UIViewController, ReaderViewControllerDelegat
         labelReturnAtMaturityAge.text = NSLocalizedString("FIELD_ANNUALRETURNRATE", comment: "")
         labelTotalEducationFundAvailableAtTertiaryAge.text = NSLocalizedString("FIELD_TOTALEDUCATIONFUNDAVAILABLE", comment: "")
         
-        labelAdditionalEducationFund.text = NSLocalizedString("Additional EducationFund Required", comment: "")
+        labelAdditionalEducationFund.text = NSLocalizedString("Additional Education Fund Required", comment: "")
         labelNumberOfYears.text = NSLocalizedString("Numbers of years", comment: "")
         labelAdditionalRegularSavings.text = NSLocalizedString("Additional Regular Monthly Saving Required", comment: "")
         
