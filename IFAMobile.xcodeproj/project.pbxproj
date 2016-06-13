@@ -37,6 +37,7 @@
 		0FF04F6A1CFFE9960048C7A2 /* Guide Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF04F691CFFE9960048C7A2 /* Guide Controller.swift */; };
 		9B13F8F71D0D474300E1D559 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B13F8F61D0D474300E1D559 /* User.swift */; };
 		9B13F8FC1D0D47C400E1D559 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B13F8FB1D0D47C400E1D559 /* Prospect.swift */; };
+		9B13F8FE1D0E748C00E1D559 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B13F8FD1D0E748C00E1D559 /* Table.swift */; };
 		9B276CC51D0500B200157817 /* Education Plan Analysis Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B276CC41D0500B200157817 /* Education Plan Analysis Controller.swift */; };
 		9B4720071D096C87000FD917 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4720001D096C6A000FD917 /* Charts.framework */; };
 		9B4720081D096C87000FD917 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4720001D096C6A000FD917 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -229,6 +230,7 @@
 		0FF04F691CFFE9960048C7A2 /* Guide Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Guide Controller.swift"; sourceTree = "<group>"; };
 		9B13F8F61D0D474300E1D559 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9B13F8FB1D0D47C400E1D559 /* Prospect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
+		9B13F8FD1D0E748C00E1D559 /* Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		9B276CC41D0500B200157817 /* Education Plan Analysis Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Education Plan Analysis Controller.swift"; sourceTree = "<group>"; };
 		9B471FF81D096C6A000FD917 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 		9B4720CD1D096DC2000FD917 /* CGPDFDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGPDFDocument.h; path = "Reader-master/Sources/CGPDFDocument.h"; sourceTree = "<group>"; };
@@ -375,6 +377,7 @@
 				0FCEA4E61CFE868900823B1E /* Button.swift */,
 				0FCEA4E71CFE868900823B1E /* Input.swift */,
 				0FCEA4E81CFE868900823B1E /* Layout.swift */,
+				9B13F8FD1D0E748C00E1D559 /* Table.swift */,
 			);
 			name = Style;
 			sourceTree = "<group>";
@@ -906,6 +909,7 @@
 				9B276CC51D0500B200157817 /* Education Plan Analysis Controller.swift in Sources */,
 				9B5B83DD1D0173DF002AE0F4 /* Fact Finding Questionnaire Controller.swift in Sources */,
 				0FCEA4F21CFE86EE00823B1E /* Icon.swift in Sources */,
+				9B13F8FE1D0E748C00E1D559 /* Table.swift in Sources */,
 				0FF04F601CFFE8AA0048C7A2 /* Education Detail Controller.swift in Sources */,
 				0F76D9C91CFC4FAE002A7F47 /* Theme Default.swift in Sources */,
 				9B4721001D096DC2000FD917 /* ReaderThumbQueue.m in Sources */,

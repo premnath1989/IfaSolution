@@ -269,3 +269,98 @@ class EntityOption
         return self.PasswordChanged
     }
 } */
+
+class EntityProspect
+{
+    var ID : Int
+    var Name : String
+    var Title : String
+    var Birthday : NSDate
+    var Gender : Bool
+    var Address : String
+    var TelephoneNumber : String
+    var Email : String
+    var State : Bool
+    var UpdatedOn : NSDate
+    var UpdatedBy : Int
+    var CreatedOn : NSDate
+    var CreatedBy : Int
+    
+    
+    init()
+    {
+        ID = 0
+        Name = ""
+        Title = ""
+        Birthday = NSDate()
+        Gender = true
+        Address = ""
+        TelephoneNumber = ""
+        Email = ""
+        State = true
+        UpdatedOn = NSDate()
+        UpdatedBy = 0
+        CreatedOn = NSDate()
+        CreatedBy = 0
+    }
+    
+    func SetID(ID : Int) -> Void
+    {
+        self.ID = ID
+    }
+    
+    func GetID() -> Int
+    {
+        return self.ID
+    }
+    
+    func SetName(Name : String) -> Void
+    {
+        self.Name = Name
+    }
+    
+    func GetName() -> String
+    {
+        return self.Name
+    }
+    
+    func SetTitle(Title : String) -> Void
+    {
+        self.Title = Title
+    }
+    
+    func GetTitle() -> String
+    {
+        return self.Title
+    }
+    
+    func SetBirthday(Birthday : NSDate) -> Void
+    {
+        self.Birthday = Birthday
+    }
+    
+    func GetBirthday() -> NSDate
+    {
+        return self.Birthday
+    }
+    
+    func SetGender(Gender : Bool) -> Void
+    {
+        self.Gender = Gender
+    }
+    
+    func GetGender() -> Bool
+    {
+        return self.Gender
+    }
+    
+    func SetState(State : Bool) -> Void
+    {
+        self.State = State
+    }
+    
+    func GetState() -> Bool
+    {
+        return self.State
+    }
+}

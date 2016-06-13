@@ -11,22 +11,26 @@
 
 import Foundation
 import UIKit
+import CoreData
 
 
 // CLASS
 
-class FindProspectController: UIViewController
+class FindProspectController: UIViewController// , UITableViewDelegate, UITableViewDataSource
 {
     // INITIALIZATION
     
-    // OUTLET
+        // OUTLET
     
-    @IBOutlet var labelHeaderTitle : UILabel!
-    @IBOutlet var labelHeaderDescription : UILabel!
+        @IBOutlet var labelHeaderTitle : UILabel!
+        @IBOutlet var labelHeaderDescription : UILabel!
     
-    // VARIABLE
+        @IBOutlet weak var tableProspect : UITableView!
     
-    var arrayNamePrefix : [String] = [String]()
+        // VARIABLE
+    
+        var arrayNamePrefix : [String] = [String]()
+        var rowProspect = [NSManagedObject]()
     
     
     // VIEW DID LOAD
@@ -75,6 +79,69 @@ class FindProspectController: UIViewController
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    // TABLE PROTOCOL
+    
+    /* func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return rowProspect.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
+        let tableItemProspect : TableItemProspect = tableProspect.dequeueReusableCellWithIdentifier("TableItemProspect") as! TableItemProspect
+        
+        if indexPath.row % 2 == 0
+        {
+            tableItemProspect.backgroundColor = GeneratorUIColor(THEME_QUATERNARY_COLOR, Opacity: 1.0)
+        }
+        else
+        {
+            tableItemProspect.backgroundColor = GeneratorUIColor(THEME_QUINARY_COLOR, Opacity: 1.0)
+        }
+        
+        tableItemProspect.labelName.text = String(rowProspect[indexPath.row].valueForKey(Coloumn_DestinationAccount_AccountHolder)!)
+        TableItem.LabelCatagory.text = FinderBankName(String(DestinationAccountRow[indexPath.row].valueForKey(Coloumn_DestinationAccount_BankCode)!))
+        TableItem.LabelSeparator.text = Character_DropDown_Separator
+        TableItem.LabelValue.text = String(DestinationAccountRow[indexPath.row].valueForKey(Coloumn_DestinationAccount_AccountNumber)!)
+        
+        return TableItem
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        let AlertVariable : AlertSetting = AlertSetting.init()
+        AlertVariable.SetAlertTitle(CapitalizedFrontLetter(NSLocalizedString("LABEL_DESTINATIONACCOUNT", comment: "")))
+        
+        AlertVariable.SetAlertMessage(
+            CapitalizedFrontLetter(NSLocalizedString("LABEL_ACCOUNTHOLDER", comment: "")) + Character_Dash + Character_TwoDot + Character_Dash
+                + String(DestinationAccountRow[indexPath.row].valueForKey(Coloumn_DestinationAccount_AccountHolder)!) + Character_NewLine +
+                CapitalizedFrontLetter(NSLocalizedString("LABEL_BANKCODE", comment: "")) + Character_Dash + Character_TwoDot + Character_Dash
+                + FinderBankName(String(DestinationAccountRow[indexPath.row].valueForKey(Coloumn_DestinationAccount_BankCode)!)) + Character_NewLine +
+                CapitalizedFrontLetter(NSLocalizedString("LABEL_ACCOUNTNUMBER", comment: "")) + Character_Dash + Character_TwoDot + Character_Dash
+                + String(DestinationAccountRow[indexPath.row].valueForKey(Coloumn_DestinationAccount_AccountNumber)!) + Character_NewLine)
+        AlertVariable.SetPageClass(Entity_DestinationAccount)
+        AlertVariable.SetPageIdentifier(Page_DestinationAccount_Detail)
+        AlertVariable.SetID(Int(DestinationAccountRow[indexPath.row].valueForKey(Coloumn_DestinationAccount_ID)! as! NSNumber))
+        AlertVariable.SetValue(String(DestinationAccountRow[indexPath.row].valueForKey(Coloumn_DestinationAccount_AccountNumber)!))
+        AlertVariable.SetCatagory(String(DestinationAccountRow[indexPath.row].valueForKey(Coloumn_DestinationAccount_BankCode)!))
+        AlertVariable.SetHolder(String(DestinationAccountRow[indexPath.row].valueForKey(Coloumn_DestinationAccount_AccountHolder)!))
+        AlertVariable.SetDeleteEntity(Entity_DestinationAccount)
+        AlertVariable.SetDeleteValue(AlertVariable.GetID())
+        AlertVariable.SetDeleteColoumn(Coloumn_DestinationAccount_ID)
+        SettingDetail.SharedInstance.SetSegueIdentifier("DestinationAccountListToDestinationAccountDetail")
+        
+        self.presentViewController(AlertTable(AlertVariable, Sender: self), animated: true, completion: nil)
+    }
+    
+    override func callbackReloadData()
+    {
+        DestinationAccountRow = SelectDatabase(Entity_DestinationAccount)
+        self.TableDestinationAccount.reloadData()
+        print("CALLBACK")
+        RefreshTableView(TableDestinationAccount,RowObject: DestinationAccountRow)
+    } */
     
     
     // NAVIGATION
