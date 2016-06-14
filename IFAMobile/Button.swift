@@ -214,6 +214,37 @@ class ButtonFind : UIButton
     }
 }
 
+class ButtonList : UIButton
+{
+    required init?(coder aDecoder : (NSCoder!))
+    {
+        super.init(coder: aDecoder)
+        
+        // GENERAL
+        
+        self.widthAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
+        self.heightAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
+        
+        self.backgroundColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity : 0.0)
+        self.setTitle("", forState: .Normal)
+        self.setImage(UIImage(named: "Find Secondary"), forState: .Normal)
+        self.tintColor = GeneratorUIColor(THEME_SEPTENARY_COLOR, Opacity : 1.0)
+    }
+    
+    override init(frame: CGRect)
+    {
+        super.init(frame: frame)
+        
+        self.widthAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
+        self.heightAnchor.constraintEqualToConstant(ICON_SIZE_LDPI).active = true
+        
+        self.backgroundColor = GeneratorUIColor(THEME_PRIMARY_COLOR, Opacity : 0.0)
+        self.setTitle("", forState: .Normal)
+        self.setImage(UIImage(named: "Find Secondary"), forState: .Normal)
+        self.tintColor = GeneratorUIColor(THEME_SEPTENARY_COLOR, Opacity : 1.0)
+    }
+}
+
 
     // GUIDE
 

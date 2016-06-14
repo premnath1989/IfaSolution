@@ -52,6 +52,8 @@ class TableItemProspect : UITableViewCell
     {
         super.awakeFromNib()
         
+        self.heightAnchor.constraintEqualToConstant(ICON_SIZE_XHDPI).active = true
+        
         labelName.textColor = GeneratorUIColor(THEME_SENARY_COLOR, Opacity : 1.0)
         labelName.font = UIFont(name : THEME_SECONDARY_FONT, size : FONTSIZE_TABLE_HEADER)
         labelEmail.textColor = GeneratorUIColor(THEME_SEPTENARY_COLOR, Opacity : 1.0)
@@ -69,6 +71,9 @@ class TableItemProspect : UITableViewCell
         imageViewCreatedOn.image = UIImage(named: "List Created On Primary")
         imageViewUpdatedOn.image = UIImage(named: "List Updated On Primary")
         imageViewTelephoneNumber.image = UIImage(named: "List Telephone Number Primary")
+        
+        buttonDelete.setImage(UIImage(named: "List Delete Primary"), forState: .Normal)
+        buttonEdit.setImage(UIImage(named: "List Edit Primary"), forState: .Normal)
     }
     
     override func setSelected(selected: Bool, animated: Bool)

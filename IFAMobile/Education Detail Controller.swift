@@ -160,12 +160,12 @@ class EducationDetailController: UIViewController
         {
             (date) -> Void in
             
-            let stringDate : String = date.formattedWithToString("dd/M/yyyy")
+            let stringDate : String = date.formattedWithToString(FORMAT_DATE_BIRTHDAY)
             
             self.textFieldEntryDate.text = "\(stringDate)"
             
             let dateBirthday = ProspectBasicInformation.SharedInstance.GetBirthday()
-            let dateTertiaryAge = date.formattedWithToNSDate("dd/M/yyyy")
+            let dateTertiaryAge = date.formattedWithToNSDate(FORMAT_DATE_BIRTHDAY)
             let stringAge : String = showAge(dateBirthday, toDate: dateTertiaryAge)
             self.textFieldEntryAge.text = stringAge
         }

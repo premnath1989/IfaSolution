@@ -40,6 +40,7 @@ class LoginController: UIViewController
         initializationQuestionnaire()
         initializationQuestion()
         initializationOption()
+        initializationProspect()
         
         
         // LANGUAGE

@@ -304,14 +304,24 @@ class EntityProspect
         CreatedBy = 0
     }
     
-    func SetID(ID : Int) -> Void
+    func SetIntID(ID : Int) -> Void
     {
         self.ID = ID
     }
     
-    func GetID() -> Int
+    func SetStringID(ID : String) -> Void
+    {
+        self.ID = Int(ID)!
+    }
+    
+    func GetIntID() -> Int
     {
         return self.ID
+    }
+    
+    func GetStringID() -> String
+    {
+        return String(self.ID)
     }
     
     func SetName(Name : String) -> Void
@@ -334,24 +344,66 @@ class EntityProspect
         return self.Title
     }
     
-    func SetBirthday(Birthday : NSDate) -> Void
+    func SetDateBirthday(Birthday : NSDate) -> Void
     {
         self.Birthday = Birthday
     }
     
-    func GetBirthday() -> NSDate
+    func GetDateBirthday() -> NSDate
     {
         return self.Birthday
     }
     
-    func SetGender(Gender : Bool) -> Void
+    func SetStringBirthday(Birthday : String) -> Void
+    {
+        self.Birthday = Birthday.formattedWithToNSDate(FORMAT_DATE_BIRTHDAY)
+    }
+    
+    func GetStringBirthday() -> String
+    {
+        return self.Birthday.formattedWithToString(FORMAT_DATE_BIRTHDAY)
+    }
+    
+    func SetBoolGender(Gender : Bool) -> Void
     {
         self.Gender = Gender
     }
     
-    func GetGender() -> Bool
+    func GetBoolGender() -> Bool
     {
         return self.Gender
+    }
+    
+    func SetStringGender(Gender : String) -> Void
+    {
+        var boolGender : Bool
+        
+        if Gender == "Female"
+        {
+            boolGender = true
+        }
+        else
+        {
+            boolGender = false
+        }
+        
+        self.Gender = boolGender
+    }
+    
+    func GetStringGender() -> String
+    {
+        var stringGender : String
+        
+        if self.Gender == true
+        {
+            stringGender = "Female"
+        }
+        else
+        {
+            stringGender = "Male"
+        }
+        
+        return stringGender
     }
     
     func SetAddress(Address : String) -> Void
@@ -394,43 +446,83 @@ class EntityProspect
         return self.State
     }
     
-    func SetCreatedOn(CreatedOn : NSDate) -> Void
+    func SetDateCreatedOn(CreatedOn : NSDate) -> Void
     {
         self.CreatedOn = CreatedOn
     }
     
-    func GetCreatedOn() -> NSDate
+    func GetDateCreatedOn() -> NSDate
     {
         return self.CreatedOn
     }
     
-    func SetCreatedBy(CreatedBy : Int) -> Void
+    func SetStringCreatedOn(CreatedOn : String) -> Void
+    {
+        self.CreatedOn = CreatedOn.formattedWithToNSDate(FORMAT_DATE_BIRTHDAY)
+    }
+    
+    func GetStringCreatedOn() -> String
+    {
+        return self.CreatedOn.formattedWithToString(FORMAT_DATE_BIRTHDAY)
+    }
+    
+    func SetIntCreatedBy(CreatedBy : Int) -> Void
     {
         self.CreatedBy = CreatedBy
     }
     
-    func GetCreatedBy() -> Int
+    func GetIntCreatedBy() -> Int
     {
         return self.CreatedBy
     }
     
-    func SetUpdatedOn(UpdatedOn : NSDate) -> Void
+    func SetStringCreatedBy(CreatedBy : String) -> Void
+    {
+        self.CreatedBy = Int(CreatedBy)!
+    }
+    
+    func GetStringCreatedBy() -> String
+    {
+        return String(self.CreatedBy)
+    }
+    
+    func SetDateUpdatedOn(UpdatedOn : NSDate) -> Void
     {
         self.UpdatedOn = UpdatedOn
     }
     
-    func GetUpdatedOn() -> NSDate
+    func GetDateUpdatedOn() -> NSDate
     {
         return self.UpdatedOn
     }
     
-    func SetUpdatedBy(UpdatedBy : Int) -> Void
+    func SetStringUpdatedOn(UpdatedOn : String) -> Void
+    {
+        self.UpdatedOn = UpdatedOn.formattedWithToNSDate(FORMAT_DATE_BIRTHDAY)
+    }
+    
+    func GetStringUpdatedOn() -> String
+    {
+        return self.UpdatedOn.formattedWithToString(FORMAT_DATE_BIRTHDAY)
+    }
+    
+    func SetIntUpdatedBy(UpdatedBy : Int) -> Void
     {
         self.UpdatedBy = UpdatedBy
     }
     
-    func GetUpdatedBy() -> Int
+    func GetIntUpdatedBy() -> Int
     {
         return self.UpdatedBy
+    }
+    
+    func SetStringUpdatedBy(UpdatedBy : String) -> Void
+    {
+        self.UpdatedBy = Int(UpdatedBy)!
+    }
+    
+    func GetStringUpdatedBy() -> String
+    {
+        return String(self.UpdatedBy)
     }
 }

@@ -161,7 +161,7 @@ class ProspectAddBasicController: UIViewController, UITextFieldDelegate
         {
             (date) -> Void in
             
-            let stringDate : String = date.formattedWithToString("dd/M/yyyy")
+            let stringDate : String = date.formattedWithToString(FORMAT_DATE_BIRTHDAY)
             
             // self.textFieldBirthday.text = "\(date)"
             self.textFieldBirthday.text = stringDate
@@ -189,7 +189,7 @@ class ProspectAddBasicController: UIViewController, UITextFieldDelegate
         }
         else
         {
-            let dateBirthday : NSDate = stringBirthday.formattedWithToNSDate("dd/M/yyyy")
+            let dateBirthday : NSDate = stringBirthday.formattedWithToNSDate(FORMAT_DATE_BIRTHDAY)
             
             ProspectBasicInformation.SharedInstance.SetProspectBasicInformation(
                 1,

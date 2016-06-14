@@ -162,37 +162,23 @@ func initializationProspect() -> Void
     
     let arrayProspect : Array<String> =
         [
-            "1" + CHARACTER_DATABASE_SEPARATOR + "Cash and carry only.",
-            "1" + CHARACTER_DATABASE_SEPARATOR + "Dollar saved is a dollar earned.",
-            "1" + CHARACTER_DATABASE_SEPARATOR + "You have to spend money in order to make money.",
-            "2" + CHARACTER_DATABASE_SEPARATOR + "6 % or less.",
-            "2" + CHARACTER_DATABASE_SEPARATOR + "6 to 10 %.",
-            "2" + CHARACTER_DATABASE_SEPARATOR + "10% & above.",
-            "3" + CHARACTER_DATABASE_SEPARATOR + "I'm nervous if my retirement fund go down and up in value.",
-            "3" + CHARACTER_DATABASE_SEPARATOR + "I can allocate as high as 40% of my retirement fund to high risk investments.",
-            "3" + CHARACTER_DATABASE_SEPARATOR + "I can allocate as high as 60% of my retirement fund to high risk investments.",
-            "4" + CHARACTER_DATABASE_SEPARATOR + "0 %.",
-            "4" + CHARACTER_DATABASE_SEPARATOR + "10 %.",
-            "4" + CHARACTER_DATABASE_SEPARATOR + "25 %.",
-            "5" + CHARACTER_DATABASE_SEPARATOR + "My savings should be safe, although my investments returns is not inflation protected.",
-            "5" + CHARACTER_DATABASE_SEPARATOR + "My investments should grow at the same rate as inflation.",
-            "5" + CHARACTER_DATABASE_SEPARATOR + "My investments should grow faster than inflation.",
-            "6" + CHARACTER_DATABASE_SEPARATOR + "Less than 3 months.",
-            "6" + CHARACTER_DATABASE_SEPARATOR + "3 to 6 months.",
-            "6" + CHARACTER_DATABASE_SEPARATOR + "More than 6 months.",
-            "7" + CHARACTER_DATABASE_SEPARATOR + "Sell all your shares.",
-            "7" + CHARACTER_DATABASE_SEPARATOR + "Sell some shares.",
-            "7" + CHARACTER_DATABASE_SEPARATOR + "Buy more shares or do nothing.",
-            "8" + CHARACTER_DATABASE_SEPARATOR + "Buy more shares or do nothing.",
-            "8" + CHARACTER_DATABASE_SEPARATOR + "Sell some of my shares.",
-            "8" + CHARACTER_DATABASE_SEPARATOR + "Sell all of my shares.",
-            "9" + CHARACTER_DATABASE_SEPARATOR + "I'll always react.",
-            "9" + CHARACTER_DATABASE_SEPARATOR + "I'll rarely react.",
-            "9" + CHARACTER_DATABASE_SEPARATOR + "I'll never react.",
-            "10" + CHARACTER_DATABASE_SEPARATOR + "I will hold my investments for the next two years.",
-            "10" + CHARACTER_DATABASE_SEPARATOR + "I will hold my investment for the next 5 years.",
-            "10" + CHARACTER_DATABASE_SEPARATOR + "I will leave my investment for ten years or more.",
-            ]
+            "Premnath Vijayakumar" + CHARACTER_DATABASE_SEPARATOR + NSLocalizedString("OPTION_MR", comment: "") + CHARACTER_DATABASE_SEPARATOR + "13/6/1990" + CHARACTER_DATABASE_SEPARATOR + "Male" + CHARACTER_DATABASE_SEPARATOR + "13th Malaysia street, block A 1 nomor 40, Damansara Jaya" + CHARACTER_DATABASE_SEPARATOR + "1234567890" + CHARACTER_DATABASE_SEPARATOR + "premnath.viajayakumar@infoconnect.com.my",
+            "Premnath Vijayakumar" + CHARACTER_DATABASE_SEPARATOR + NSLocalizedString("OPTION_MR", comment: "") + CHARACTER_DATABASE_SEPARATOR + "13/6/1990" + CHARACTER_DATABASE_SEPARATOR + "Male" + CHARACTER_DATABASE_SEPARATOR + "13th Malaysia street, block A 1 nomor 40, Damansara Jaya" + CHARACTER_DATABASE_SEPARATOR + "1234567890" + CHARACTER_DATABASE_SEPARATOR + "premnath.viajayakumar@infoconnect.com.my",
+            "Premnath Vijayakumar" + CHARACTER_DATABASE_SEPARATOR + NSLocalizedString("OPTION_MR", comment: "") + CHARACTER_DATABASE_SEPARATOR + "13/6/1990" + CHARACTER_DATABASE_SEPARATOR + "Male" + CHARACTER_DATABASE_SEPARATOR + "13th Malaysia street, block A 1 nomor 40, Damansara Jaya" + CHARACTER_DATABASE_SEPARATOR + "1234567890" + CHARACTER_DATABASE_SEPARATOR + "premnath.viajayakumar@infoconnect.com.my",
+            "Premnath Vijayakumar" + CHARACTER_DATABASE_SEPARATOR + NSLocalizedString("OPTION_MR", comment: "") + CHARACTER_DATABASE_SEPARATOR + "13/6/1990" + CHARACTER_DATABASE_SEPARATOR + "Male" + CHARACTER_DATABASE_SEPARATOR + "13th Malaysia street, block A 1 nomor 40, Damansara Jaya" + CHARACTER_DATABASE_SEPARATOR + "1234567890" + CHARACTER_DATABASE_SEPARATOR + "premnath.viajayakumar@infoconnect.com.my",
+            "Premnath Vijayakumar" + CHARACTER_DATABASE_SEPARATOR + NSLocalizedString("OPTION_MR", comment: "") + CHARACTER_DATABASE_SEPARATOR + "13/6/1990" + CHARACTER_DATABASE_SEPARATOR + "Male" + CHARACTER_DATABASE_SEPARATOR + "13th Malaysia street, block A 1 nomor 40, Damansara Jaya" + CHARACTER_DATABASE_SEPARATOR + "1234567890" + CHARACTER_DATABASE_SEPARATOR + "premnath.viajayakumar@infoconnect.com.my",
+            "Premnath Vijayakumar" + CHARACTER_DATABASE_SEPARATOR + NSLocalizedString("OPTION_MR", comment: "") + CHARACTER_DATABASE_SEPARATOR + "13/6/1990" + CHARACTER_DATABASE_SEPARATOR + "Male" + CHARACTER_DATABASE_SEPARATOR + "13th Malaysia street, block A 1 nomor 40, Damansara Jaya" + CHARACTER_DATABASE_SEPARATOR + "1234567890" + CHARACTER_DATABASE_SEPARATOR + "premnath.viajayakumar@infoconnect.com.my",
+            "Premnath Vijayakumar" + CHARACTER_DATABASE_SEPARATOR + NSLocalizedString("OPTION_MR", comment: "") + CHARACTER_DATABASE_SEPARATOR + "13/6/1990" + CHARACTER_DATABASE_SEPARATOR + "Male" + CHARACTER_DATABASE_SEPARATOR + "13th Malaysia street, block A 1 nomor 40, Damansara Jaya" + CHARACTER_DATABASE_SEPARATOR + "1234567890" + CHARACTER_DATABASE_SEPARATOR + "premnath.viajayakumar@infoconnect.com.my",
+            "Premnath Vijayakumar" + CHARACTER_DATABASE_SEPARATOR + NSLocalizedString("OPTION_MR", comment: "") + CHARACTER_DATABASE_SEPARATOR + "13/6/1990" + CHARACTER_DATABASE_SEPARATOR + "Male" + CHARACTER_DATABASE_SEPARATOR + "13th Malaysia street, block A 1 nomor 40, Damansara Jaya" + CHARACTER_DATABASE_SEPARATOR + "1234567890" + CHARACTER_DATABASE_SEPARATOR + "premnath.viajayakumar@infoconnect.com.my",
+            "Premnath Vijayakumar" + CHARACTER_DATABASE_SEPARATOR + NSLocalizedString("OPTION_MR", comment: "") + CHARACTER_DATABASE_SEPARATOR + "13/6/1990" + CHARACTER_DATABASE_SEPARATOR + "Male" + CHARACTER_DATABASE_SEPARATOR + "13th Malaysia street, block A 1 nomor 40, Damansara Jaya" + CHARACTER_DATABASE_SEPARATOR + "1234567890" + CHARACTER_DATABASE_SEPARATOR + "premnath.viajayakumar@infoconnect.com.my",
+            "Premnath Vijayakumar" + CHARACTER_DATABASE_SEPARATOR + NSLocalizedString("OPTION_MR", comment: "") + CHARACTER_DATABASE_SEPARATOR + "13/6/1990" + CHARACTER_DATABASE_SEPARATOR + "Male" + CHARACTER_DATABASE_SEPARATOR + "13th Malaysia street, block A 1 nomor 40, Damansara Jaya" + CHARACTER_DATABASE_SEPARATOR + "1234567890" + CHARACTER_DATABASE_SEPARATOR + "premnath.viajayakumar@infoconnect.com.my",
+            "Premnath Vijayakumar" + CHARACTER_DATABASE_SEPARATOR + NSLocalizedString("OPTION_MR", comment: "") + CHARACTER_DATABASE_SEPARATOR + "13/6/1990" + CHARACTER_DATABASE_SEPARATOR + "Male" + CHARACTER_DATABASE_SEPARATOR + "13th Malaysia street, block A 1 nomor 40, Damansara Jaya" + CHARACTER_DATABASE_SEPARATOR + "1234567890" + CHARACTER_DATABASE_SEPARATOR + "premnath.viajayakumar@infoconnect.com.my",
+            "Premnath Vijayakumar" + CHARACTER_DATABASE_SEPARATOR + NSLocalizedString("OPTION_MR", comment: "") + CHARACTER_DATABASE_SEPARATOR + "13/6/1990" + CHARACTER_DATABASE_SEPARATOR + "Male" + CHARACTER_DATABASE_SEPARATOR + "13th Malaysia street, block A 1 nomor 40, Damansara Jaya" + CHARACTER_DATABASE_SEPARATOR + "1234567890" + CHARACTER_DATABASE_SEPARATOR + "premnath.viajayakumar@infoconnect.com.my",
+            "Premnath Vijayakumar" + CHARACTER_DATABASE_SEPARATOR + NSLocalizedString("OPTION_MR", comment: "") + CHARACTER_DATABASE_SEPARATOR + "13/6/1990" + CHARACTER_DATABASE_SEPARATOR + "Male" + CHARACTER_DATABASE_SEPARATOR + "13th Malaysia street, block A 1 nomor 40, Damansara Jaya" + CHARACTER_DATABASE_SEPARATOR + "1234567890" + CHARACTER_DATABASE_SEPARATOR + "premnath.viajayakumar@infoconnect.com.my",
+            "Premnath Vijayakumar" + CHARACTER_DATABASE_SEPARATOR + NSLocalizedString("OPTION_MR", comment: "") + CHARACTER_DATABASE_SEPARATOR + "13/6/1990" + CHARACTER_DATABASE_SEPARATOR + "Male" + CHARACTER_DATABASE_SEPARATOR + "13th Malaysia street, block A 1 nomor 40, Damansara Jaya" + CHARACTER_DATABASE_SEPARATOR + "1234567890" + CHARACTER_DATABASE_SEPARATOR + "premnath.viajayakumar@infoconnect.com.my",
+            "Premnath Vijayakumar" + CHARACTER_DATABASE_SEPARATOR + NSLocalizedString("OPTION_MR", comment: "") + CHARACTER_DATABASE_SEPARATOR + "13/6/1990" + CHARACTER_DATABASE_SEPARATOR + "Male" + CHARACTER_DATABASE_SEPARATOR + "13th Malaysia street, block A 1 nomor 40, Damansara Jaya" + CHARACTER_DATABASE_SEPARATOR + "1234567890" + CHARACTER_DATABASE_SEPARATOR + "premnath.viajayakumar@infoconnect.com.my",
+            "Premnath Vijayakumar" + CHARACTER_DATABASE_SEPARATOR + NSLocalizedString("OPTION_MR", comment: "") + CHARACTER_DATABASE_SEPARATOR + "13/6/1990" + CHARACTER_DATABASE_SEPARATOR + "Male" + CHARACTER_DATABASE_SEPARATOR + "13th Malaysia street, block A 1 nomor 40, Damansara Jaya" + CHARACTER_DATABASE_SEPARATOR + "1234567890" + CHARACTER_DATABASE_SEPARATOR + "premnath.viajayakumar@infoconnect.com.my",
+        ]
     
     if tableRow.count == 0
     {
@@ -200,20 +186,19 @@ func initializationProspect() -> Void
         {
             var arrayProspectContent = arrayProspect[i].componentsSeparatedByString(CHARACTER_DATABASE_SEPARATOR)
             
-            entityProspect.SetID(i)
-            /* entityProspect.SetName(arrayProspectContent[0])
+            entityProspect.SetIntID(i)
+            entityProspect.SetName(arrayProspectContent[0])
             entityProspect.SetTitle(arrayProspectContent[1])
-            entityProspect.SetBirthday(arrayProspectContent[2])
-            entityProspect.SetGender(arrayProspectContent[3])
+            entityProspect.SetStringBirthday(arrayProspectContent[2])
+            entityProspect.SetStringGender(arrayProspectContent[3])
             entityProspect.SetAddress(arrayProspectContent[4])
             entityProspect.SetTelephoneNumber(arrayProspectContent[5])
             entityProspect.SetEmail(arrayProspectContent[6])
-            entityProspect.SetAddress(arrayProspectContent[7])
-            entityProspect.SetCreatedOn(arrayProspectContent[8])
-            entityProspect.SetCreatedBy(arrayProspectContent[9])
-            entityProspect.SetUpdatedOn(arrayProspectContent[10])
-            entityProspect.SetUpdatedBy(arrayProspectContent[11])
-            entityProspect.SetState(arrayProspectContent[12]) */
+            entityProspect.SetDateCreatedOn(NSDate())
+            entityProspect.SetIntCreatedBy(1)
+            entityProspect.SetDateUpdatedOn(NSDate())
+            entityProspect.SetIntUpdatedBy(1)
+            entityProspect.SetState(true)
             InsertProspect(entityProspect)
         }
     }

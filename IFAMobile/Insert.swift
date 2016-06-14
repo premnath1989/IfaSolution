@@ -154,24 +154,24 @@ func InsertProspect(Entity : EntityProspect)
     TableRow.setValue(GeneratedID, forKey: COLUMN_PROSPECT_ID)
     TableRow.setValue(Entity.GetName(), forKey: COLUMN_PROSPECT_NAME)
     TableRow.setValue(Entity.GetTitle(), forKey: COLUMN_PROSPECT_TITLE)
-    TableRow.setValue(Entity.GetBirthday(), forKey: COLUMN_PROSPECT_TITLE)
-    TableRow.setValue(Entity.GetGender(), forKey: COLUMN_PROSPECT_GENDER)
+    TableRow.setValue(Entity.GetDateBirthday(), forKey: COLUMN_PROSPECT_BIRTHDAY)
+    TableRow.setValue(Entity.GetBoolGender(), forKey: COLUMN_PROSPECT_GENDER)
     TableRow.setValue(Entity.GetAddress(), forKey: COLUMN_PROSPECT_ADDRESS)
     TableRow.setValue(Entity.GetTelephoneNumber(), forKey: COLUMN_PROSPECT_TELEPHONENUMBER)
     TableRow.setValue(Entity.GetEmail(), forKey: COLUMN_PROSPECT_EMAIL)
-    TableRow.setValue(Entity.GetCreatedOn(), forKey: COLUMN_PROSPECT_CREATEDON)
-    TableRow.setValue(Entity.GetCreatedBy(), forKey: COLUMN_PROSPECT_CREATEDBY)
-    TableRow.setValue(Entity.GetUpdatedOn(), forKey: COLUMN_PROSPECT_UPDATEDON)
-    TableRow.setValue(Entity.GetUpdatedBy(), forKey: COLUMN_PROSPECT_UPDATEDBY)
+    TableRow.setValue(Entity.GetDateCreatedOn(), forKey: COLUMN_PROSPECT_CREATEDON)
+    TableRow.setValue(Entity.GetIntCreatedBy(), forKey: COLUMN_PROSPECT_CREATEDBY)
+    TableRow.setValue(Entity.GetDateUpdatedOn(), forKey: COLUMN_PROSPECT_UPDATEDON)
+    TableRow.setValue(Entity.GetIntUpdatedBy(), forKey: COLUMN_PROSPECT_UPDATEDBY)
     TableRow.setValue(Entity.GetState(), forKey: COLUMN_PROSPECT_STATE)
     
     do
     {
         try TableContext.save()
-        NSLog("Insert " + ENTITY_PROSPECT + "(\(Entity.GetID())) - Inserted.", TableRow)
+        NSLog("Insert " + ENTITY_PROSPECT + "(\(Entity.GetStringID())) - Inserted.", TableRow)
     }
     catch let error as NSError
     {
-        NSLog("Insert " + ENTITY_PROSPECT + "(\(Entity.GetID())) - Could not insert \(error), \(error.userInfo).", error)
+        NSLog("Insert " + ENTITY_PROSPECT + "(\(Entity.GetStringID())) - Could not insert \(error), \(error.userInfo).", error)
     }
 }

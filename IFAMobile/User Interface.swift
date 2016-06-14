@@ -33,7 +33,7 @@ extension NSDate
     var formatted:String
     {
         let formatter = NSDateFormatter()
-        formatter.dateFormat = "dd/M/yyyy"
+        formatter.dateFormat = FORMAT_DATE_BIRTHDAY
         return formatter.stringFromDate(self)
     }
     
@@ -59,7 +59,7 @@ extension String
     func formattedWithToNSDate (format:String) -> NSDate
     {
         let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "dd/M/yyyy"
+        dateFormatter.dateFormat = FORMAT_DATE_BIRTHDAY
         let date = dateFormatter.dateFromString(self)
         return date!
     }

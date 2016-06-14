@@ -36,6 +36,7 @@ public let TAG_GUIDE_STEP2 : Int = 10 + 1
 public let TAG_GUIDE_STEP3 : Int = 10 + 2
 public let TAG_GUIDE_STEP4 : Int = 10 + 3
 public let TAG_GUIDE_STEP5 : Int = 10 + 4
+public let FORMAT_DATE_BIRTHDAY : String = "dd/M/yyyy"
 
 
 // DATABASE
