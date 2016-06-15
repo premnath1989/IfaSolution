@@ -50,8 +50,6 @@ extension NSDate
         formatter.dateFormat = format
         return self
     }
-    
-    
 }
 
 extension String
@@ -62,6 +60,22 @@ extension String
         dateFormatter.dateFormat = FORMAT_DATE_BIRTHDAY
         let date = dateFormatter.dateFromString(self)
         return date!
+    }
+    
+    func truncatedLength(length : Int) -> String
+    {
+        var truncatedString : String = self
+        
+        if self.characters.count > length
+        {
+            truncatedString = self.substringToIndex(self.startIndex.advancedBy(length)) + "..."
+        }
+        else
+        {
+            
+        }
+        
+        return truncatedString
     }
 }
 

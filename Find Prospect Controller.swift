@@ -103,7 +103,7 @@ class FindProspectController: UIViewController// , UITableViewDelegate, UITableV
         } */
         
         tableItemProspect.labelName.text = String(rowProspect[indexPath.row].valueForKey(COLUMN_PROSPECT_NAME)!)
-        tableItemProspect.labelEmail.text = String(rowProspect[indexPath.row].valueForKey(COLUMN_PROSPECT_EMAIL)!)
+        tableItemProspect.labelEmail.text = String(rowProspect[indexPath.row].valueForKey(COLUMN_PROSPECT_EMAIL)!).truncatedLength(FORMAT_STRING_TRUNCATED)
         tableItemProspect.labelCreatedOn.text = (rowProspect[indexPath.row].valueForKey(COLUMN_PROSPECT_CREATEDON)! as! NSDate).formattedWithToString(FORMAT_DATE_BIRTHDAY)
         tableItemProspect.labelUpdatedOn.text = (rowProspect[indexPath.row].valueForKey(COLUMN_PROSPECT_UPDATEDON)! as! NSDate).formattedWithToString(FORMAT_DATE_BIRTHDAY)
         tableItemProspect.labelTelephoneNumber.text = String(rowProspect[indexPath.row].valueForKey(COLUMN_PROSPECT_TELEPHONENUMBER)!)

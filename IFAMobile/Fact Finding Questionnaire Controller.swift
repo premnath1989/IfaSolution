@@ -156,7 +156,7 @@ class FactFindingQuestionnaireController : UIViewController
 
             if (queryOption.count > 0)
             {
-                // var arraySwitch = [UISwitch]()
+                var arraySwitch = [UISwitch]()
                 
                 for j : Int in 0 ..< queryOption.count
                 {
@@ -176,8 +176,27 @@ class FactFindingQuestionnaireController : UIViewController
                     
                     stackViewQestionnaire.addArrangedSubview(stackViewOption)
                     
-                    // arraySwitch.append(switchOption)
+                    arraySwitch.append(switchOption)
                 }
+                
+                /* if switchOption.on
+                {
+                    for k : Int in 0 ..< queryOption.count
+                    {
+                        if arraySwitch[k].on
+                        {
+                            
+                        }
+                        else
+                        {
+                            
+                        }
+                    }
+                }
+                else
+                {
+                    
+                }*/
                 
                 // arraySwitchGroup[i].appendContentsOf(arraySwitch)
             }
